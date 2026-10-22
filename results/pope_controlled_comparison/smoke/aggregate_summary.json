@@ -1,0 +1,22 @@
+{
+  "artifact_kind": "derived_aggregate",
+  "source_artifacts": [
+    {
+      "path": "results/pope_controlled_comparison/smoke/summary.json",
+      "sha256": "7bf70eb2d464536a2e521e108aadd19250e483accd55a9bcf9349746c535f4e1"
+    }
+  ],
+  "publication_note": "Explicitly whitelisted aggregates only. Redistribution clearance is not asserted.",
+  "status": "completed",
+  "mode": "smoke",
+  "generation_count": 20,
+  "full_model_rerun": false,
+  "full_300_started": false,
+  "automatic_full_transition": false,
+  "full_300_requires_separate_approval": true,
+  "runtime_seconds": 56.56241209997097,
+  "protected_files_unchanged": true,
+  "evaluated_question_count": 2,
+  "error_count": 0,
+  "scope_note": "Two-question, five-method, two-budget connection smoke; not a single-method accuracy estimate."
+}

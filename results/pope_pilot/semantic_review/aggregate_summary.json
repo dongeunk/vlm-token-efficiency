@@ -1,0 +1,99 @@
+{
+  "artifact_kind": "derived_aggregate",
+  "source_artifacts": [
+    {
+      "path": "results/pope_pilot/semantic_review/summary.json",
+      "sha256": "edc7cd6654222e2cae0b493293bacfe3fa319f1d2d3be3b464b1bf468d3c2be0"
+    }
+  ],
+  "publication_note": "Explicitly whitelisted aggregates only. Redistribution clearance is not asserted.",
+  "evaluation_kind": "post_hoc_rescore_of_same_thirty_responses",
+  "generation_calls": 0,
+  "created_utc": "2026-10-20T06:39:21.564921+00:00",
+  "parser_version": "visual_semantic_yes_no_v1",
+  "source_sha256": "7ed3f2e64f5cef1bf24b830fbe05aca9740d9afe68879a1d59da174158e12ecd",
+  "parser_sha256": "a432780ff8035ec5bea872b899d995433403e633a60ef24dd27fcc29f87a8a1e",
+  "model_inference_executed": false,
+  "model_imports": false,
+  "all_decisions_completed_before_label_scoring": true,
+  "reviewed_responses": 30,
+  "original_invalid_count": 12,
+  "changed_decisions": 10,
+  "resolved_invalid_count": 10,
+  "remaining_invalid_count": 2,
+  "original_valid_decisions_unchanged": true,
+  "accuracy_change_pp": 26.66666666666667,
+  "invalid_change_pp": -33.333333333333336,
+  "original_inputs_unchanged": true,
+  "strict_metrics": {
+    "n": 30,
+    "accuracy": 0.6,
+    "yes_class_accuracy": 0.8666666666666667,
+    "no_class_accuracy": 0.3333333333333333,
+    "precision": 1.0,
+    "recall": 0.8666666666666667,
+    "f1": 0.9285714285714286,
+    "yes_prediction_ratio": 0.43333333333333335,
+    "invalid_ratio": 0.4,
+    "confusion_matrix": {
+      "yes": {
+        "yes": 13,
+        "no": 0,
+        "invalid": 2
+      },
+      "no": {
+        "yes": 0,
+        "no": 5,
+        "invalid": 10
+      }
+    },
+    "support": {
+      "yes": 15,
+      "no": 15
+    },
+    "tp": 13,
+    "fp": 0,
+    "fn": 0,
+    "tn": 5,
+    "invalid_yes": 2,
+    "invalid_no": 10
+  },
+  "semantic_metrics": {
+    "n": 30,
+    "accuracy": 0.8666666666666667,
+    "yes_class_accuracy": 0.8666666666666667,
+    "no_class_accuracy": 0.8666666666666667,
+    "precision": 1.0,
+    "recall": 0.8666666666666667,
+    "f1": 0.9285714285714286,
+    "yes_prediction_ratio": 0.43333333333333335,
+    "invalid_ratio": 0.06666666666666667,
+    "confusion_matrix": {
+      "yes": {
+        "yes": 13,
+        "no": 2,
+        "invalid": 0
+      },
+      "no": {
+        "yes": 0,
+        "no": 13,
+        "invalid": 2
+      }
+    },
+    "support": {
+      "yes": 15,
+      "no": 15
+    },
+    "tp": 13,
+    "fp": 0,
+    "fn": 2,
+    "tn": 13,
+    "invalid_yes": 0,
+    "invalid_no": 2
+  },
+  "limitations": [
+    "Retrospective response-format audit; not new model performance",
+    "Restricted English grammar, not a general semantic reasoner",
+    "No held-out response validation or additional experiment"
+  ]
+}

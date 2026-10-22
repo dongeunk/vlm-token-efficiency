@@ -1,0 +1,40 @@
+Visual Token Pruning: Representational Coverage and Spatial Floors
+
+Copyright 2026 dongeunk
+Applies to the owner's original contributions identified in docs/LICENSING.md.
+This notice does not replace rights in externally authored material.
+
+MMTok attribution -- greedy-coverage update portions
+Copyright (c) 2025 Zoom Communications, Inc.
+Author: Sixun Dong
+Paper: https://arxiv.org/abs/2508.18264
+Repository: https://github.com/Ironieser/MMTok
+Revision: 8e2686836ed5bbe05d064f1d1c20e50c73c70b94
+Source: mmtok/core/semantic_selector.py:greedy_merged_jit_kernel
+License: Apache-2.0 (full text in LICENSE)
+
+Local scope:
+- src/pruning/coverage.py:global_coverage_select -- vectorized marginal-gain
+  update structure adapted/referenced from the upstream kernel.
+- src/pruning/spatial_floor_coverage.py:spatial_floor_coverage_select --
+  completion follows the local MMTok-referenced coverage baseline.
+- src/pruning/matched_allocation.py:_complete -- completion follows that
+  baseline with local-candidate and externally supplied quota constraints.
+
+Local differences from the upstream selector include row-centered clipped
+cosine affinity over projected features, unit visual demand weights, removal
+of text-vision P / softmax-temperature / alpha mixing, local input checks,
+and final original-order restoration. Spatial floor and A/B controls are
+project-specific extensions. This is not a reproduction of full MMTok.
+
+Publication-only change: license/attribution comments and documentation added;
+selector expressions, tie rules, inference/evaluation logic and results unchanged.
+
+This project-created NOTICE is informational. No upstream NOTICE file was
+found in the referenced MMTok snapshot. The MMTok Qwen model wrappers and the
+complete external source tree are not distributed.
+
+S2Prune references describe research history. Its reference implementation,
+parity test, and nine dependent files remain outside this release. No rights
+in excluded S2Prune code, datasets, model weights, papers, or photographs are
+granted here. See docs/LICENSING.md for scope and legacy-file treatment.

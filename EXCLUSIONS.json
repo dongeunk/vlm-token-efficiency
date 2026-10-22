@@ -1,0 +1,503 @@
+{
+  "status": "Phase-one research snapshot authorized for GitHub publication; completion verified against the remote",
+  "source_groups_excluded": [
+    {
+      "source_prefix": ".git/**",
+      "source_file_count": 294,
+      "reason": "Local Git metadata; never copied"
+    },
+    {
+      "source_prefix": "third_party/**",
+      "source_file_count": 122,
+      "reason": "External code/reference repos excluded; no upstream redistribution"
+    },
+    {
+      "source_prefix": "data/**",
+      "source_file_count": 32,
+      "reason": "Dataset annotations, source metadata and COCO photographs withheld"
+    },
+    {
+      "source_prefix": "images/**",
+      "source_file_count": 5,
+      "reason": "Example photographs/assets have no established redistribution clearance"
+    },
+    {
+      "source_prefix": ".vscode/**",
+      "source_file_count": 1,
+      "reason": "Personal editor settings excluded"
+    }
+  ],
+  "individual_original_files_not_copied": [
+    {
+      "source_relative_path": ".gitignore",
+      "reason": "Original ignore file preserved; a new candidate-only policy is provided"
+    },
+    {
+      "source_relative_path": "Untitled-1.ipynb",
+      "reason": "GPU/scratch environment check outside research release scope"
+    },
+    {
+      "source_relative_path": "examples/analyze_pope_spatial_heterogeneity.py",
+      "reason": "Dependency HOLD: original saved-result H runner"
+    },
+    {
+      "source_relative_path": "examples/compare_allocation_strategies.py",
+      "reason": "Dependency HOLD: original allocation experiment runner"
+    },
+    {
+      "source_relative_path": "examples/run_pope_controlled_comparison.py",
+      "reason": "Dependency HOLD: original five-method runner"
+    },
+    {
+      "source_relative_path": "results/allocation_comparison/report.md",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/allocation_comparison/results.json",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_controlled_comparison/full/REPORT.md",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_controlled_comparison/full/comparison.json",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_controlled_comparison/full/config.json",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_controlled_comparison/full/predictions.jsonl",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_controlled_comparison/full/preflight.json",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_controlled_comparison/full/selected_manifest.jsonl",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_controlled_comparison/full/summary.json",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_controlled_comparison/full/timing_ledger.jsonl",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_controlled_comparison/smoke/REPORT.md",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_controlled_comparison/smoke/SMOKE_REVIEW.md",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_controlled_comparison/smoke/comparison.json",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_controlled_comparison/smoke/config.json",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_controlled_comparison/smoke/existing_files_integrity.json",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_controlled_comparison/smoke/predictions.jsonl",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_controlled_comparison/smoke/preflight.json",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_controlled_comparison/smoke/selected_manifest.jsonl",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_controlled_comparison/smoke/summary.json",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_controlled_comparison/smoke/timing_ledger.jsonl",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_controlled_comparison/smoke/validation.json",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_pilot/README.md",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_pilot/config.json",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_pilot/data_audit.json",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_pilot/full_model_report.md",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_pilot/full_model_seed42/config.json",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_pilot/full_model_seed42/predictions.jsonl",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_pilot/full_model_seed42/preflight.json",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_pilot/full_model_seed42/sample_manifest.jsonl",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_pilot/full_model_seed42/summary.json",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_pilot/full_model_seed42/verification.json",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_pilot/image_downloads.json",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_pilot/latest_full_model.json",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_pilot/manifest_image_validation.json",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_pilot/preflight.json",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_pilot/sample_manifest.jsonl",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_pilot/semantic_review/parser_rules.json",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_pilot/semantic_review/predictions.jsonl",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_pilot/semantic_review/raw_text_review.json",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_pilot/semantic_review/report.md",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_pilot/semantic_review/summary.json",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_pilot/semantic_review/verification.json",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_pilot/summary.json",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_pruning_smoke/REPORT.md",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_pruning_smoke/config.json",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_pruning_smoke/existing_files_integrity.json",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_pruning_smoke/initial_two_passed.json",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_pruning_smoke/kn_identity.jsonl",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_pruning_smoke/predictions.jsonl",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_pruning_smoke/selected_manifest.jsonl",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_pruning_smoke/summary.json",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_pruning_smoke/validation.json",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_spatial_heterogeneity_30/REPORT.md",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_spatial_heterogeneity_30/VALIDATION.json",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_spatial_heterogeneity_30/analysis.json",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_spatial_heterogeneity_30/analysis_plan.json",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_spatial_heterogeneity_30/drafts/analysis_v1/REPORT.md",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_spatial_heterogeneity_30/drafts/analysis_v1/analysis.json",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_spatial_heterogeneity_30/drafts/analysis_v1/analyze_pope_spatial_heterogeneity.py",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_spatial_heterogeneity_30/drafts/analysis_v1/report_pope_spatial_heterogeneity.py",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_spatial_heterogeneity_30/drafts/analysis_v1/sensitivity.csv",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_spatial_heterogeneity_30/drafts/figure_layout_v1/figures/accuracy_by_heterogeneity_group.png",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_spatial_heterogeneity_30/drafts/figure_layout_v1/figures/gc_zero_regions_vs_heterogeneity.png",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_spatial_heterogeneity_30/drafts/figure_layout_v1/figures/heterogeneity_vs_ours_minus_gc.png",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_spatial_heterogeneity_30/drafts/figure_layout_v1/figures/panels/qid_1603_k_128.png",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_spatial_heterogeneity_30/drafts/figure_layout_v1/figures/panels/qid_1603_k_64.png",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_spatial_heterogeneity_30/drafts/figure_layout_v1/figures/panels/qid_1799_k_128.png",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_spatial_heterogeneity_30/drafts/figure_layout_v1/figures/panels/qid_1799_k_64.png",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_spatial_heterogeneity_30/drafts/figure_layout_v1/figures/panels/qid_249_k_128.png",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_spatial_heterogeneity_30/drafts/figure_layout_v1/figures/panels/qid_249_k_64.png",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_spatial_heterogeneity_30/drafts/figure_layout_v1/figures/panels/qid_2997_k_128.png",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_spatial_heterogeneity_30/drafts/figure_layout_v1/figures/panels/qid_2997_k_64.png",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_spatial_heterogeneity_30/drafts/figure_layout_v1/figures/panels/qid_388_k_128.png",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_spatial_heterogeneity_30/drafts/figure_layout_v1/figures/panels/qid_388_k_64.png",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_spatial_heterogeneity_30/drafts/figure_layout_v1/figures/panels/qid_527_k_128.png",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_spatial_heterogeneity_30/drafts/figure_layout_v1/figures/panels/qid_527_k_64.png",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_spatial_heterogeneity_30/drafts/figure_layout_v1/plot_pope_spatial_heterogeneity.py",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_spatial_heterogeneity_30/drafts/figure_layout_v1/provenance.json",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_spatial_heterogeneity_30/figures/panels/qid_1603_k_128.png",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_spatial_heterogeneity_30/figures/panels/qid_1603_k_64.png",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_spatial_heterogeneity_30/figures/panels/qid_1799_k_128.png",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_spatial_heterogeneity_30/figures/panels/qid_1799_k_64.png",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_spatial_heterogeneity_30/figures/panels/qid_249_k_128.png",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_spatial_heterogeneity_30/figures/panels/qid_249_k_64.png",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_spatial_heterogeneity_30/figures/panels/qid_2997_k_128.png",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_spatial_heterogeneity_30/figures/panels/qid_2997_k_64.png",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_spatial_heterogeneity_30/figures/panels/qid_388_k_128.png",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_spatial_heterogeneity_30/figures/panels/qid_388_k_64.png",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_spatial_heterogeneity_30/figures/panels/qid_527_k_128.png",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_spatial_heterogeneity_30/figures/panels/qid_527_k_64.png",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_spatial_heterogeneity_30/group_comparison.csv",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_spatial_heterogeneity_30/original_files_sha256.json",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_spatial_heterogeneity_30/paired_group_comparison.csv",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_spatial_heterogeneity_30/per_image_analysis.csv",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_spatial_heterogeneity_30/provenance.json",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "results/pope_spatial_heterogeneity_30/sensitivity.csv",
+      "reason": "Original historical artifact not distributed; only explicit whitelisted derivatives are candidates"
+    },
+    {
+      "source_relative_path": "src/analysis/spatial_heterogeneity.py",
+      "reason": "Dependency HOLD: original geometry/H analysis"
+    },
+    {
+      "source_relative_path": "src/inference/controlled_selectors.py",
+      "reason": "Dependency HOLD: original selector orchestration"
+    },
+    {
+      "source_relative_path": "src/pruning/s2_style_allocation.py",
+      "reason": "Rights HOLD: code-informed reference implementation"
+    },
+    {
+      "source_relative_path": "tests/test_controlled_runner.py",
+      "reason": "Dependency HOLD: original runner/approval tests"
+    },
+    {
+      "source_relative_path": "tests/test_controlled_selectors.py",
+      "reason": "Dependency HOLD: original synthetic selector tests"
+    },
+    {
+      "source_relative_path": "tests/test_pope_heterogeneity_analysis.py",
+      "reason": "Dependency HOLD: original H-analysis orchestration tests"
+    },
+    {
+      "source_relative_path": "tests/test_s2_style_allocation.py",
+      "reason": "Mixed-provenance HOLD: own tests plus upstream fixture/parity material"
+    },
+    {
+      "source_relative_path": "tests/test_spatial_heterogeneity.py",
+      "reason": "Dependency HOLD: original geometry/complexity tests"
+    }
+  ],
+  "held_first_party_files": [
+    "examples/analyze_pope_spatial_heterogeneity.py",
+    "examples/compare_allocation_strategies.py",
+    "examples/run_pope_controlled_comparison.py",
+    "src/analysis/spatial_heterogeneity.py",
+    "src/inference/controlled_selectors.py",
+    "src/pruning/s2_style_allocation.py",
+    "tests/test_controlled_runner.py",
+    "tests/test_controlled_selectors.py",
+    "tests/test_pope_heterogeneity_analysis.py",
+    "tests/test_s2_style_allocation.py",
+    "tests/test_spatial_heterogeneity.py"
+  ],
+  "not_present_or_not_scanned": "No model weights/cache found in project; external home model cache and credential stores were not read.",
+  "originals": "Preserved unchanged; exclusion is from the candidate, not deletion from the source project.",
+  "results": "No original annotations, manifests, raw predictions, photo panels, original question/image IDs or response text in numeric exports. Historical case IDs may remain in source/docs as references.",
+  "private_preparation_material": "Only the release root is a publication candidate. Publication audit, archived drafts, source snapshots and private ID maps are outside it.",
+  "hold_classification": {
+    "src/pruning/s2_style_allocation.py": "Rights HOLD: code-informed reference implementation",
+    "tests/test_s2_style_allocation.py": "Mixed-provenance HOLD: own tests plus upstream fixture/parity material",
+    "src/inference/controlled_selectors.py": "Dependency HOLD: original selector orchestration",
+    "src/analysis/spatial_heterogeneity.py": "Dependency HOLD: original geometry/H analysis",
+    "examples/compare_allocation_strategies.py": "Dependency HOLD: original allocation experiment runner",
+    "examples/run_pope_controlled_comparison.py": "Dependency HOLD: original five-method runner",
+    "examples/analyze_pope_spatial_heterogeneity.py": "Dependency HOLD: original saved-result H runner",
+    "tests/test_controlled_selectors.py": "Dependency HOLD: original synthetic selector tests",
+    "tests/test_controlled_runner.py": "Dependency HOLD: original runner/approval tests",
+    "tests/test_spatial_heterogeneity.py": "Dependency HOLD: original geometry/complexity tests",
+    "tests/test_pope_heterogeneity_analysis.py": "Dependency HOLD: original H-analysis orchestration tests"
+  },
+  "retained_legacy_file": {
+    "path": "vlm.py",
+    "representation": "Existing GitHub/Git LF blob; local CRLF source preserved",
+    "new_license_grant": "HOLD; outside new project grant"
+  }
+}

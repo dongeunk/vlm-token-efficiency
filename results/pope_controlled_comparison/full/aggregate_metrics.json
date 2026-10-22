@@ -1,0 +1,1338 @@
+{
+  "artifact_kind": "derived_aggregate",
+  "source_artifacts": [
+    {
+      "path": "results/pope_controlled_comparison/full/comparison.json",
+      "sha256": "bd174a74e16cfc5a09ec51878114211305b6e7ef85f5f2aa0817cb28e43b63ab"
+    }
+  ],
+  "publication_note": "Explicitly whitelisted aggregates only. Redistribution clearance is not asserted.",
+  "scope": {
+    "full_manifest_count": 30,
+    "evaluated_question_count": 30,
+    "expected_prediction_records": 300,
+    "actual_prediction_records": 300,
+    "complete_for_scope": true,
+    "subset_only": false,
+    "full_30_comparison_complete": true
+  },
+  "methods": [
+    "random",
+    "pure_gc",
+    "ours",
+    "a_local_only",
+    "b_laplacian_quota"
+  ],
+  "budgets": [
+    64,
+    128
+  ],
+  "semantic_parser_version": "visual_semantic_yes_no_v1",
+  "groups": [
+    {
+      "method": "random",
+      "k": 64,
+      "complete_for_scope": true,
+      "question_count": 30,
+      "strict_metrics": {
+        "n": 30,
+        "accuracy": 0.6333333333333333,
+        "yes_class_accuracy": 0.6666666666666666,
+        "no_class_accuracy": 0.6,
+        "precision": 1.0,
+        "recall": 0.6666666666666666,
+        "f1": 0.8,
+        "yes_prediction_ratio": 0.3333333333333333,
+        "invalid_ratio": 0.26666666666666666,
+        "confusion_matrix": {
+          "yes": {
+            "yes": 10,
+            "no": 3,
+            "invalid": 2
+          },
+          "no": {
+            "yes": 0,
+            "no": 9,
+            "invalid": 6
+          }
+        },
+        "support": {
+          "yes": 15,
+          "no": 15
+        },
+        "tp": 10,
+        "fp": 0,
+        "fn": 3,
+        "tn": 9,
+        "invalid_yes": 2,
+        "invalid_no": 6
+      },
+      "semantic_metrics": {
+        "n": 30,
+        "accuracy": 0.8333333333333334,
+        "yes_class_accuracy": 0.6666666666666666,
+        "no_class_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 0.6666666666666666,
+        "f1": 0.8,
+        "yes_prediction_ratio": 0.3333333333333333,
+        "invalid_ratio": 0.0,
+        "confusion_matrix": {
+          "yes": {
+            "yes": 10,
+            "no": 5,
+            "invalid": 0
+          },
+          "no": {
+            "yes": 0,
+            "no": 15,
+            "invalid": 0
+          }
+        },
+        "support": {
+          "yes": 15,
+          "no": 15
+        },
+        "tp": 10,
+        "fp": 0,
+        "fn": 5,
+        "tn": 15,
+        "invalid_yes": 0,
+        "invalid_no": 0
+      },
+      "strict_correct_count": 19,
+      "semantic_correct_count": 25,
+      "strict_invalid_count": 8,
+      "semantic_invalid_count": 0,
+      "versus_full": {
+        "strict": {
+          "n": 30,
+          "left_correct": 18,
+          "right_correct": 19,
+          "correct_count_difference": 1,
+          "accuracy_difference_pp": 3.3333333333333335,
+          "changed_answer_question_count": 12,
+          "correctness_changed_question_count": 11,
+          "gained_correct_question_count": 6,
+          "lost_correct_question_count": 5,
+          "both_correct_question_count": 13,
+          "both_incorrect_question_count": 6,
+          "invalid_to_valid_question_count": 7,
+          "valid_to_invalid_question_count": 3
+        },
+        "semantic": {
+          "n": 30,
+          "left_correct": 26,
+          "right_correct": 25,
+          "correct_count_difference": -1,
+          "accuracy_difference_pp": -3.3333333333333335,
+          "changed_answer_question_count": 5,
+          "correctness_changed_question_count": 5,
+          "gained_correct_question_count": 2,
+          "lost_correct_question_count": 3,
+          "both_correct_question_count": 23,
+          "both_incorrect_question_count": 2,
+          "invalid_to_valid_question_count": 2,
+          "valid_to_invalid_question_count": 0
+        }
+      }
+    },
+    {
+      "method": "random",
+      "k": 128,
+      "complete_for_scope": true,
+      "question_count": 30,
+      "strict_metrics": {
+        "n": 30,
+        "accuracy": 0.6333333333333333,
+        "yes_class_accuracy": 0.8666666666666667,
+        "no_class_accuracy": 0.4,
+        "precision": 1.0,
+        "recall": 0.8666666666666667,
+        "f1": 0.9285714285714286,
+        "yes_prediction_ratio": 0.43333333333333335,
+        "invalid_ratio": 0.36666666666666664,
+        "confusion_matrix": {
+          "yes": {
+            "yes": 13,
+            "no": 0,
+            "invalid": 2
+          },
+          "no": {
+            "yes": 0,
+            "no": 6,
+            "invalid": 9
+          }
+        },
+        "support": {
+          "yes": 15,
+          "no": 15
+        },
+        "tp": 13,
+        "fp": 0,
+        "fn": 0,
+        "tn": 6,
+        "invalid_yes": 2,
+        "invalid_no": 9
+      },
+      "semantic_metrics": {
+        "n": 30,
+        "accuracy": 0.9333333333333333,
+        "yes_class_accuracy": 0.8666666666666667,
+        "no_class_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 0.8666666666666667,
+        "f1": 0.9285714285714286,
+        "yes_prediction_ratio": 0.43333333333333335,
+        "invalid_ratio": 0.0,
+        "confusion_matrix": {
+          "yes": {
+            "yes": 13,
+            "no": 2,
+            "invalid": 0
+          },
+          "no": {
+            "yes": 0,
+            "no": 15,
+            "invalid": 0
+          }
+        },
+        "support": {
+          "yes": 15,
+          "no": 15
+        },
+        "tp": 13,
+        "fp": 0,
+        "fn": 2,
+        "tn": 15,
+        "invalid_yes": 0,
+        "invalid_no": 0
+      },
+      "strict_correct_count": 19,
+      "semantic_correct_count": 28,
+      "strict_invalid_count": 11,
+      "semantic_invalid_count": 0,
+      "versus_full": {
+        "strict": {
+          "n": 30,
+          "left_correct": 18,
+          "right_correct": 19,
+          "correct_count_difference": 1,
+          "accuracy_difference_pp": 3.3333333333333335,
+          "changed_answer_question_count": 9,
+          "correctness_changed_question_count": 9,
+          "gained_correct_question_count": 5,
+          "lost_correct_question_count": 4,
+          "both_correct_question_count": 14,
+          "both_incorrect_question_count": 7,
+          "invalid_to_valid_question_count": 5,
+          "valid_to_invalid_question_count": 4
+        },
+        "semantic": {
+          "n": 30,
+          "left_correct": 26,
+          "right_correct": 28,
+          "correct_count_difference": 2,
+          "accuracy_difference_pp": 6.666666666666667,
+          "changed_answer_question_count": 4,
+          "correctness_changed_question_count": 4,
+          "gained_correct_question_count": 3,
+          "lost_correct_question_count": 1,
+          "both_correct_question_count": 25,
+          "both_incorrect_question_count": 1,
+          "invalid_to_valid_question_count": 2,
+          "valid_to_invalid_question_count": 0
+        }
+      }
+    },
+    {
+      "method": "pure_gc",
+      "k": 64,
+      "complete_for_scope": true,
+      "question_count": 30,
+      "strict_metrics": {
+        "n": 30,
+        "accuracy": 0.7333333333333333,
+        "yes_class_accuracy": 0.8666666666666667,
+        "no_class_accuracy": 0.6,
+        "precision": 1.0,
+        "recall": 0.8666666666666667,
+        "f1": 0.9285714285714286,
+        "yes_prediction_ratio": 0.43333333333333335,
+        "invalid_ratio": 0.2,
+        "confusion_matrix": {
+          "yes": {
+            "yes": 13,
+            "no": 2,
+            "invalid": 0
+          },
+          "no": {
+            "yes": 0,
+            "no": 9,
+            "invalid": 6
+          }
+        },
+        "support": {
+          "yes": 15,
+          "no": 15
+        },
+        "tp": 13,
+        "fp": 0,
+        "fn": 2,
+        "tn": 9,
+        "invalid_yes": 0,
+        "invalid_no": 6
+      },
+      "semantic_metrics": {
+        "n": 30,
+        "accuracy": 0.9333333333333333,
+        "yes_class_accuracy": 0.8666666666666667,
+        "no_class_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 0.8666666666666667,
+        "f1": 0.9285714285714286,
+        "yes_prediction_ratio": 0.43333333333333335,
+        "invalid_ratio": 0.0,
+        "confusion_matrix": {
+          "yes": {
+            "yes": 13,
+            "no": 2,
+            "invalid": 0
+          },
+          "no": {
+            "yes": 0,
+            "no": 15,
+            "invalid": 0
+          }
+        },
+        "support": {
+          "yes": 15,
+          "no": 15
+        },
+        "tp": 13,
+        "fp": 0,
+        "fn": 2,
+        "tn": 15,
+        "invalid_yes": 0,
+        "invalid_no": 0
+      },
+      "strict_correct_count": 22,
+      "semantic_correct_count": 28,
+      "strict_invalid_count": 6,
+      "semantic_invalid_count": 0,
+      "versus_full": {
+        "strict": {
+          "n": 30,
+          "left_correct": 18,
+          "right_correct": 22,
+          "correct_count_difference": 4,
+          "accuracy_difference_pp": 13.333333333333334,
+          "changed_answer_question_count": 7,
+          "correctness_changed_question_count": 6,
+          "gained_correct_question_count": 5,
+          "lost_correct_question_count": 1,
+          "both_correct_question_count": 17,
+          "both_incorrect_question_count": 7,
+          "invalid_to_valid_question_count": 6,
+          "valid_to_invalid_question_count": 0
+        },
+        "semantic": {
+          "n": 30,
+          "left_correct": 26,
+          "right_correct": 28,
+          "correct_count_difference": 2,
+          "accuracy_difference_pp": 6.666666666666667,
+          "changed_answer_question_count": 4,
+          "correctness_changed_question_count": 4,
+          "gained_correct_question_count": 3,
+          "lost_correct_question_count": 1,
+          "both_correct_question_count": 25,
+          "both_incorrect_question_count": 1,
+          "invalid_to_valid_question_count": 2,
+          "valid_to_invalid_question_count": 0
+        }
+      }
+    },
+    {
+      "method": "pure_gc",
+      "k": 128,
+      "complete_for_scope": true,
+      "question_count": 30,
+      "strict_metrics": {
+        "n": 30,
+        "accuracy": 0.7,
+        "yes_class_accuracy": 0.9333333333333333,
+        "no_class_accuracy": 0.4666666666666667,
+        "precision": 1.0,
+        "recall": 0.9333333333333333,
+        "f1": 0.9655172413793104,
+        "yes_prediction_ratio": 0.4666666666666667,
+        "invalid_ratio": 0.3,
+        "confusion_matrix": {
+          "yes": {
+            "yes": 14,
+            "no": 0,
+            "invalid": 1
+          },
+          "no": {
+            "yes": 0,
+            "no": 7,
+            "invalid": 8
+          }
+        },
+        "support": {
+          "yes": 15,
+          "no": 15
+        },
+        "tp": 14,
+        "fp": 0,
+        "fn": 0,
+        "tn": 7,
+        "invalid_yes": 1,
+        "invalid_no": 8
+      },
+      "semantic_metrics": {
+        "n": 30,
+        "accuracy": 0.9,
+        "yes_class_accuracy": 0.9333333333333333,
+        "no_class_accuracy": 0.8666666666666667,
+        "precision": 1.0,
+        "recall": 0.9333333333333333,
+        "f1": 0.9655172413793104,
+        "yes_prediction_ratio": 0.4666666666666667,
+        "invalid_ratio": 0.06666666666666667,
+        "confusion_matrix": {
+          "yes": {
+            "yes": 14,
+            "no": 1,
+            "invalid": 0
+          },
+          "no": {
+            "yes": 0,
+            "no": 13,
+            "invalid": 2
+          }
+        },
+        "support": {
+          "yes": 15,
+          "no": 15
+        },
+        "tp": 14,
+        "fp": 0,
+        "fn": 1,
+        "tn": 13,
+        "invalid_yes": 0,
+        "invalid_no": 2
+      },
+      "strict_correct_count": 21,
+      "semantic_correct_count": 27,
+      "strict_invalid_count": 9,
+      "semantic_invalid_count": 2,
+      "versus_full": {
+        "strict": {
+          "n": 30,
+          "left_correct": 18,
+          "right_correct": 21,
+          "correct_count_difference": 3,
+          "accuracy_difference_pp": 10.0,
+          "changed_answer_question_count": 3,
+          "correctness_changed_question_count": 3,
+          "gained_correct_question_count": 3,
+          "lost_correct_question_count": 0,
+          "both_correct_question_count": 18,
+          "both_incorrect_question_count": 9,
+          "invalid_to_valid_question_count": 3,
+          "valid_to_invalid_question_count": 0
+        },
+        "semantic": {
+          "n": 30,
+          "left_correct": 26,
+          "right_correct": 27,
+          "correct_count_difference": 1,
+          "accuracy_difference_pp": 3.3333333333333335,
+          "changed_answer_question_count": 1,
+          "correctness_changed_question_count": 1,
+          "gained_correct_question_count": 1,
+          "lost_correct_question_count": 0,
+          "both_correct_question_count": 26,
+          "both_incorrect_question_count": 3,
+          "invalid_to_valid_question_count": 0,
+          "valid_to_invalid_question_count": 0
+        }
+      }
+    },
+    {
+      "method": "ours",
+      "k": 64,
+      "complete_for_scope": true,
+      "question_count": 30,
+      "strict_metrics": {
+        "n": 30,
+        "accuracy": 0.7666666666666667,
+        "yes_class_accuracy": 0.7333333333333333,
+        "no_class_accuracy": 0.8,
+        "precision": 1.0,
+        "recall": 0.7333333333333333,
+        "f1": 0.846153846153846,
+        "yes_prediction_ratio": 0.36666666666666664,
+        "invalid_ratio": 0.16666666666666666,
+        "confusion_matrix": {
+          "yes": {
+            "yes": 11,
+            "no": 2,
+            "invalid": 2
+          },
+          "no": {
+            "yes": 0,
+            "no": 12,
+            "invalid": 3
+          }
+        },
+        "support": {
+          "yes": 15,
+          "no": 15
+        },
+        "tp": 11,
+        "fp": 0,
+        "fn": 2,
+        "tn": 12,
+        "invalid_yes": 2,
+        "invalid_no": 3
+      },
+      "semantic_metrics": {
+        "n": 30,
+        "accuracy": 0.8333333333333334,
+        "yes_class_accuracy": 0.7333333333333333,
+        "no_class_accuracy": 0.9333333333333333,
+        "precision": 1.0,
+        "recall": 0.7333333333333333,
+        "f1": 0.846153846153846,
+        "yes_prediction_ratio": 0.36666666666666664,
+        "invalid_ratio": 0.1,
+        "confusion_matrix": {
+          "yes": {
+            "yes": 11,
+            "no": 2,
+            "invalid": 2
+          },
+          "no": {
+            "yes": 0,
+            "no": 14,
+            "invalid": 1
+          }
+        },
+        "support": {
+          "yes": 15,
+          "no": 15
+        },
+        "tp": 11,
+        "fp": 0,
+        "fn": 2,
+        "tn": 14,
+        "invalid_yes": 2,
+        "invalid_no": 1
+      },
+      "strict_correct_count": 23,
+      "semantic_correct_count": 25,
+      "strict_invalid_count": 5,
+      "semantic_invalid_count": 3,
+      "versus_full": {
+        "strict": {
+          "n": 30,
+          "left_correct": 18,
+          "right_correct": 23,
+          "correct_count_difference": 5,
+          "accuracy_difference_pp": 16.666666666666668,
+          "changed_answer_question_count": 10,
+          "correctness_changed_question_count": 9,
+          "gained_correct_question_count": 7,
+          "lost_correct_question_count": 2,
+          "both_correct_question_count": 16,
+          "both_incorrect_question_count": 5,
+          "invalid_to_valid_question_count": 8,
+          "valid_to_invalid_question_count": 1
+        },
+        "semantic": {
+          "n": 30,
+          "left_correct": 26,
+          "right_correct": 25,
+          "correct_count_difference": -1,
+          "accuracy_difference_pp": -3.3333333333333335,
+          "changed_answer_question_count": 6,
+          "correctness_changed_question_count": 5,
+          "gained_correct_question_count": 2,
+          "lost_correct_question_count": 3,
+          "both_correct_question_count": 23,
+          "both_incorrect_question_count": 2,
+          "invalid_to_valid_question_count": 2,
+          "valid_to_invalid_question_count": 3
+        }
+      }
+    },
+    {
+      "method": "ours",
+      "k": 128,
+      "complete_for_scope": true,
+      "question_count": 30,
+      "strict_metrics": {
+        "n": 30,
+        "accuracy": 0.8,
+        "yes_class_accuracy": 0.9333333333333333,
+        "no_class_accuracy": 0.6666666666666666,
+        "precision": 1.0,
+        "recall": 0.9333333333333333,
+        "f1": 0.9655172413793104,
+        "yes_prediction_ratio": 0.4666666666666667,
+        "invalid_ratio": 0.2,
+        "confusion_matrix": {
+          "yes": {
+            "yes": 14,
+            "no": 0,
+            "invalid": 1
+          },
+          "no": {
+            "yes": 0,
+            "no": 10,
+            "invalid": 5
+          }
+        },
+        "support": {
+          "yes": 15,
+          "no": 15
+        },
+        "tp": 14,
+        "fp": 0,
+        "fn": 0,
+        "tn": 10,
+        "invalid_yes": 1,
+        "invalid_no": 5
+      },
+      "semantic_metrics": {
+        "n": 30,
+        "accuracy": 0.9,
+        "yes_class_accuracy": 0.9333333333333333,
+        "no_class_accuracy": 0.8666666666666667,
+        "precision": 1.0,
+        "recall": 0.9333333333333333,
+        "f1": 0.9655172413793104,
+        "yes_prediction_ratio": 0.4666666666666667,
+        "invalid_ratio": 0.06666666666666667,
+        "confusion_matrix": {
+          "yes": {
+            "yes": 14,
+            "no": 1,
+            "invalid": 0
+          },
+          "no": {
+            "yes": 0,
+            "no": 13,
+            "invalid": 2
+          }
+        },
+        "support": {
+          "yes": 15,
+          "no": 15
+        },
+        "tp": 14,
+        "fp": 0,
+        "fn": 1,
+        "tn": 13,
+        "invalid_yes": 0,
+        "invalid_no": 2
+      },
+      "strict_correct_count": 24,
+      "semantic_correct_count": 27,
+      "strict_invalid_count": 6,
+      "semantic_invalid_count": 2,
+      "versus_full": {
+        "strict": {
+          "n": 30,
+          "left_correct": 18,
+          "right_correct": 24,
+          "correct_count_difference": 6,
+          "accuracy_difference_pp": 20.0,
+          "changed_answer_question_count": 6,
+          "correctness_changed_question_count": 6,
+          "gained_correct_question_count": 6,
+          "lost_correct_question_count": 0,
+          "both_correct_question_count": 18,
+          "both_incorrect_question_count": 6,
+          "invalid_to_valid_question_count": 6,
+          "valid_to_invalid_question_count": 0
+        },
+        "semantic": {
+          "n": 30,
+          "left_correct": 26,
+          "right_correct": 27,
+          "correct_count_difference": 1,
+          "accuracy_difference_pp": 3.3333333333333335,
+          "changed_answer_question_count": 3,
+          "correctness_changed_question_count": 3,
+          "gained_correct_question_count": 2,
+          "lost_correct_question_count": 1,
+          "both_correct_question_count": 25,
+          "both_incorrect_question_count": 2,
+          "invalid_to_valid_question_count": 1,
+          "valid_to_invalid_question_count": 1
+        }
+      }
+    },
+    {
+      "method": "a_local_only",
+      "k": 64,
+      "complete_for_scope": true,
+      "question_count": 30,
+      "strict_metrics": {
+        "n": 30,
+        "accuracy": 0.8,
+        "yes_class_accuracy": 0.9333333333333333,
+        "no_class_accuracy": 0.6666666666666666,
+        "precision": 1.0,
+        "recall": 0.9333333333333333,
+        "f1": 0.9655172413793104,
+        "yes_prediction_ratio": 0.4666666666666667,
+        "invalid_ratio": 0.16666666666666666,
+        "confusion_matrix": {
+          "yes": {
+            "yes": 14,
+            "no": 1,
+            "invalid": 0
+          },
+          "no": {
+            "yes": 0,
+            "no": 10,
+            "invalid": 5
+          }
+        },
+        "support": {
+          "yes": 15,
+          "no": 15
+        },
+        "tp": 14,
+        "fp": 0,
+        "fn": 1,
+        "tn": 10,
+        "invalid_yes": 0,
+        "invalid_no": 5
+      },
+      "semantic_metrics": {
+        "n": 30,
+        "accuracy": 0.9333333333333333,
+        "yes_class_accuracy": 0.9333333333333333,
+        "no_class_accuracy": 0.9333333333333333,
+        "precision": 1.0,
+        "recall": 0.9333333333333333,
+        "f1": 0.9655172413793104,
+        "yes_prediction_ratio": 0.4666666666666667,
+        "invalid_ratio": 0.03333333333333333,
+        "confusion_matrix": {
+          "yes": {
+            "yes": 14,
+            "no": 1,
+            "invalid": 0
+          },
+          "no": {
+            "yes": 0,
+            "no": 14,
+            "invalid": 1
+          }
+        },
+        "support": {
+          "yes": 15,
+          "no": 15
+        },
+        "tp": 14,
+        "fp": 0,
+        "fn": 1,
+        "tn": 14,
+        "invalid_yes": 0,
+        "invalid_no": 1
+      },
+      "strict_correct_count": 24,
+      "semantic_correct_count": 28,
+      "strict_invalid_count": 5,
+      "semantic_invalid_count": 1,
+      "versus_full": {
+        "strict": {
+          "n": 30,
+          "left_correct": 18,
+          "right_correct": 24,
+          "correct_count_difference": 6,
+          "accuracy_difference_pp": 20.0,
+          "changed_answer_question_count": 9,
+          "correctness_changed_question_count": 8,
+          "gained_correct_question_count": 7,
+          "lost_correct_question_count": 1,
+          "both_correct_question_count": 17,
+          "both_incorrect_question_count": 5,
+          "invalid_to_valid_question_count": 8,
+          "valid_to_invalid_question_count": 1
+        },
+        "semantic": {
+          "n": 30,
+          "left_correct": 26,
+          "right_correct": 28,
+          "correct_count_difference": 2,
+          "accuracy_difference_pp": 6.666666666666667,
+          "changed_answer_question_count": 4,
+          "correctness_changed_question_count": 4,
+          "gained_correct_question_count": 3,
+          "lost_correct_question_count": 1,
+          "both_correct_question_count": 25,
+          "both_incorrect_question_count": 1,
+          "invalid_to_valid_question_count": 2,
+          "valid_to_invalid_question_count": 1
+        }
+      }
+    },
+    {
+      "method": "a_local_only",
+      "k": 128,
+      "complete_for_scope": true,
+      "question_count": 30,
+      "strict_metrics": {
+        "n": 30,
+        "accuracy": 0.7333333333333333,
+        "yes_class_accuracy": 0.9333333333333333,
+        "no_class_accuracy": 0.5333333333333333,
+        "precision": 1.0,
+        "recall": 0.9333333333333333,
+        "f1": 0.9655172413793104,
+        "yes_prediction_ratio": 0.4666666666666667,
+        "invalid_ratio": 0.23333333333333334,
+        "confusion_matrix": {
+          "yes": {
+            "yes": 14,
+            "no": 1,
+            "invalid": 0
+          },
+          "no": {
+            "yes": 0,
+            "no": 8,
+            "invalid": 7
+          }
+        },
+        "support": {
+          "yes": 15,
+          "no": 15
+        },
+        "tp": 14,
+        "fp": 0,
+        "fn": 1,
+        "tn": 8,
+        "invalid_yes": 0,
+        "invalid_no": 7
+      },
+      "semantic_metrics": {
+        "n": 30,
+        "accuracy": 0.8666666666666667,
+        "yes_class_accuracy": 0.9333333333333333,
+        "no_class_accuracy": 0.8,
+        "precision": 1.0,
+        "recall": 0.9333333333333333,
+        "f1": 0.9655172413793104,
+        "yes_prediction_ratio": 0.4666666666666667,
+        "invalid_ratio": 0.1,
+        "confusion_matrix": {
+          "yes": {
+            "yes": 14,
+            "no": 1,
+            "invalid": 0
+          },
+          "no": {
+            "yes": 0,
+            "no": 12,
+            "invalid": 3
+          }
+        },
+        "support": {
+          "yes": 15,
+          "no": 15
+        },
+        "tp": 14,
+        "fp": 0,
+        "fn": 1,
+        "tn": 12,
+        "invalid_yes": 0,
+        "invalid_no": 3
+      },
+      "strict_correct_count": 22,
+      "semantic_correct_count": 26,
+      "strict_invalid_count": 7,
+      "semantic_invalid_count": 3,
+      "versus_full": {
+        "strict": {
+          "n": 30,
+          "left_correct": 18,
+          "right_correct": 22,
+          "correct_count_difference": 4,
+          "accuracy_difference_pp": 13.333333333333334,
+          "changed_answer_question_count": 7,
+          "correctness_changed_question_count": 6,
+          "gained_correct_question_count": 5,
+          "lost_correct_question_count": 1,
+          "both_correct_question_count": 17,
+          "both_incorrect_question_count": 7,
+          "invalid_to_valid_question_count": 6,
+          "valid_to_invalid_question_count": 1
+        },
+        "semantic": {
+          "n": 30,
+          "left_correct": 26,
+          "right_correct": 26,
+          "correct_count_difference": 0,
+          "accuracy_difference_pp": 0.0,
+          "changed_answer_question_count": 4,
+          "correctness_changed_question_count": 4,
+          "gained_correct_question_count": 2,
+          "lost_correct_question_count": 2,
+          "both_correct_question_count": 24,
+          "both_incorrect_question_count": 2,
+          "invalid_to_valid_question_count": 1,
+          "valid_to_invalid_question_count": 2
+        }
+      }
+    },
+    {
+      "method": "b_laplacian_quota",
+      "k": 64,
+      "complete_for_scope": true,
+      "question_count": 30,
+      "strict_metrics": {
+        "n": 30,
+        "accuracy": 0.7666666666666667,
+        "yes_class_accuracy": 0.8,
+        "no_class_accuracy": 0.7333333333333333,
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.888888888888889,
+        "yes_prediction_ratio": 0.4,
+        "invalid_ratio": 0.13333333333333333,
+        "confusion_matrix": {
+          "yes": {
+            "yes": 12,
+            "no": 3,
+            "invalid": 0
+          },
+          "no": {
+            "yes": 0,
+            "no": 11,
+            "invalid": 4
+          }
+        },
+        "support": {
+          "yes": 15,
+          "no": 15
+        },
+        "tp": 12,
+        "fp": 0,
+        "fn": 3,
+        "tn": 11,
+        "invalid_yes": 0,
+        "invalid_no": 4
+      },
+      "semantic_metrics": {
+        "n": 30,
+        "accuracy": 0.9,
+        "yes_class_accuracy": 0.8,
+        "no_class_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.888888888888889,
+        "yes_prediction_ratio": 0.4,
+        "invalid_ratio": 0.0,
+        "confusion_matrix": {
+          "yes": {
+            "yes": 12,
+            "no": 3,
+            "invalid": 0
+          },
+          "no": {
+            "yes": 0,
+            "no": 15,
+            "invalid": 0
+          }
+        },
+        "support": {
+          "yes": 15,
+          "no": 15
+        },
+        "tp": 12,
+        "fp": 0,
+        "fn": 3,
+        "tn": 15,
+        "invalid_yes": 0,
+        "invalid_no": 0
+      },
+      "strict_correct_count": 23,
+      "semantic_correct_count": 27,
+      "strict_invalid_count": 4,
+      "semantic_invalid_count": 0,
+      "versus_full": {
+        "strict": {
+          "n": 30,
+          "left_correct": 18,
+          "right_correct": 23,
+          "correct_count_difference": 5,
+          "accuracy_difference_pp": 16.666666666666668,
+          "changed_answer_question_count": 16,
+          "correctness_changed_question_count": 15,
+          "gained_correct_question_count": 10,
+          "lost_correct_question_count": 5,
+          "both_correct_question_count": 13,
+          "both_incorrect_question_count": 2,
+          "invalid_to_valid_question_count": 11,
+          "valid_to_invalid_question_count": 3
+        },
+        "semantic": {
+          "n": 30,
+          "left_correct": 26,
+          "right_correct": 27,
+          "correct_count_difference": 1,
+          "accuracy_difference_pp": 3.3333333333333335,
+          "changed_answer_question_count": 5,
+          "correctness_changed_question_count": 5,
+          "gained_correct_question_count": 3,
+          "lost_correct_question_count": 2,
+          "both_correct_question_count": 24,
+          "both_incorrect_question_count": 1,
+          "invalid_to_valid_question_count": 2,
+          "valid_to_invalid_question_count": 0
+        }
+      }
+    },
+    {
+      "method": "b_laplacian_quota",
+      "k": 128,
+      "complete_for_scope": true,
+      "question_count": 30,
+      "strict_metrics": {
+        "n": 30,
+        "accuracy": 0.6666666666666666,
+        "yes_class_accuracy": 0.8666666666666667,
+        "no_class_accuracy": 0.4666666666666667,
+        "precision": 0.9285714285714286,
+        "recall": 0.8666666666666667,
+        "f1": 0.896551724137931,
+        "yes_prediction_ratio": 0.4666666666666667,
+        "invalid_ratio": 0.23333333333333334,
+        "confusion_matrix": {
+          "yes": {
+            "yes": 13,
+            "no": 2,
+            "invalid": 0
+          },
+          "no": {
+            "yes": 1,
+            "no": 7,
+            "invalid": 7
+          }
+        },
+        "support": {
+          "yes": 15,
+          "no": 15
+        },
+        "tp": 13,
+        "fp": 1,
+        "fn": 2,
+        "tn": 7,
+        "invalid_yes": 0,
+        "invalid_no": 7
+      },
+      "semantic_metrics": {
+        "n": 30,
+        "accuracy": 0.8333333333333334,
+        "yes_class_accuracy": 0.8666666666666667,
+        "no_class_accuracy": 0.8,
+        "precision": 0.9285714285714286,
+        "recall": 0.8666666666666667,
+        "f1": 0.896551724137931,
+        "yes_prediction_ratio": 0.4666666666666667,
+        "invalid_ratio": 0.06666666666666667,
+        "confusion_matrix": {
+          "yes": {
+            "yes": 13,
+            "no": 2,
+            "invalid": 0
+          },
+          "no": {
+            "yes": 1,
+            "no": 12,
+            "invalid": 2
+          }
+        },
+        "support": {
+          "yes": 15,
+          "no": 15
+        },
+        "tp": 13,
+        "fp": 1,
+        "fn": 2,
+        "tn": 12,
+        "invalid_yes": 0,
+        "invalid_no": 2
+      },
+      "strict_correct_count": 20,
+      "semantic_correct_count": 25,
+      "strict_invalid_count": 7,
+      "semantic_invalid_count": 2,
+      "versus_full": {
+        "strict": {
+          "n": 30,
+          "left_correct": 18,
+          "right_correct": 20,
+          "correct_count_difference": 2,
+          "accuracy_difference_pp": 6.666666666666667,
+          "changed_answer_question_count": 10,
+          "correctness_changed_question_count": 8,
+          "gained_correct_question_count": 5,
+          "lost_correct_question_count": 3,
+          "both_correct_question_count": 15,
+          "both_incorrect_question_count": 7,
+          "invalid_to_valid_question_count": 7,
+          "valid_to_invalid_question_count": 2
+        },
+        "semantic": {
+          "n": 30,
+          "left_correct": 26,
+          "right_correct": 25,
+          "correct_count_difference": -1,
+          "accuracy_difference_pp": -3.3333333333333335,
+          "changed_answer_question_count": 5,
+          "correctness_changed_question_count": 5,
+          "gained_correct_question_count": 2,
+          "lost_correct_question_count": 3,
+          "both_correct_question_count": 23,
+          "both_incorrect_question_count": 2,
+          "invalid_to_valid_question_count": 1,
+          "valid_to_invalid_question_count": 1
+        }
+      }
+    }
+  ],
+  "pairwise": [
+    {
+      "left_method": "a_local_only",
+      "right_method": "b_laplacian_quota",
+      "k": 64,
+      "n": 30,
+      "complete_for_scope": true,
+      "strict": {
+        "n": 30,
+        "left_correct": 24,
+        "right_correct": 23,
+        "correct_count_difference": -1,
+        "accuracy_difference_pp": -3.3333333333333335,
+        "changed_answer_question_count": 7,
+        "correctness_changed_question_count": 7,
+        "gained_correct_question_count": 3,
+        "lost_correct_question_count": 4,
+        "both_correct_question_count": 20,
+        "both_incorrect_question_count": 3,
+        "invalid_to_valid_question_count": 3,
+        "valid_to_invalid_question_count": 2
+      },
+      "semantic": {
+        "n": 30,
+        "left_correct": 28,
+        "right_correct": 27,
+        "correct_count_difference": -1,
+        "accuracy_difference_pp": -3.3333333333333335,
+        "changed_answer_question_count": 3,
+        "correctness_changed_question_count": 3,
+        "gained_correct_question_count": 1,
+        "lost_correct_question_count": 2,
+        "both_correct_question_count": 26,
+        "both_incorrect_question_count": 1,
+        "invalid_to_valid_question_count": 1,
+        "valid_to_invalid_question_count": 0
+      }
+    },
+    {
+      "left_method": "a_local_only",
+      "right_method": "b_laplacian_quota",
+      "k": 128,
+      "n": 30,
+      "complete_for_scope": true,
+      "strict": {
+        "n": 30,
+        "left_correct": 22,
+        "right_correct": 20,
+        "correct_count_difference": -2,
+        "accuracy_difference_pp": -6.666666666666667,
+        "changed_answer_question_count": 4,
+        "correctness_changed_question_count": 4,
+        "gained_correct_question_count": 1,
+        "lost_correct_question_count": 3,
+        "both_correct_question_count": 19,
+        "both_incorrect_question_count": 7,
+        "invalid_to_valid_question_count": 1,
+        "valid_to_invalid_question_count": 1
+      },
+      "semantic": {
+        "n": 30,
+        "left_correct": 26,
+        "right_correct": 25,
+        "correct_count_difference": -1,
+        "accuracy_difference_pp": -3.3333333333333335,
+        "changed_answer_question_count": 3,
+        "correctness_changed_question_count": 3,
+        "gained_correct_question_count": 1,
+        "lost_correct_question_count": 2,
+        "both_correct_question_count": 24,
+        "both_incorrect_question_count": 3,
+        "invalid_to_valid_question_count": 1,
+        "valid_to_invalid_question_count": 0
+      }
+    },
+    {
+      "left_method": "ours",
+      "right_method": "a_local_only",
+      "k": 64,
+      "n": 30,
+      "complete_for_scope": true,
+      "strict": {
+        "n": 30,
+        "left_correct": 23,
+        "right_correct": 24,
+        "correct_count_difference": 1,
+        "accuracy_difference_pp": 3.3333333333333335,
+        "changed_answer_question_count": 9,
+        "correctness_changed_question_count": 9,
+        "gained_correct_question_count": 5,
+        "lost_correct_question_count": 4,
+        "both_correct_question_count": 19,
+        "both_incorrect_question_count": 2,
+        "invalid_to_valid_question_count": 4,
+        "valid_to_invalid_question_count": 4
+      },
+      "semantic": {
+        "n": 30,
+        "left_correct": 25,
+        "right_correct": 28,
+        "correct_count_difference": 3,
+        "accuracy_difference_pp": 10.0,
+        "changed_answer_question_count": 5,
+        "correctness_changed_question_count": 5,
+        "gained_correct_question_count": 4,
+        "lost_correct_question_count": 1,
+        "both_correct_question_count": 24,
+        "both_incorrect_question_count": 1,
+        "invalid_to_valid_question_count": 3,
+        "valid_to_invalid_question_count": 1
+      }
+    },
+    {
+      "left_method": "ours",
+      "right_method": "a_local_only",
+      "k": 128,
+      "n": 30,
+      "complete_for_scope": true,
+      "strict": {
+        "n": 30,
+        "left_correct": 24,
+        "right_correct": 22,
+        "correct_count_difference": -2,
+        "accuracy_difference_pp": -6.666666666666667,
+        "changed_answer_question_count": 8,
+        "correctness_changed_question_count": 8,
+        "gained_correct_question_count": 3,
+        "lost_correct_question_count": 5,
+        "both_correct_question_count": 19,
+        "both_incorrect_question_count": 3,
+        "invalid_to_valid_question_count": 3,
+        "valid_to_invalid_question_count": 4
+      },
+      "semantic": {
+        "n": 30,
+        "left_correct": 27,
+        "right_correct": 26,
+        "correct_count_difference": -1,
+        "accuracy_difference_pp": -3.3333333333333335,
+        "changed_answer_question_count": 7,
+        "correctness_changed_question_count": 7,
+        "gained_correct_question_count": 3,
+        "lost_correct_question_count": 4,
+        "both_correct_question_count": 23,
+        "both_incorrect_question_count": 0,
+        "invalid_to_valid_question_count": 2,
+        "valid_to_invalid_question_count": 3
+      }
+    },
+    {
+      "left_method": "ours",
+      "right_method": "pure_gc",
+      "k": 64,
+      "n": 30,
+      "complete_for_scope": true,
+      "strict": {
+        "n": 30,
+        "left_correct": 23,
+        "right_correct": 22,
+        "correct_count_difference": -1,
+        "accuracy_difference_pp": -3.3333333333333335,
+        "changed_answer_question_count": 5,
+        "correctness_changed_question_count": 5,
+        "gained_correct_question_count": 2,
+        "lost_correct_question_count": 3,
+        "both_correct_question_count": 20,
+        "both_incorrect_question_count": 5,
+        "invalid_to_valid_question_count": 2,
+        "valid_to_invalid_question_count": 3
+      },
+      "semantic": {
+        "n": 30,
+        "left_correct": 25,
+        "right_correct": 28,
+        "correct_count_difference": 3,
+        "accuracy_difference_pp": 10.0,
+        "changed_answer_question_count": 3,
+        "correctness_changed_question_count": 3,
+        "gained_correct_question_count": 3,
+        "lost_correct_question_count": 0,
+        "both_correct_question_count": 25,
+        "both_incorrect_question_count": 2,
+        "invalid_to_valid_question_count": 3,
+        "valid_to_invalid_question_count": 0
+      }
+    },
+    {
+      "left_method": "ours",
+      "right_method": "pure_gc",
+      "k": 128,
+      "n": 30,
+      "complete_for_scope": true,
+      "strict": {
+        "n": 30,
+        "left_correct": 24,
+        "right_correct": 21,
+        "correct_count_difference": -3,
+        "accuracy_difference_pp": -10.0,
+        "changed_answer_question_count": 5,
+        "correctness_changed_question_count": 5,
+        "gained_correct_question_count": 1,
+        "lost_correct_question_count": 4,
+        "both_correct_question_count": 20,
+        "both_incorrect_question_count": 5,
+        "invalid_to_valid_question_count": 1,
+        "valid_to_invalid_question_count": 4
+      },
+      "semantic": {
+        "n": 30,
+        "left_correct": 27,
+        "right_correct": 27,
+        "correct_count_difference": 0,
+        "accuracy_difference_pp": 0.0,
+        "changed_answer_question_count": 4,
+        "correctness_changed_question_count": 4,
+        "gained_correct_question_count": 2,
+        "lost_correct_question_count": 2,
+        "both_correct_question_count": 25,
+        "both_incorrect_question_count": 1,
+        "invalid_to_valid_question_count": 1,
+        "valid_to_invalid_question_count": 1
+      }
+    }
+  ],
+  "metric_note": "F1 is Yes-positive; invalid predictions are retained as a separate confusion column and count as incorrect for accuracy."
+}

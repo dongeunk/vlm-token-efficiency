@@ -1,0 +1,2180 @@
+{
+  "schema_version": 2,
+  "release_status": "Phase-one research snapshot approved for GitHub publication; no new experiment execution",
+  "historical_project_execution_commit": null,
+  "publication_commit": null,
+  "hash_algorithm": "SHA-256 over exact file bytes",
+  "manifest_self_hash": "Excluded; exact self SHA retained in the separate private publication audit",
+  "original_preservation": "Original research files and stored SHA values unchanged; originals are not relocated or rewritten.",
+  "scope": "Selected first-party source and English documentation; whitelisted aggregate and anonymous per-case numeric derivatives; three photo-free historical plots",
+  "omissions": "No original datasets, annotations/manifests, raw predictions, photographs/panels, models/cache, credentials, personal settings, Git metadata or external source trees",
+  "privacy_derivation": "Result membership IDs reduced to counts and per-case IDs anonymized. Numeric metrics preserved. Source/doc historical case references may remain.",
+  "lineage": "Original source hashes are preserved. reviewed_candidate_sha256 identifies previous candidate bytes; public_sha256 identifies this working copy. Prior transformations and current changes are separate. approved_working_copy_sha256 identifies the frozen 72-file preparation. Publication-status changes are recorded separately; original source hashes and historical execution fields are unchanged.",
+  "file_count_excluding_manifest": 71,
+  "total_files_including_manifest": 72,
+  "created_utc": "2026-10-22T11:07:07.440867+00:00",
+  "previous_reviewed_manifest_sha256": "778d576d5d5ca08a2906aaf45311dae5d424c917cb2b372251d324c22a1cc817",
+  "license_policy": {
+    "owner_identifier": "dongeunk",
+    "default_for_original_contributions": "Apache-2.0",
+    "exact_scope": "docs/LICENSING.md",
+    "attribution": "NOTICE",
+    "exclusions": [
+      "All excluded third-party material and HOLD files",
+      "vlm.py: new license assignment HOLD"
+    ]
+  },
+  "official_license": {
+    "url": "https://www.apache.org/licenses/LICENSE-2.0.txt",
+    "bytes": 11358,
+    "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+  },
+  "legacy_source": {
+    "repository": "https://github.com/dongeunk/vlm-token-efficiency",
+    "commit": "e3057a3cb9b8e8dc4e464665334f822420b73d62",
+    "blob": "a1d7c229b4c67eeaf75b3cdb690ad44588e51c85",
+    "sha256": "0b69b4d24e32ce8cc95ef9edec733b6861469eff0061ec269a81e33175465e73",
+    "new_license_grant": "HOLD"
+  },
+  "files": [
+    {
+      "public_relative_path": ".gitattributes",
+      "kind": "carried_forward_reviewed_candidate",
+      "sources": [],
+      "public_sha256": "e6f26aff4206b5985d874d585633b49a1bc8bb65ad8ba0ef75f398e5af0cbb0e",
+      "public_bytes": 83,
+      "reviewed_candidate_sha256": "e6f26aff4206b5985d874d585633b49a1bc8bb65ad8ba0ef75f398e5af0cbb0e",
+      "reviewed_candidate_bytes": 83,
+      "reviewed_candidate_kind": "generated",
+      "reviewed_candidate_transformations": [
+        "New candidate-only LF/binary policy; no checkout/staging performed"
+      ],
+      "transformations": [
+        "Byte-identical carry-forward from reviewed candidate."
+      ],
+      "license_expression": "Apache-2.0",
+      "rights_scope": "Owner's original authored expression only; external rights excluded; see docs/LICENSING.md",
+      "approved_working_copy_sha256": "e6f26aff4206b5985d874d585633b49a1bc8bb65ad8ba0ef75f398e5af0cbb0e",
+      "approved_working_copy_bytes": 83,
+      "publication_status_transformations": []
+    },
+    {
+      "public_relative_path": ".gitignore",
+      "kind": "publication_document_or_metadata",
+      "sources": [],
+      "public_sha256": "6ddb9b2930e6f49f6850886728a4a49da243d26ce1a1b10e28a1be523882c55b",
+      "public_bytes": 385,
+      "reviewed_candidate_sha256": "096454fc00a444330194c12be99d1aca1341063b3c048af0a1da727c9dc28f81",
+      "reviewed_candidate_bytes": 369,
+      "reviewed_candidate_kind": "generated",
+      "reviewed_candidate_transformations": [
+        "New candidate-only exclusion policy; original ignore file unchanged"
+      ],
+      "transformations": [
+        "Update policy description only; retain exclusion patterns."
+      ],
+      "license_expression": "Apache-2.0",
+      "rights_scope": "Owner's original authored expression only; external rights excluded; see docs/LICENSING.md",
+      "approved_working_copy_sha256": "6ddb9b2930e6f49f6850886728a4a49da243d26ce1a1b10e28a1be523882c55b",
+      "approved_working_copy_bytes": 385,
+      "publication_status_transformations": []
+    },
+    {
+      "public_relative_path": "EXCLUSIONS.json",
+      "kind": "publication_document_or_metadata",
+      "sources": [],
+      "public_sha256": "ce62838ccb02b64b4a631c6020b20bd362be16f657ead4fc5f4b86c711565d71",
+      "public_bytes": 27141,
+      "reviewed_candidate_sha256": "75cffc161b68d6235b224ed2fb821431b635cfec1ad9addd9631c88abf225e3e",
+      "reviewed_candidate_bytes": 25988,
+      "reviewed_candidate_kind": "generated_publication_review",
+      "reviewed_candidate_transformations": [
+        "New release inventory/policy/review document; no original file overwritten"
+      ],
+      "transformations": [
+        "Retain exclusion inventory; remove vlm.py exclusion and classify eleven HOLD paths."
+      ],
+      "license_expression": "Apache-2.0",
+      "rights_scope": "Owner's original authored expression only; external rights excluded; see docs/LICENSING.md",
+      "approved_working_copy_sha256": "4505a3387754803d999e1ab4563cd677c1bb1189db905f89e849678cc12ddfec",
+      "approved_working_copy_bytes": 27118,
+      "publication_status_transformations": [
+        {
+          "before": "Phase-one local preparation authorized; no GitHub upload approved or performed",
+          "after": "Phase-one research snapshot authorized for GitHub publication; completion verified against the remote"
+        }
+      ]
+    },
+    {
+      "public_relative_path": "EXCLUSIONS.md",
+      "kind": "publication_document_or_metadata",
+      "sources": [],
+      "public_sha256": "8777b00ba66e4a60a7ce5cfdfb643fa11377f647411261a0f56a8e6058d679c8",
+      "public_bytes": 20401,
+      "reviewed_candidate_sha256": "97bc3560010d09bd2f5c5b45bc917f862ea88ba979a995bf9a8acd671adceab1",
+      "reviewed_candidate_bytes": 18867,
+      "reviewed_candidate_kind": "generated_publication_review",
+      "reviewed_candidate_transformations": [
+        "New release inventory/policy/review document; no original file overwritten"
+      ],
+      "transformations": [
+        "Remove legacy exclusion and clarify rights versus dependency HOLD without changing originals.",
+        "Add scoped original-text copyright/SPDX footer."
+      ],
+      "license_expression": "Apache-2.0",
+      "rights_scope": "Owner's original authored expression only; external rights excluded; see docs/LICENSING.md",
+      "approved_working_copy_sha256": "8777b00ba66e4a60a7ce5cfdfb643fa11377f647411261a0f56a8e6058d679c8",
+      "approved_working_copy_bytes": 20401,
+      "publication_status_transformations": []
+    },
+    {
+      "public_relative_path": "LICENSE",
+      "public_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "public_bytes": 11358,
+      "kind": "verbatim_official_license",
+      "transformations": [
+        "Add exact official Apache-2.0 text, without text or newline modification."
+      ],
+      "license_expression": "Apache-2.0",
+      "rights_scope": "Official license instrument; no project authorship claimed",
+      "sources": [],
+      "official_source": {
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt",
+        "bytes": 11358,
+        "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+      },
+      "approved_working_copy_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "approved_working_copy_bytes": 11358,
+      "publication_status_transformations": []
+    },
+    {
+      "public_relative_path": "NOTICE",
+      "public_sha256": "36f91c01b75a9c5d5184c367cd5840773e2f450b61e451c931797405dd19f289",
+      "public_bytes": 2090,
+      "kind": "publication_document_or_metadata",
+      "transformations": [
+        "Add scoped project/MMTok copyright, fixed source commit, and change notices."
+      ],
+      "license_expression": "Apache-2.0",
+      "rights_scope": "Owner's original authored expression only; external rights excluded; see docs/LICENSING.md",
+      "sources": [],
+      "approved_working_copy_sha256": "36f91c01b75a9c5d5184c367cd5840773e2f450b61e451c931797405dd19f289",
+      "approved_working_copy_bytes": 2090,
+      "publication_status_transformations": []
+    },
+    {
+      "public_relative_path": "PUBLIC_FILES.md",
+      "kind": "publication_document_or_metadata",
+      "sources": [],
+      "public_sha256": "71cedda9f99602f19f91c3e6c4ec63439fd5d7d64a7e0f34bb89b49ff59535b9",
+      "public_bytes": 9117,
+      "reviewed_candidate_sha256": "e78e5c8a5f1311a2b2e9b9123c79ff03e7f219aa7446327a4580c1a5c803934d",
+      "reviewed_candidate_bytes": 7433,
+      "reviewed_candidate_kind": "generated_publication_review",
+      "reviewed_candidate_transformations": [
+        "New release inventory/policy/review document; no original file overwritten"
+      ],
+      "transformations": [
+        "Record exact 72-file allowlist and four additions; link each included file.",
+        "Add scoped original-text copyright/SPDX footer."
+      ],
+      "license_expression": "Apache-2.0",
+      "rights_scope": "Owner's original authored expression only; external rights excluded; see docs/LICENSING.md",
+      "approved_working_copy_sha256": "1a9729a27ab21373154618b8a45547089256ba91f2c28e8879801f3c42e03ff8",
+      "approved_working_copy_bytes": 9104,
+      "publication_status_transformations": [
+        {
+          "before": "This working copy contains **72 files**. Preparation and static review are approved; upload is not approved.",
+          "after": "This phase-one research snapshot contains **72 files**. Preparation, static review and GitHub publication are authorized."
+        }
+      ]
+    },
+    {
+      "public_relative_path": "README.md",
+      "kind": "publication_document_or_metadata",
+      "sources": [
+        {
+          "source_relative_path": "results/pope_controlled_comparison/full/comparison.json",
+          "source_raw_sha256": "bd174a74e16cfc5a09ec51878114211305b6e7ef85f5f2aa0817cb28e43b63ab",
+          "source_bytes": 530343
+        },
+        {
+          "source_relative_path": "results/pope_controlled_comparison/full/config.json",
+          "source_raw_sha256": "7ac3e61a9196f020c38b07a54012fc48c8b1d1e9c2956a186a83e7bb028d60dc",
+          "source_bytes": 21073
+        },
+        {
+          "source_relative_path": "results/pope_pruning_smoke/kn_identity.jsonl",
+          "source_raw_sha256": "2533ac8a8285a77b791ec5a6151bd42b479a3d8ee75dc2ad89c9405eb377d93c",
+          "source_bytes": 69607
+        },
+        {
+          "source_relative_path": "results/pope_spatial_heterogeneity_30/analysis.json",
+          "source_raw_sha256": "29d01c4a578586a308063eb944bda2aed2bcaa3dbbe25b34910ba19b7ba5deb7",
+          "source_bytes": 3885582
+        }
+      ],
+      "public_sha256": "88cb574289a41a85125677097e25fc944794d2ca3a3cedbe1b37fae3faddfde9",
+      "public_bytes": 13196,
+      "initial_candidate_sha256": "b88be75b0113e2dda881bd7040c8f2c67f896b03311bd834e226a0d3a3be6693",
+      "reviewed_candidate_sha256": "3837000ecc72d45ccf6c299a84582b8364185948d464bf9d67e30b5cc9dd7a10",
+      "reviewed_candidate_bytes": 11429,
+      "reviewed_candidate_kind": "generated",
+      "reviewed_candidate_transformations": [
+        "New English documentation synthesized from retained source/evidence; no inference; no reconstructed historical dates or execution commit",
+        "Clarify aggregate plus anonymous per-case release scope; no source research claim changed"
+      ],
+      "transformations": [
+        "Update phase-one scope, license links, legacy utility and explicit functionality/replay limits; retain numerical evidence.",
+        "Add scoped original-text copyright/SPDX footer."
+      ],
+      "license_expression": "Apache-2.0",
+      "rights_scope": "Owner's original authored expression only; external rights excluded; see docs/LICENSING.md",
+      "approved_working_copy_sha256": "3c8512eacbbbe46893579c109f40552a4a73f16e07fe85787d09ac7911f1dfbc",
+      "approved_working_copy_bytes": 13038,
+      "publication_status_transformations": [
+        {
+          "before": "**Phase-one publication working copy | historical 30-question pilot | upload not yet approved**",
+          "after": "**Phase-one research snapshot | historical 30-question pilot**"
+        },
+        {
+          "before": "This working copy contains 72 selected files. Preparation and static review\nare authorized; GitHub upload is not yet authorized. No experiment or test\nsuite was run to prepare it.",
+          "after": "This phase-one research snapshot contains 72 selected files and is authorized\nfor GitHub publication. No experiment or test suite was run to prepare it.\nPublication completion is established by remote verification, not assumed here."
+        },
+        {
+          "before": "The manifest separates original SHA-256 from public-copy SHA-256 and lists transformations. Local paths are not represented as externally accessible links. No Git repository was initialized in this candidate and no commit, push, upload or Notion update was performed.",
+          "after": "The manifest separates original SHA-256 from public-copy SHA-256 and lists transformations. Local paths are not represented as externally accessible links. Initial preparation did not stage, commit or upload files. Publication uses a separate clone and preserves existing repository history; the publication commit is identified by Git history. No Notion update or model execution accompanies publication."
+        }
+      ]
+    },
+    {
+      "public_relative_path": "SECURITY_REVIEW.md",
+      "kind": "publication_document_or_metadata",
+      "sources": [],
+      "public_sha256": "70a7231b326b758cd8f66b6b1f10c60527ba79b555b9a3ae9dde902e961401b5",
+      "public_bytes": 3135,
+      "reviewed_candidate_sha256": "a858cb21a0c045f4e22ba4519b818996555ddc5fcd0ae0342fbcb96339785e55",
+      "reviewed_candidate_bytes": 2154,
+      "reviewed_candidate_kind": "generated_publication_review",
+      "reviewed_candidate_transformations": [
+        "New release inventory/policy/review document; no original file overwritten"
+      ],
+      "transformations": [
+        "Describe static-only methods, scopes, non-execution limits and private audit separation.",
+        "Add scoped original-text copyright/SPDX footer."
+      ],
+      "license_expression": "Apache-2.0",
+      "rights_scope": "Owner's original authored expression only; external rights excluded; see docs/LICENSING.md",
+      "approved_working_copy_sha256": "b780dfa6d06e0b8b28f4875a622e9bffbbd7e919d1ed6b168caf6e6cb275de7a",
+      "approved_working_copy_bytes": 2996,
+      "publication_status_transformations": [
+        {
+          "before": "Preparation is authorized. GitHub upload, Git add/commit/push and Notion changes\nare not performed or authorized by this working copy.",
+          "after": "Preparation and GitHub publication are authorized. Publication uses a separate\nclone, a new commit and a normal push after staged-file verification. Completion\nis checked against the remote. New tests/model execution and Notion changes\nremain outside this publication work."
+        }
+      ]
+    },
+    {
+      "public_relative_path": "docs/CODE_AVAILABILITY.md",
+      "kind": "publication_document_or_metadata",
+      "sources": [
+        {
+          "source_relative_path": "src/pruning/s2_style_allocation.py",
+          "source_raw_sha256": "53496eaaaa58615d6a0734c24f99563098f8732395bad866ab270573e1fcf8a6",
+          "source_bytes": 12672
+        },
+        {
+          "source_relative_path": "examples/run_pope_controlled_comparison.py",
+          "source_raw_sha256": "aa9164f6e0a71b02da2e371c1f11d0985bb5fe842bff9352dd49c4c5f0634838",
+          "source_bytes": 24781
+        }
+      ],
+      "public_sha256": "e09b70dd868b4c0417b7f8843dd1a393bd5e506e0642e6bf6c3648b53e9d0cc9",
+      "public_bytes": 4845,
+      "reviewed_candidate_sha256": "a5f67e91aa5b0bce047b5dc659e815c581f7e74e98ccddfae1029282824a183d",
+      "reviewed_candidate_bytes": 2976,
+      "reviewed_candidate_kind": "generated",
+      "reviewed_candidate_transformations": [
+        "Document conservative source/dependency hold without altering algorithms"
+      ],
+      "transformations": [
+        "Differentiate one rights HOLD, one mixed parity-test HOLD and nine dependency HOLD files.",
+        "Add scoped original-text copyright/SPDX footer."
+      ],
+      "license_expression": "Apache-2.0",
+      "rights_scope": "Owner's original authored expression only; external rights excluded; see docs/LICENSING.md",
+      "approved_working_copy_sha256": "e09b70dd868b4c0417b7f8843dd1a393bd5e506e0642e6bf6c3648b53e9d0cc9",
+      "approved_working_copy_bytes": 4845,
+      "publication_status_transformations": []
+    },
+    {
+      "public_relative_path": "docs/ETHICS_AND_RELEASE_SCOPE.md",
+      "kind": "publication_document_or_metadata",
+      "sources": [
+        {
+          "source_relative_path": "src/pruning/coverage.py",
+          "source_raw_sha256": "3fa659d891804b5b360240ac73d6c5554ac258750af5a488274a2df4e9cf344e",
+          "source_bytes": 2470
+        },
+        {
+          "source_relative_path": "src/pruning/s2_style_allocation.py",
+          "source_raw_sha256": "53496eaaaa58615d6a0734c24f99563098f8732395bad866ab270573e1fcf8a6",
+          "source_bytes": 12672
+        },
+        {
+          "source_relative_path": "results/allocation_comparison/report.md",
+          "source_raw_sha256": "1cd3e1263e7da3f95841e73b7cc1aae558d00f6b8760d0c6199f04514264a15f",
+          "source_bytes": 17614
+        }
+      ],
+      "public_sha256": "9205d3cf40cecaad2458cf3bf73074243c5444d7edec12d0a3245576496f43e3",
+      "public_bytes": 6644,
+      "initial_candidate_sha256": "6a8fa9750cd720ac5e8efc9c0f71d89957e6ae1bfde9d174d86f4031caf60b8a",
+      "reviewed_candidate_sha256": "be94b36f5cc6078aba709eeefc2c6dfd2323122718e8f08c8721e5e041034fcf",
+      "reviewed_candidate_bytes": 6166,
+      "reviewed_candidate_kind": "generated_document",
+      "reviewed_candidate_transformations": [
+        "New English evidence-status and release-scope documentation; no PDF/upstream code redistributed; no unverified bibliography filled in",
+        "Clarify aggregate plus anonymous per-case release scope; no source research claim changed"
+      ],
+      "transformations": [
+        "Replace obsolete no-license statement with scoped owner authorization and external-rights boundary.",
+        "Add scoped original-text copyright/SPDX footer."
+      ],
+      "license_expression": "Apache-2.0",
+      "rights_scope": "Owner's original authored expression only; external rights excluded; see docs/LICENSING.md",
+      "approved_working_copy_sha256": "73f677c731a7ac724754c190196a1d6c2adf64edbf846a618bbd060c2999542a",
+      "approved_working_copy_bytes": 6506,
+      "publication_status_transformations": [
+        {
+          "before": "This is a local publication candidate for an independent personal research",
+          "after": "This is a phase-one research snapshot for an independent personal research"
+        },
+        {
+          "before": "Permission to prepare this candidate does not authorize uploading or\npushing it. No source commit is recorded for this candidate, and no\npublication commit has been created for it. These documents do not assert\nthat it has been published.",
+          "after": "The owner authorized preparation and subsequent GitHub publication of this\nsnapshot. Publication completion is determined by remote verification; these\ncontents do not assume a successful push. The publication commit is identified\nby repository history and is not a historical experiment-execution commit."
+        },
+        {
+          "before": "Future execution and publication are separate actions from this local\npreparation.",
+          "after": "Future model execution and additional experiments remain separate actions.\nGitHub publication is separately authorized and tracked by repository history."
+        }
+      ]
+    },
+    {
+      "public_relative_path": "docs/HETEROGENEITY.md",
+      "kind": "publication_document_or_metadata",
+      "sources": [
+        {
+          "source_relative_path": "results/pope_controlled_comparison/full/comparison.json",
+          "source_raw_sha256": "bd174a74e16cfc5a09ec51878114211305b6e7ef85f5f2aa0817cb28e43b63ab",
+          "source_bytes": 530343
+        },
+        {
+          "source_relative_path": "results/pope_controlled_comparison/full/config.json",
+          "source_raw_sha256": "7ac3e61a9196f020c38b07a54012fc48c8b1d1e9c2956a186a83e7bb028d60dc",
+          "source_bytes": 21073
+        },
+        {
+          "source_relative_path": "results/pope_pruning_smoke/kn_identity.jsonl",
+          "source_raw_sha256": "2533ac8a8285a77b791ec5a6151bd42b479a3d8ee75dc2ad89c9405eb377d93c",
+          "source_bytes": 69607
+        },
+        {
+          "source_relative_path": "results/pope_spatial_heterogeneity_30/analysis.json",
+          "source_raw_sha256": "29d01c4a578586a308063eb944bda2aed2bcaa3dbbe25b34910ba19b7ba5deb7",
+          "source_bytes": 3885582
+        }
+      ],
+      "public_sha256": "161b01cc98c57a1f1e875c31f2e988130a90790856ce73618f889077c07bec65",
+      "public_bytes": 5989,
+      "initial_candidate_sha256": "3e54bc61cf1834adea55c78a353bd47b0b09782fd52e1c9ac5453d4c827deb63",
+      "reviewed_candidate_sha256": "b48bb63257767447f9bed958778b3247c7389ed190f530eb6365182b0f42679e",
+      "reviewed_candidate_bytes": 5628,
+      "reviewed_candidate_kind": "generated",
+      "reviewed_candidate_transformations": [
+        "New English documentation synthesized from retained source/evidence; no inference; no reconstructed historical dates or execution commit",
+        "Clarify aggregate plus anonymous per-case release scope; no source research claim changed"
+      ],
+      "transformations": [
+        "Add publication availability note; preserve the historical method/result text.",
+        "Add scoped original-text copyright/SPDX footer."
+      ],
+      "license_expression": "Apache-2.0",
+      "rights_scope": "Owner's original authored expression only; external rights excluded; see docs/LICENSING.md",
+      "approved_working_copy_sha256": "161b01cc98c57a1f1e875c31f2e988130a90790856ce73618f889077c07bec65",
+      "approved_working_copy_bytes": 5989,
+      "publication_status_transformations": []
+    },
+    {
+      "public_relative_path": "docs/LICENSING.md",
+      "public_sha256": "9bfaa2e70b1ab546b11f02db69c3c1786987d6c7be2f26d537e179babecbaa6a",
+      "public_bytes": 5773,
+      "kind": "publication_document_or_metadata",
+      "transformations": [
+        "Add file-scoped Apache grant, external-rights exclusions, source provenance and legacy decision.",
+        "Add scoped original-text copyright/SPDX footer."
+      ],
+      "license_expression": "Apache-2.0",
+      "rights_scope": "Owner's original authored expression only; external rights excluded; see docs/LICENSING.md",
+      "sources": [],
+      "approved_working_copy_sha256": "71b85679fc3c6e56306be165bcb63635535df62094e72bf5c1f67c53c2417016",
+      "approved_working_copy_bytes": 5496,
+      "publication_status_transformations": [
+        {
+          "before": "This is an approved local preparation, not an uploaded release. No publication\ncommit exists. A repository-level license does not create rights in code,\ndata, papers, or assets owned by others. See [held components](CODE_AVAILABILITY.md).",
+          "after": "This is an owner-authorized phase-one publication payload. Publication success\nis established by remote verification, not assumed by this document. A\nrepository-level license does not create rights in code, data, papers, or\nassets owned by others. See [held components](CODE_AVAILABILITY.md)."
+        },
+        {
+          "before": "**not recorded**. Current publication commit: **none**.",
+          "after": "**not recorded**. The publication commit is identified by the containing\nrepository history; its own hash is not embedded in these contents."
+        },
+        {
+          "before": "No model inference, selector execution, test suite, package installation,\nGit staging/commit/push, remote modification or Notion update is part of this\nstatic preparation. Dataset/model acquisition and experimental execution need\ntheir own applicable permissions and environment.",
+          "after": "Initial static preparation involved no model inference, selector execution,\ntest suite, package installation, Git staging/commit/push, remote modification\nor Notion update. The owner subsequently authorized publication in a separate\nclone; no new model/test execution or Notion change accompanies publication.\nDataset/model acquisition and experimental execution need their own applicable\npermissions and environment."
+        }
+      ]
+    },
+    {
+      "public_relative_path": "docs/LITERATURE.md",
+      "kind": "publication_document_or_metadata",
+      "sources": [
+        {
+          "source_relative_path": "src/pruning/coverage.py",
+          "source_raw_sha256": "3fa659d891804b5b360240ac73d6c5554ac258750af5a488274a2df4e9cf344e",
+          "source_bytes": 2470
+        },
+        {
+          "source_relative_path": "src/pruning/s2_style_allocation.py",
+          "source_raw_sha256": "53496eaaaa58615d6a0734c24f99563098f8732395bad866ab270573e1fcf8a6",
+          "source_bytes": 12672
+        },
+        {
+          "source_relative_path": "results/allocation_comparison/report.md",
+          "source_raw_sha256": "1cd3e1263e7da3f95841e73b7cc1aae558d00f6b8760d0c6199f04514264a15f",
+          "source_bytes": 17614
+        }
+      ],
+      "public_sha256": "11b5900976e31958979a260a9810e268f0326769b6e60c18b2423de9da931b75",
+      "public_bytes": 9371,
+      "reviewed_candidate_sha256": "92a542d328470e03e5884315fc466bce1c67d19d6c2f64648a3afa3ef3b041a7",
+      "reviewed_candidate_bytes": 9106,
+      "reviewed_candidate_kind": "generated_document",
+      "reviewed_candidate_transformations": [
+        "New English evidence-status and release-scope documentation; no PDF/upstream code redistributed; no unverified bibliography filled in"
+      ],
+      "transformations": [
+        "Connect implementation references to scoped notices without changing literature review states.",
+        "Add scoped original-text copyright/SPDX footer."
+      ],
+      "license_expression": "Apache-2.0",
+      "rights_scope": "Owner's original authored expression only; external rights excluded; see docs/LICENSING.md",
+      "approved_working_copy_sha256": "11b5900976e31958979a260a9810e268f0326769b6e60c18b2423de9da931b75",
+      "approved_working_copy_bytes": 9371,
+      "publication_status_transformations": []
+    },
+    {
+      "public_relative_path": "docs/METHODS.md",
+      "kind": "publication_document_or_metadata",
+      "sources": [
+        {
+          "source_relative_path": "results/pope_controlled_comparison/full/comparison.json",
+          "source_raw_sha256": "bd174a74e16cfc5a09ec51878114211305b6e7ef85f5f2aa0817cb28e43b63ab",
+          "source_bytes": 530343
+        },
+        {
+          "source_relative_path": "results/pope_controlled_comparison/full/config.json",
+          "source_raw_sha256": "7ac3e61a9196f020c38b07a54012fc48c8b1d1e9c2956a186a83e7bb028d60dc",
+          "source_bytes": 21073
+        },
+        {
+          "source_relative_path": "results/pope_pruning_smoke/kn_identity.jsonl",
+          "source_raw_sha256": "2533ac8a8285a77b791ec5a6151bd42b479a3d8ee75dc2ad89c9405eb377d93c",
+          "source_bytes": 69607
+        },
+        {
+          "source_relative_path": "results/pope_spatial_heterogeneity_30/analysis.json",
+          "source_raw_sha256": "29d01c4a578586a308063eb944bda2aed2bcaa3dbbe25b34910ba19b7ba5deb7",
+          "source_bytes": 3885582
+        }
+      ],
+      "public_sha256": "aa376546fe634c3280e3c33c71b8d8367aa68e985016f3253ec7b1ee7cb1de4f",
+      "public_bytes": 5721,
+      "reviewed_candidate_sha256": "6ca6f01f862e2427d813b07afd2eb0a4c9723723a3b449f89393f052f463ff48",
+      "reviewed_candidate_bytes": 5309,
+      "reviewed_candidate_kind": "generated",
+      "reviewed_candidate_transformations": [
+        "New English documentation synthesized from retained source/evidence; no inference; no reconstructed historical dates or execution commit"
+      ],
+      "transformations": [
+        "Add publication availability note; preserve the historical method/result text.",
+        "Add scoped original-text copyright/SPDX footer."
+      ],
+      "license_expression": "Apache-2.0",
+      "rights_scope": "Owner's original authored expression only; external rights excluded; see docs/LICENSING.md",
+      "approved_working_copy_sha256": "aa376546fe634c3280e3c33c71b8d8367aa68e985016f3253ec7b1ee7cb1de4f",
+      "approved_working_copy_bytes": 5721,
+      "publication_status_transformations": []
+    },
+    {
+      "public_relative_path": "docs/REPRODUCIBILITY.md",
+      "kind": "publication_document_or_metadata",
+      "sources": [
+        {
+          "source_relative_path": "results/pope_controlled_comparison/full/comparison.json",
+          "source_raw_sha256": "bd174a74e16cfc5a09ec51878114211305b6e7ef85f5f2aa0817cb28e43b63ab",
+          "source_bytes": 530343
+        },
+        {
+          "source_relative_path": "results/pope_controlled_comparison/full/config.json",
+          "source_raw_sha256": "7ac3e61a9196f020c38b07a54012fc48c8b1d1e9c2956a186a83e7bb028d60dc",
+          "source_bytes": 21073
+        },
+        {
+          "source_relative_path": "results/pope_pruning_smoke/kn_identity.jsonl",
+          "source_raw_sha256": "2533ac8a8285a77b791ec5a6151bd42b479a3d8ee75dc2ad89c9405eb377d93c",
+          "source_bytes": 69607
+        },
+        {
+          "source_relative_path": "results/pope_spatial_heterogeneity_30/analysis.json",
+          "source_raw_sha256": "29d01c4a578586a308063eb944bda2aed2bcaa3dbbe25b34910ba19b7ba5deb7",
+          "source_bytes": 3885582
+        }
+      ],
+      "public_sha256": "33d98436a88f6e48b799e0916cbc3422dc41306827bacc378d7e15d9031f4ed6",
+      "public_bytes": 7204,
+      "reviewed_candidate_sha256": "57d0d98ce625939ca8437a195a785e5e13a2e6a53862b2119a40f61b3a1528b6",
+      "reviewed_candidate_bytes": 5986,
+      "reviewed_candidate_kind": "generated",
+      "reviewed_candidate_transformations": [
+        "New English documentation synthesized from retained source/evidence; no inference; no reconstructed historical dates or execution commit"
+      ],
+      "transformations": [
+        "Update approved preparation boundary, exact legacy bytes, publication hashes and static-only validation.",
+        "Add scoped original-text copyright/SPDX footer."
+      ],
+      "license_expression": "Apache-2.0",
+      "rights_scope": "Owner's original authored expression only; external rights excluded; see docs/LICENSING.md",
+      "approved_working_copy_sha256": "6d1a9e847c6b2f744511ac7c357a081436b55408ace0bfa2716168fa8c8c8088",
+      "approved_working_copy_bytes": 6885,
+      "publication_status_transformations": [
+        {
+          "before": "This is a phase-one publication working copy with explicitly incomplete historical replay coverage.",
+          "after": "This is a phase-one research snapshot with explicitly incomplete historical replay coverage."
+        },
+        {
+          "before": "| Publication commit | None; this folder has not been committed |",
+          "after": "| Publication commit | Identified by Git history for this snapshot; not embedded in its own contents |"
+        },
+        {
+          "before": "No Git add/checkout was performed to test this policy. Public-file hashes are computed from the final candidate bytes.",
+          "after": "During initial static preparation, no Git add/checkout was performed to test this policy. Publication requires staged Git blob bytes to match the final publication manifest. Public-file hashes are computed from the final payload bytes."
+        },
+        {
+          "before": "No repository was initialized here. No Git staging, commit, push, remote changes, model inference, environment update or Notion modification was performed. Preparation fetched only the official Apache license text and read GitHub metadata/source for legacy provenance. No model or dataset was downloaded. The owner approved scoped Apache-2.0 preparation; actual upload, additional data clearance and automatic updates remain unapproved.",
+          "after": "During initial static preparation, no Git staging, commit, push, remote changes, model inference, environment update or Notion modification was performed. Preparation fetched only the official Apache license text and read GitHub metadata/source for legacy provenance. No model or dataset was downloaded. The owner subsequently authorized status-only publication edits, a separate clone, a new commit and a normal push to the existing main branch. Publication completion is verified against the remote. Additional data clearance, automatic updates, experiments and Notion changes remain outside this approval."
+        }
+      ]
+    },
+    {
+      "public_relative_path": "docs/RESULTS.md",
+      "kind": "publication_document_or_metadata",
+      "sources": [
+        {
+          "source_relative_path": "results/pope_controlled_comparison/full/comparison.json",
+          "source_raw_sha256": "bd174a74e16cfc5a09ec51878114211305b6e7ef85f5f2aa0817cb28e43b63ab",
+          "source_bytes": 530343
+        },
+        {
+          "source_relative_path": "results/pope_controlled_comparison/full/config.json",
+          "source_raw_sha256": "7ac3e61a9196f020c38b07a54012fc48c8b1d1e9c2956a186a83e7bb028d60dc",
+          "source_bytes": 21073
+        },
+        {
+          "source_relative_path": "results/pope_pruning_smoke/kn_identity.jsonl",
+          "source_raw_sha256": "2533ac8a8285a77b791ec5a6151bd42b479a3d8ee75dc2ad89c9405eb377d93c",
+          "source_bytes": 69607
+        },
+        {
+          "source_relative_path": "results/pope_spatial_heterogeneity_30/analysis.json",
+          "source_raw_sha256": "29d01c4a578586a308063eb944bda2aed2bcaa3dbbe25b34910ba19b7ba5deb7",
+          "source_bytes": 3885582
+        }
+      ],
+      "public_sha256": "9abbe019f9f89bcbef7df622b207cd4327efdb016ae0df81651c1a4a0ca9d6a9",
+      "public_bytes": 5154,
+      "reviewed_candidate_sha256": "9124202db737fef26ff8dc09df412f0fe5c2f5c3e0c4c973fd762190d020b342",
+      "reviewed_candidate_bytes": 4781,
+      "reviewed_candidate_kind": "generated",
+      "reviewed_candidate_transformations": [
+        "Generate tables directly from stored aggregate metrics and paired analysis; omit questions, per-row labels, raw responses and token lists"
+      ],
+      "transformations": [
+        "Add publication availability note; preserve the historical method/result text.",
+        "Add scoped original-text copyright/SPDX footer."
+      ],
+      "license_expression": "Apache-2.0",
+      "rights_scope": "Owner's original authored expression only; external rights excluded; see docs/LICENSING.md",
+      "approved_working_copy_sha256": "9abbe019f9f89bcbef7df622b207cd4327efdb016ae0df81651c1a4a0ca9d6a9",
+      "approved_working_copy_bytes": 5154,
+      "publication_status_transformations": []
+    },
+    {
+      "public_relative_path": "environment/observed_versions.json",
+      "kind": "carried_forward_reviewed_candidate",
+      "sources": [
+        {
+          "source_relative_path": "results/pope_controlled_comparison/full/config.json",
+          "source_raw_sha256": "7ac3e61a9196f020c38b07a54012fc48c8b1d1e9c2956a186a83e7bb028d60dc",
+          "source_bytes": 21073
+        }
+      ],
+      "public_sha256": "3b29ee341bd5c04b407b2c6ac92915a79b65cf4271e450afd27a774633d07d03",
+      "public_bytes": 604,
+      "reviewed_candidate_sha256": "3b29ee341bd5c04b407b2c6ac92915a79b65cf4271e450afd27a774633d07d03",
+      "reviewed_candidate_bytes": 604,
+      "reviewed_candidate_kind": "generated",
+      "reviewed_candidate_transformations": [
+        "Select nonpersonal model/runtime metadata; read installed package metadata without importing model libraries"
+      ],
+      "transformations": [
+        "Byte-identical carry-forward from reviewed candidate."
+      ],
+      "license_expression": "Apache-2.0",
+      "rights_scope": "Owner's original authored expression only; external rights excluded; see docs/LICENSING.md",
+      "approved_working_copy_sha256": "3b29ee341bd5c04b407b2c6ac92915a79b65cf4271e450afd27a774633d07d03",
+      "approved_working_copy_bytes": 604,
+      "publication_status_transformations": []
+    },
+    {
+      "public_relative_path": "examples/README_pope_controlled_comparison.md",
+      "kind": "publication_document_or_metadata",
+      "sources": [
+        {
+          "source_relative_path": "examples/README_pope_controlled_comparison.md",
+          "source_raw_sha256": "4c288a509ace4518f56b24946c22467ed6806d0a8e4b424bfd73051f4ae09fca",
+          "source_bytes": 5241
+        }
+      ],
+      "public_sha256": "80b2e507746f2230097a83d6780931b27bb0ed8548b711f2c6c7eea33805d9e2",
+      "public_bytes": 1644,
+      "reviewed_candidate_sha256": "d392e8df4573ce11d86c453f1580ccb54cf339fab070a652c481ea55fc6b733e",
+      "reviewed_candidate_bytes": 1494,
+      "reviewed_candidate_kind": "derived_document",
+      "reviewed_candidate_transformations": [
+        "Replace private-machine command guide with public historical-scope notice; remove personal interpreter paths; retain guards as documented history"
+      ],
+      "transformations": [
+        "Add scoped original-text copyright/SPDX footer."
+      ],
+      "license_expression": "Apache-2.0",
+      "rights_scope": "Owner's original authored expression only; external rights excluded; see docs/LICENSING.md",
+      "approved_working_copy_sha256": "80b2e507746f2230097a83d6780931b27bb0ed8548b711f2c6c7eea33805d9e2",
+      "approved_working_copy_bytes": 1644,
+      "publication_status_transformations": []
+    },
+    {
+      "public_relative_path": "examples/diagnose_global_coverage.py",
+      "kind": "publication_annotated_python",
+      "sources": [
+        {
+          "source_relative_path": "examples/diagnose_global_coverage.py",
+          "source_raw_sha256": "5e700c11c484bac276051cb4f0a9d1aa5ac6c7fa3aab2968ced6f16f98940c8d",
+          "source_bytes": 11677
+        }
+      ],
+      "public_sha256": "fed371423ae6e4b1fd21dd5458efc4ed683b94a7704b14880f97b947be4a9c1f",
+      "public_bytes": 12249,
+      "reviewed_candidate_sha256": "5e700c11c484bac276051cb4f0a9d1aa5ac6c7fa3aab2968ced6f16f98940c8d",
+      "reviewed_candidate_bytes": 11677,
+      "reviewed_candidate_kind": "unchanged_source_copy",
+      "reviewed_candidate_transformations": [
+        "Byte-for-byte first-party source copy"
+      ],
+      "transformations": [
+        "Prepend license/copyright comments only; preserve complete reviewed Python body."
+      ],
+      "license_expression": "Apache-2.0",
+      "rights_scope": "Owner's original authored expression only; external rights excluded; see docs/LICENSING.md",
+      "approved_working_copy_sha256": "fed371423ae6e4b1fd21dd5458efc4ed683b94a7704b14880f97b947be4a9c1f",
+      "approved_working_copy_bytes": 12249,
+      "publication_status_transformations": []
+    },
+    {
+      "public_relative_path": "examples/diagnose_matched_random.py",
+      "kind": "publication_annotated_python",
+      "sources": [
+        {
+          "source_relative_path": "examples/diagnose_matched_random.py",
+          "source_raw_sha256": "ba00bed9ab9740243de82a8079a5933b92bf0556e398b7900605cce97c18c7c3",
+          "source_bytes": 10053
+        }
+      ],
+      "public_sha256": "d39f4e22f201e0d447324454df29a887a2fd00852ef553bb0fb33275a9c7fee9",
+      "public_bytes": 10625,
+      "reviewed_candidate_sha256": "ba00bed9ab9740243de82a8079a5933b92bf0556e398b7900605cce97c18c7c3",
+      "reviewed_candidate_bytes": 10053,
+      "reviewed_candidate_kind": "unchanged_source_copy",
+      "reviewed_candidate_transformations": [
+        "Byte-for-byte first-party source copy"
+      ],
+      "transformations": [
+        "Prepend license/copyright comments only; preserve complete reviewed Python body."
+      ],
+      "license_expression": "Apache-2.0",
+      "rights_scope": "Owner's original authored expression only; external rights excluded; see docs/LICENSING.md",
+      "approved_working_copy_sha256": "d39f4e22f201e0d447324454df29a887a2fd00852ef553bb0fb33275a9c7fee9",
+      "approved_working_copy_bytes": 10625,
+      "publication_status_transformations": []
+    },
+    {
+      "public_relative_path": "examples/diagnose_spatial_budgets.py",
+      "kind": "publication_annotated_python",
+      "sources": [
+        {
+          "source_relative_path": "examples/diagnose_spatial_budgets.py",
+          "source_raw_sha256": "e690f7e9e1cebd894bf266065a5b3a7b5711f31a7b33290886a164f084acfba1",
+          "source_bytes": 10110
+        }
+      ],
+      "public_sha256": "bcf08b012751639beeaadec6348bd495f62b9f7c8cde4ad92bcfdd2cb2237b98",
+      "public_bytes": 10682,
+      "reviewed_candidate_sha256": "e690f7e9e1cebd894bf266065a5b3a7b5711f31a7b33290886a164f084acfba1",
+      "reviewed_candidate_bytes": 10110,
+      "reviewed_candidate_kind": "unchanged_source_copy",
+      "reviewed_candidate_transformations": [
+        "Byte-for-byte first-party source copy"
+      ],
+      "transformations": [
+        "Prepend license/copyright comments only; preserve complete reviewed Python body."
+      ],
+      "license_expression": "Apache-2.0",
+      "rights_scope": "Owner's original authored expression only; external rights excluded; see docs/LICENSING.md",
+      "approved_working_copy_sha256": "bcf08b012751639beeaadec6348bd495f62b9f7c8cde4ad92bcfdd2cb2237b98",
+      "approved_working_copy_bytes": 10682,
+      "publication_status_transformations": []
+    },
+    {
+      "public_relative_path": "examples/download_pope_pilot_images.py",
+      "kind": "publication_annotated_python",
+      "sources": [
+        {
+          "source_relative_path": "examples/download_pope_pilot_images.py",
+          "source_raw_sha256": "99762e4622d7d7259ebb2093ec5b4f4b8a2ad443778c39fca9fd38ab792dff4e",
+          "source_bytes": 7817
+        }
+      ],
+      "public_sha256": "76a36126ad9e184cdb8422786024ba8a0d176e7e826c9e1b8433df264f38d972",
+      "public_bytes": 8389,
+      "reviewed_candidate_sha256": "99762e4622d7d7259ebb2093ec5b4f4b8a2ad443778c39fca9fd38ab792dff4e",
+      "reviewed_candidate_bytes": 7817,
+      "reviewed_candidate_kind": "unchanged_source_copy",
+      "reviewed_candidate_transformations": [
+        "Byte-for-byte first-party source copy"
+      ],
+      "transformations": [
+        "Prepend license/copyright comments only; preserve complete reviewed Python body."
+      ],
+      "license_expression": "Apache-2.0",
+      "rights_scope": "Owner's original authored expression only; external rights excluded; see docs/LICENSING.md",
+      "approved_working_copy_sha256": "76a36126ad9e184cdb8422786024ba8a0d176e7e826c9e1b8433df264f38d972",
+      "approved_working_copy_bytes": 8389,
+      "publication_status_transformations": []
+    },
+    {
+      "public_relative_path": "examples/inspect_llm_input.py",
+      "kind": "publication_annotated_python",
+      "sources": [
+        {
+          "source_relative_path": "examples/inspect_llm_input.py",
+          "source_raw_sha256": "61f851f136bfacc1765766f2837f25bed3b68b2a7977c6bc8e9993fe2c12b48c",
+          "source_bytes": 6666
+        }
+      ],
+      "public_sha256": "1bd96881c6f01163f02718caa2789dcc0c856f6d726448bcf04d7d5fbac276e7",
+      "public_bytes": 7238,
+      "reviewed_candidate_sha256": "61f851f136bfacc1765766f2837f25bed3b68b2a7977c6bc8e9993fe2c12b48c",
+      "reviewed_candidate_bytes": 6666,
+      "reviewed_candidate_kind": "unchanged_source_copy",
+      "reviewed_candidate_transformations": [
+        "Byte-for-byte first-party source copy"
+      ],
+      "transformations": [
+        "Prepend license/copyright comments only; preserve complete reviewed Python body."
+      ],
+      "license_expression": "Apache-2.0",
+      "rights_scope": "Owner's original authored expression only; external rights excluded; see docs/LICENSING.md",
+      "approved_working_copy_sha256": "1bd96881c6f01163f02718caa2789dcc0c856f6d726448bcf04d7d5fbac276e7",
+      "approved_working_copy_bytes": 7238,
+      "publication_status_transformations": []
+    },
+    {
+      "public_relative_path": "examples/inspect_visual_tokens.py",
+      "kind": "publication_annotated_python",
+      "sources": [
+        {
+          "source_relative_path": "examples/inspect_visual_tokens.py",
+          "source_raw_sha256": "0fa00ee8fbe14e708786b3fccaa0f0ec548dbdb014eb1f88ba9cd95e718600e3",
+          "source_bytes": 4306
+        }
+      ],
+      "public_sha256": "ec825b115f0bddf1c13d614a4227cba3e93bb53c37415d80f66d64cf71d91c75",
+      "public_bytes": 4878,
+      "reviewed_candidate_sha256": "0fa00ee8fbe14e708786b3fccaa0f0ec548dbdb014eb1f88ba9cd95e718600e3",
+      "reviewed_candidate_bytes": 4306,
+      "reviewed_candidate_kind": "unchanged_source_copy",
+      "reviewed_candidate_transformations": [
+        "Byte-for-byte first-party source copy"
+      ],
+      "transformations": [
+        "Prepend license/copyright comments only; preserve complete reviewed Python body."
+      ],
+      "license_expression": "Apache-2.0",
+      "rights_scope": "Owner's original authored expression only; external rights excluded; see docs/LICENSING.md",
+      "approved_working_copy_sha256": "ec825b115f0bddf1c13d614a4227cba3e93bb53c37415d80f66d64cf71d91c75",
+      "approved_working_copy_bytes": 4878,
+      "publication_status_transformations": []
+    },
+    {
+      "public_relative_path": "examples/plot_pope_spatial_heterogeneity.py",
+      "kind": "publication_annotated_python",
+      "sources": [
+        {
+          "source_relative_path": "examples/plot_pope_spatial_heterogeneity.py",
+          "source_raw_sha256": "4acc46f310687f2a61112c025061f625f75fa2fc30c44afa00487a6e0cbbc297",
+          "source_bytes": 17739
+        }
+      ],
+      "public_sha256": "786dd746f201814b0be7170d0278218b91ff3dc94d3f91af2e06643733269ac2",
+      "public_bytes": 18311,
+      "reviewed_candidate_sha256": "4acc46f310687f2a61112c025061f625f75fa2fc30c44afa00487a6e0cbbc297",
+      "reviewed_candidate_bytes": 17739,
+      "reviewed_candidate_kind": "unchanged_source_copy",
+      "reviewed_candidate_transformations": [
+        "Byte-for-byte first-party source copy"
+      ],
+      "transformations": [
+        "Prepend license/copyright comments only; preserve complete reviewed Python body."
+      ],
+      "license_expression": "Apache-2.0",
+      "rights_scope": "Owner's original authored expression only; external rights excluded; see docs/LICENSING.md",
+      "approved_working_copy_sha256": "786dd746f201814b0be7170d0278218b91ff3dc94d3f91af2e06643733269ac2",
+      "approved_working_copy_bytes": 18311,
+      "publication_status_transformations": []
+    },
+    {
+      "public_relative_path": "examples/report_pope_spatial_heterogeneity.py",
+      "kind": "publication_annotated_python",
+      "sources": [
+        {
+          "source_relative_path": "examples/report_pope_spatial_heterogeneity.py",
+          "source_raw_sha256": "97dce4c1df209326321e9625b12095b8c31da88165b8bb6031afdf618dc3d0e8",
+          "source_bytes": 36230
+        }
+      ],
+      "public_sha256": "c3920bea264bb199d5e48cf96798d86bbec20e36a9f518c6c86d48b6bfb422d1",
+      "public_bytes": 36747,
+      "reviewed_candidate_sha256": "e80ec057f8201119d009b1429937f7a82b0afc2913e0e0f5dd63937a0def524c",
+      "reviewed_candidate_bytes": 36175,
+      "reviewed_candidate_kind": "sanitized_source_copy",
+      "reviewed_candidate_transformations": [
+        "Replace one personal interpreter path inside a generated-report command literal with python; no algorithm or guard changes"
+      ],
+      "transformations": [
+        "Prepend license/copyright comments only; preserve complete reviewed Python body."
+      ],
+      "license_expression": "Apache-2.0",
+      "rights_scope": "Owner's original authored expression only; external rights excluded; see docs/LICENSING.md",
+      "approved_working_copy_sha256": "c3920bea264bb199d5e48cf96798d86bbec20e36a9f518c6c86d48b6bfb422d1",
+      "approved_working_copy_bytes": 36747,
+      "publication_status_transformations": []
+    },
+    {
+      "public_relative_path": "examples/rescore_pope_semantic.py",
+      "kind": "publication_annotated_python",
+      "sources": [
+        {
+          "source_relative_path": "examples/rescore_pope_semantic.py",
+          "source_raw_sha256": "fa62e36811dadc9add064dc05c63e785ea83c650c3390c03a9e3e01051bb2763",
+          "source_bytes": 13299
+        }
+      ],
+      "public_sha256": "41f991ba4f1cd0d7aa47ea5c637113993f2218b679a04710487592218b3a0270",
+      "public_bytes": 13871,
+      "reviewed_candidate_sha256": "fa62e36811dadc9add064dc05c63e785ea83c650c3390c03a9e3e01051bb2763",
+      "reviewed_candidate_bytes": 13299,
+      "reviewed_candidate_kind": "unchanged_source_copy",
+      "reviewed_candidate_transformations": [
+        "Byte-for-byte first-party source copy"
+      ],
+      "transformations": [
+        "Prepend license/copyright comments only; preserve complete reviewed Python body."
+      ],
+      "license_expression": "Apache-2.0",
+      "rights_scope": "Owner's original authored expression only; external rights excluded; see docs/LICENSING.md",
+      "approved_working_copy_sha256": "41f991ba4f1cd0d7aa47ea5c637113993f2218b679a04710487592218b3a0270",
+      "approved_working_copy_bytes": 13871,
+      "publication_status_transformations": []
+    },
+    {
+      "public_relative_path": "examples/run_global_coverage.py",
+      "kind": "publication_annotated_python",
+      "sources": [
+        {
+          "source_relative_path": "examples/run_global_coverage.py",
+          "source_raw_sha256": "cb4c820720d7a1d3f5fc746572cba75fe96018cb8e8cdf6d31bc1f99c1d4a43e",
+          "source_bytes": 10785
+        }
+      ],
+      "public_sha256": "b25cbcbaa9e5d539fc8b25449c38464bebb7ed086e305af995a4658dfae38f57",
+      "public_bytes": 11357,
+      "reviewed_candidate_sha256": "cb4c820720d7a1d3f5fc746572cba75fe96018cb8e8cdf6d31bc1f99c1d4a43e",
+      "reviewed_candidate_bytes": 10785,
+      "reviewed_candidate_kind": "unchanged_source_copy",
+      "reviewed_candidate_transformations": [
+        "Byte-for-byte first-party source copy"
+      ],
+      "transformations": [
+        "Prepend license/copyright comments only; preserve complete reviewed Python body."
+      ],
+      "license_expression": "Apache-2.0",
+      "rights_scope": "Owner's original authored expression only; external rights excluded; see docs/LICENSING.md",
+      "approved_working_copy_sha256": "b25cbcbaa9e5d539fc8b25449c38464bebb7ed086e305af995a4658dfae38f57",
+      "approved_working_copy_bytes": 11357,
+      "publication_status_transformations": []
+    },
+    {
+      "public_relative_path": "examples/run_pope_pilot.py",
+      "kind": "publication_annotated_python",
+      "sources": [
+        {
+          "source_relative_path": "examples/run_pope_pilot.py",
+          "source_raw_sha256": "6bbc53258e76b936cce804ac7f66d08cedf8348c4d5b446c6349bd205f6d801d",
+          "source_bytes": 16271
+        }
+      ],
+      "public_sha256": "37c4f5acf2dc4d8989f903f3b463bd36cb4106c1f837eaaef02e5589e63ea1f8",
+      "public_bytes": 16843,
+      "reviewed_candidate_sha256": "6bbc53258e76b936cce804ac7f66d08cedf8348c4d5b446c6349bd205f6d801d",
+      "reviewed_candidate_bytes": 16271,
+      "reviewed_candidate_kind": "unchanged_source_copy",
+      "reviewed_candidate_transformations": [
+        "Byte-for-byte first-party source copy"
+      ],
+      "transformations": [
+        "Prepend license/copyright comments only; preserve complete reviewed Python body."
+      ],
+      "license_expression": "Apache-2.0",
+      "rights_scope": "Owner's original authored expression only; external rights excluded; see docs/LICENSING.md",
+      "approved_working_copy_sha256": "37c4f5acf2dc4d8989f903f3b463bd36cb4106c1f837eaaef02e5589e63ea1f8",
+      "approved_working_copy_bytes": 16843,
+      "publication_status_transformations": []
+    },
+    {
+      "public_relative_path": "examples/run_pope_pruning_smoke.py",
+      "kind": "publication_annotated_python",
+      "sources": [
+        {
+          "source_relative_path": "examples/run_pope_pruning_smoke.py",
+          "source_raw_sha256": "44eec4ca1c6118fd390e9b9600946755135847fc79126e818c86de6052f3ae2b",
+          "source_bytes": 20366
+        }
+      ],
+      "public_sha256": "8519582f9870e3e7c75ca7f2e40f4fa5cc6608428f589320107fa1f8814bff35",
+      "public_bytes": 20938,
+      "reviewed_candidate_sha256": "44eec4ca1c6118fd390e9b9600946755135847fc79126e818c86de6052f3ae2b",
+      "reviewed_candidate_bytes": 20366,
+      "reviewed_candidate_kind": "unchanged_source_copy",
+      "reviewed_candidate_transformations": [
+        "Byte-for-byte first-party source copy"
+      ],
+      "transformations": [
+        "Prepend license/copyright comments only; preserve complete reviewed Python body."
+      ],
+      "license_expression": "Apache-2.0",
+      "rights_scope": "Owner's original authored expression only; external rights excluded; see docs/LICENSING.md",
+      "approved_working_copy_sha256": "8519582f9870e3e7c75ca7f2e40f4fa5cc6608428f589320107fa1f8814bff35",
+      "approved_working_copy_bytes": 20938,
+      "publication_status_transformations": []
+    },
+    {
+      "public_relative_path": "examples/run_random_pruning.py",
+      "kind": "publication_annotated_python",
+      "sources": [
+        {
+          "source_relative_path": "examples/run_random_pruning.py",
+          "source_raw_sha256": "dbcfaefa62c51c536f4b568a5d192a8fd82bc242a8187c89fa7ed9c33d9541a4",
+          "source_bytes": 10097
+        }
+      ],
+      "public_sha256": "053aaf924fc5e9ee853a50ff3e8ea5ef133179cf65af675e598db61922a90e8b",
+      "public_bytes": 10669,
+      "reviewed_candidate_sha256": "dbcfaefa62c51c536f4b568a5d192a8fd82bc242a8187c89fa7ed9c33d9541a4",
+      "reviewed_candidate_bytes": 10097,
+      "reviewed_candidate_kind": "unchanged_source_copy",
+      "reviewed_candidate_transformations": [
+        "Byte-for-byte first-party source copy"
+      ],
+      "transformations": [
+        "Prepend license/copyright comments only; preserve complete reviewed Python body."
+      ],
+      "license_expression": "Apache-2.0",
+      "rights_scope": "Owner's original authored expression only; external rights excluded; see docs/LICENSING.md",
+      "approved_working_copy_sha256": "053aaf924fc5e9ee853a50ff3e8ea5ef133179cf65af675e598db61922a90e8b",
+      "approved_working_copy_bytes": 10669,
+      "publication_status_transformations": []
+    },
+    {
+      "public_relative_path": "examples/run_small_vlm.py",
+      "kind": "publication_annotated_python",
+      "sources": [
+        {
+          "source_relative_path": "examples/run_small_vlm.py",
+          "source_raw_sha256": "27fb0909eb3f09b5aa3040ecf32f6e7305b26d5336cc4749b102acd2db29d419",
+          "source_bytes": 1946
+        }
+      ],
+      "public_sha256": "fb88bc5757a5734df2c8b6ca0d320298033bf2e96114e813771071365556a130",
+      "public_bytes": 2518,
+      "reviewed_candidate_sha256": "27fb0909eb3f09b5aa3040ecf32f6e7305b26d5336cc4749b102acd2db29d419",
+      "reviewed_candidate_bytes": 1946,
+      "reviewed_candidate_kind": "unchanged_source_copy",
+      "reviewed_candidate_transformations": [
+        "Byte-for-byte first-party source copy"
+      ],
+      "transformations": [
+        "Prepend license/copyright comments only; preserve complete reviewed Python body."
+      ],
+      "license_expression": "Apache-2.0",
+      "rights_scope": "Owner's original authored expression only; external rights excluded; see docs/LICENSING.md",
+      "approved_working_copy_sha256": "fb88bc5757a5734df2c8b6ca0d320298033bf2e96114e813771071365556a130",
+      "approved_working_copy_bytes": 2518,
+      "publication_status_transformations": []
+    },
+    {
+      "public_relative_path": "examples/run_spatial_floor_coverage.py",
+      "kind": "publication_annotated_python",
+      "sources": [
+        {
+          "source_relative_path": "examples/run_spatial_floor_coverage.py",
+          "source_raw_sha256": "94a76963de1caa1ef10e2d859bab3070d2d269872ca563af88197e1711ade5b9",
+          "source_bytes": 10978
+        }
+      ],
+      "public_sha256": "936b3373454ec556f8c42fdf6014a2e1130b43ae1560245137b2b4ecac774b52",
+      "public_bytes": 11550,
+      "reviewed_candidate_sha256": "94a76963de1caa1ef10e2d859bab3070d2d269872ca563af88197e1711ade5b9",
+      "reviewed_candidate_bytes": 10978,
+      "reviewed_candidate_kind": "unchanged_source_copy",
+      "reviewed_candidate_transformations": [
+        "Byte-for-byte first-party source copy"
+      ],
+      "transformations": [
+        "Prepend license/copyright comments only; preserve complete reviewed Python body."
+      ],
+      "license_expression": "Apache-2.0",
+      "rights_scope": "Owner's original authored expression only; external rights excluded; see docs/LICENSING.md",
+      "approved_working_copy_sha256": "936b3373454ec556f8c42fdf6014a2e1130b43ae1560245137b2b4ecac774b52",
+      "approved_working_copy_bytes": 11550,
+      "publication_status_transformations": []
+    },
+    {
+      "public_relative_path": "examples/test_noop_visual_tokens.py",
+      "kind": "publication_annotated_python",
+      "sources": [
+        {
+          "source_relative_path": "examples/test_noop_visual_tokens.py",
+          "source_raw_sha256": "136ea4e3bbbf03b331c885a3415f609bdff4c11d65704bcda7c09fda4742fbe2",
+          "source_bytes": 6657
+        }
+      ],
+      "public_sha256": "06d0ba7a779eaacafdc6e3e4b63a6b96a411c7c2ae6a27969eea092f90b2800b",
+      "public_bytes": 7229,
+      "reviewed_candidate_sha256": "136ea4e3bbbf03b331c885a3415f609bdff4c11d65704bcda7c09fda4742fbe2",
+      "reviewed_candidate_bytes": 6657,
+      "reviewed_candidate_kind": "unchanged_source_copy",
+      "reviewed_candidate_transformations": [
+        "Byte-for-byte first-party source copy"
+      ],
+      "transformations": [
+        "Prepend license/copyright comments only; preserve complete reviewed Python body."
+      ],
+      "license_expression": "Apache-2.0",
+      "rights_scope": "Owner's original authored expression only; external rights excluded; see docs/LICENSING.md",
+      "approved_working_copy_sha256": "06d0ba7a779eaacafdc6e3e4b63a6b96a411c7c2ae6a27969eea092f90b2800b",
+      "approved_working_copy_bytes": 7229,
+      "publication_status_transformations": []
+    },
+    {
+      "public_relative_path": "results/allocation_comparison/aggregate_results.json",
+      "kind": "carried_forward_reviewed_candidate",
+      "sources": [
+        {
+          "source_relative_path": "results/allocation_comparison/results.json",
+          "source_raw_sha256": "65a45246780b4a86d961ead1befed3fec8bf4b5ff0113c45b49201e1b0a62db3",
+          "source_bytes": 55168
+        }
+      ],
+      "public_sha256": "7963d4ae9b3e7f53e51350f10b1103342d7026be50aa418ee2b38adc6755bf44",
+      "public_bytes": 19910,
+      "validation_row_count": 4,
+      "reviewed_candidate_sha256": "7963d4ae9b3e7f53e51350f10b1103342d7026be50aa418ee2b38adc6755bf44",
+      "reviewed_candidate_bytes": 19910,
+      "reviewed_candidate_kind": "whitelisted_result_derivative",
+      "reviewed_candidate_transformations": [
+        "Whitelisted four allocation configurations and existing coverage/count/quota/check metrics.",
+        "Replaced image filenames with stable within-export case aliases; removed pixel data and all floor/selected token index lists.",
+        "Coverage values/losses are copied from the source, without recomputation."
+      ],
+      "transformations": [
+        "Byte-identical carry-forward from reviewed candidate."
+      ],
+      "license_expression": "Apache-2.0",
+      "rights_scope": "Owner's original authored expression only; external rights excluded; see docs/LICENSING.md",
+      "approved_working_copy_sha256": "7963d4ae9b3e7f53e51350f10b1103342d7026be50aa418ee2b38adc6755bf44",
+      "approved_working_copy_bytes": 19910,
+      "publication_status_transformations": []
+    },
+    {
+      "public_relative_path": "results/pope_controlled_comparison/full/aggregate_metrics.json",
+      "kind": "carried_forward_reviewed_candidate",
+      "sources": [
+        {
+          "source_relative_path": "results/pope_controlled_comparison/full/comparison.json",
+          "source_raw_sha256": "bd174a74e16cfc5a09ec51878114211305b6e7ef85f5f2aa0817cb28e43b63ab",
+          "source_bytes": 530343
+        }
+      ],
+      "public_sha256": "66340dde112d6698ea810cf8fb878df72498563df3b69367156557688e7ea460",
+      "public_bytes": 38849,
+      "validation_row_count": 10,
+      "initial_candidate_sha256": "fd0a7b399273654248f38b1925ac8d585b55c601dced16f8de83ef0e0e31fa95",
+      "reviewed_candidate_sha256": "66340dde112d6698ea810cf8fb878df72498563df3b69367156557688e7ea460",
+      "reviewed_candidate_bytes": 38849,
+      "reviewed_candidate_kind": "whitelisted_result_derivative",
+      "reviewed_candidate_transformations": [
+        "Whitelisted scope, ten method/budget metric groups and six paired aggregates.",
+        "Removed per_question, baseline scored_records, questions, responses, image references and token traces.",
+        "Retained numeric question identifiers in paired outcomes; these are not visual-token index lists.",
+        "Invalid count is invalid_yes + invalid_no; correct counts are copied from the stored versus_full record.",
+        "Replace question-ID membership arrays by their counts; omit original question/image scalar IDs; no scoring or structural numeric metric recomputed"
+      ],
+      "transformations": [
+        "Byte-identical carry-forward from reviewed candidate."
+      ],
+      "license_expression": "Apache-2.0",
+      "rights_scope": "Owner's original authored expression only; external rights excluded; see docs/LICENSING.md",
+      "approved_working_copy_sha256": "66340dde112d6698ea810cf8fb878df72498563df3b69367156557688e7ea460",
+      "approved_working_copy_bytes": 38849,
+      "publication_status_transformations": []
+    },
+    {
+      "public_relative_path": "results/pope_controlled_comparison/full/run_summary.json",
+      "kind": "carried_forward_reviewed_candidate",
+      "sources": [
+        {
+          "source_relative_path": "results/pope_controlled_comparison/full/summary.json",
+          "source_raw_sha256": "6b0b5b02756b3a09037d423621f597ac26c8715477f71d4a5611715595995178",
+          "source_bytes": 689
+        }
+      ],
+      "public_sha256": "c0e3c68232337447acf56934beaa8731f493675814b711fb171e698aef335ade",
+      "public_bytes": 749,
+      "validation_row_count": null,
+      "reviewed_candidate_sha256": "c0e3c68232337447acf56934beaa8731f493675814b711fb171e698aef335ade",
+      "reviewed_candidate_bytes": 749,
+      "reviewed_candidate_kind": "whitelisted_result_derivative",
+      "reviewed_candidate_transformations": [
+        "Whitelisted run-level scalars; removed question lists and file lists."
+      ],
+      "transformations": [
+        "Byte-identical carry-forward from reviewed candidate."
+      ],
+      "license_expression": "Apache-2.0",
+      "rights_scope": "Owner's original authored expression only; external rights excluded; see docs/LICENSING.md",
+      "approved_working_copy_sha256": "c0e3c68232337447acf56934beaa8731f493675814b711fb171e698aef335ade",
+      "approved_working_copy_bytes": 749,
+      "publication_status_transformations": []
+    },
+    {
+      "public_relative_path": "results/pope_controlled_comparison/smoke/aggregate_summary.json",
+      "kind": "carried_forward_reviewed_candidate",
+      "sources": [
+        {
+          "source_relative_path": "results/pope_controlled_comparison/smoke/summary.json",
+          "source_raw_sha256": "7bf70eb2d464536a2e521e108aadd19250e483accd55a9bcf9349746c535f4e1",
+          "source_bytes": 393
+        }
+      ],
+      "public_sha256": "2e595b39c9ccc351b87529b54565f87d5d4eeeca5d7e5b4c95dbf4850f78457f",
+      "public_bytes": 802,
+      "validation_row_count": null,
+      "reviewed_candidate_sha256": "2e595b39c9ccc351b87529b54565f87d5d4eeeca5d7e5b4c95dbf4850f78457f",
+      "reviewed_candidate_bytes": 802,
+      "reviewed_candidate_kind": "whitelisted_result_derivative",
+      "reviewed_candidate_transformations": [
+        "Whitelisted run-level scalars and question count; removed question lists and file lists."
+      ],
+      "transformations": [
+        "Byte-identical carry-forward from reviewed candidate."
+      ],
+      "license_expression": "Apache-2.0",
+      "rights_scope": "Owner's original authored expression only; external rights excluded; see docs/LICENSING.md",
+      "approved_working_copy_sha256": "2e595b39c9ccc351b87529b54565f87d5d4eeeca5d7e5b4c95dbf4850f78457f",
+      "approved_working_copy_bytes": 802,
+      "publication_status_transformations": []
+    },
+    {
+      "public_relative_path": "results/pope_pilot/full_model_seed42/aggregate_summary.json",
+      "kind": "carried_forward_reviewed_candidate",
+      "sources": [
+        {
+          "source_relative_path": "results/pope_pilot/full_model_seed42/summary.json",
+          "source_raw_sha256": "96d4cae6c39cc569f10deba412a191891d8f85a9d2aea59f24c89123c297cd2a",
+          "source_bytes": 3212
+        }
+      ],
+      "public_sha256": "f58a0561ba766a6729093334935075d2a147c141961a257c46a2171e77714210",
+      "public_bytes": 1354,
+      "validation_row_count": null,
+      "reviewed_candidate_sha256": "f58a0561ba766a6729093334935075d2a147c141961a257c46a2171e77714210",
+      "reviewed_candidate_bytes": 1354,
+      "reviewed_candidate_kind": "whitelisted_result_derivative",
+      "reviewed_candidate_transformations": [
+        "Removed quality_review, including twelve raw-response examples; retained original Strict metrics only."
+      ],
+      "transformations": [
+        "Byte-identical carry-forward from reviewed candidate."
+      ],
+      "license_expression": "Apache-2.0",
+      "rights_scope": "Owner's original authored expression only; external rights excluded; see docs/LICENSING.md",
+      "approved_working_copy_sha256": "f58a0561ba766a6729093334935075d2a147c141961a257c46a2171e77714210",
+      "approved_working_copy_bytes": 1354,
+      "publication_status_transformations": []
+    },
+    {
+      "public_relative_path": "results/pope_pilot/semantic_review/aggregate_summary.json",
+      "kind": "carried_forward_reviewed_candidate",
+      "sources": [
+        {
+          "source_relative_path": "results/pope_pilot/semantic_review/summary.json",
+          "source_raw_sha256": "edc7cd6654222e2cae0b493293bacfe3fa319f1d2d3be3b464b1bf468d3c2be0",
+          "source_bytes": 3225
+        }
+      ],
+      "public_sha256": "a88924a400d521101fd1cb103e1f623d9353af807e345c745fe2c2cdec237c8f",
+      "public_bytes": 2719,
+      "validation_row_count": null,
+      "reviewed_candidate_sha256": "a88924a400d521101fd1cb103e1f623d9353af807e345c745fe2c2cdec237c8f",
+      "reviewed_candidate_bytes": 2719,
+      "reviewed_candidate_kind": "whitelisted_result_derivative",
+      "reviewed_candidate_transformations": [
+        "Whitelisted evaluation metrics and parser/source hashes; removed absolute paths and original-file path-keyed hash map."
+      ],
+      "transformations": [
+        "Byte-identical carry-forward from reviewed candidate."
+      ],
+      "license_expression": "Apache-2.0",
+      "rights_scope": "Owner's original authored expression only; external rights excluded; see docs/LICENSING.md",
+      "approved_working_copy_sha256": "a88924a400d521101fd1cb103e1f623d9353af807e345c745fe2c2cdec237c8f",
+      "approved_working_copy_bytes": 2719,
+      "publication_status_transformations": []
+    },
+    {
+      "public_relative_path": "results/pope_pruning_smoke/aggregate_summary.json",
+      "kind": "carried_forward_reviewed_candidate",
+      "sources": [
+        {
+          "source_relative_path": "results/pope_pruning_smoke/summary.json",
+          "source_raw_sha256": "4a281feaf3ec3615c010267ebb8714d7652e078120b58381f0c4c6d0037b9c1b",
+          "source_bytes": 404
+        },
+        {
+          "source_relative_path": "results/pope_pruning_smoke/kn_identity.jsonl",
+          "source_raw_sha256": "2533ac8a8285a77b791ec5a6151bd42b479a3d8ee75dc2ad89c9405eb377d93c",
+          "source_bytes": 69607
+        }
+      ],
+      "public_sha256": "87f3aea7abcdcfce9efc2fe4b826571b401ef4278423570a70a781913e11279e",
+      "public_bytes": 1676,
+      "validation_row_count": 2,
+      "reviewed_candidate_sha256": "87f3aea7abcdcfce9efc2fe4b826571b401ef4278423570a70a781913e11279e",
+      "reviewed_candidate_bytes": 1676,
+      "reviewed_candidate_kind": "whitelisted_result_derivative",
+      "reviewed_candidate_transformations": [
+        "Whitelisted smoke totals and two top-level K=N identity metric/check records.",
+        "Removed nested full/noop records, questions/prompts, responses, generated token IDs and all selected/floor/sequence token index lists."
+      ],
+      "transformations": [
+        "Byte-identical carry-forward from reviewed candidate."
+      ],
+      "license_expression": "Apache-2.0",
+      "rights_scope": "Owner's original authored expression only; external rights excluded; see docs/LICENSING.md",
+      "approved_working_copy_sha256": "87f3aea7abcdcfce9efc2fe4b826571b401ef4278423570a70a781913e11279e",
+      "approved_working_copy_bytes": 1676,
+      "publication_status_transformations": []
+    },
+    {
+      "public_relative_path": "results/pope_spatial_heterogeneity_30/aggregate_summary.json",
+      "kind": "carried_forward_reviewed_candidate",
+      "sources": [
+        {
+          "source_relative_path": "results/pope_spatial_heterogeneity_30/analysis.json",
+          "source_raw_sha256": "29d01c4a578586a308063eb944bda2aed2bcaa3dbbe25b34910ba19b7ba5deb7",
+          "source_bytes": 3885582
+        }
+      ],
+      "public_sha256": "6c1c9d3ff7458f3114527443c9a389cccfe22a17a754ddcf6e39869670d43fda",
+      "public_bytes": 11415,
+      "validation_row_count": 2,
+      "initial_candidate_sha256": "a2ea0b3a1c4d3e1e474b4171e47c69dcd96d67fdaf5d16086dc0743349899133",
+      "reviewed_candidate_sha256": "6c1c9d3ff7458f3114527443c9a389cccfe22a17a754ddcf6e39869670d43fda",
+      "reviewed_candidate_bytes": 11415,
+      "reviewed_candidate_kind": "whitelisted_result_derivative",
+      "reviewed_candidate_transformations": [
+        "Whitelisted analysis settings, two K-level summaries, paired/coverage strata and outcome-category aggregates.",
+        "Excluded all original image-budget rows, questions, responses, labels, image references and token traces.",
+        "Replace question-ID membership arrays by their counts; omit original question/image scalar IDs; no scoring or structural numeric metric recomputed"
+      ],
+      "transformations": [
+        "Byte-identical carry-forward from reviewed candidate."
+      ],
+      "license_expression": "Apache-2.0",
+      "rights_scope": "Owner's original authored expression only; external rights excluded; see docs/LICENSING.md",
+      "approved_working_copy_sha256": "6c1c9d3ff7458f3114527443c9a389cccfe22a17a754ddcf6e39869670d43fda",
+      "approved_working_copy_bytes": 11415,
+      "publication_status_transformations": []
+    },
+    {
+      "public_relative_path": "results/pope_spatial_heterogeneity_30/figures/accuracy_by_heterogeneity_group.png",
+      "kind": "carried_forward_reviewed_candidate",
+      "sources": [
+        {
+          "source_relative_path": "results/pope_spatial_heterogeneity_30/figures/accuracy_by_heterogeneity_group.png",
+          "source_raw_sha256": "fac99603dfb2b9a2f3831529da1530dc3acd66f886f90bbe534c85bfc8ba04ea",
+          "source_bytes": 98156
+        },
+        {
+          "source_relative_path": "examples/plot_pope_spatial_heterogeneity.py",
+          "source_raw_sha256": "4acc46f310687f2a61112c025061f625f75fa2fc30c44afa00487a6e0cbbc297",
+          "source_bytes": 17739
+        }
+      ],
+      "public_sha256": "fac99603dfb2b9a2f3831529da1530dc3acd66f886f90bbe534c85bfc8ba04ea",
+      "public_bytes": 98156,
+      "validation_row_count": null,
+      "reviewed_candidate_sha256": "fac99603dfb2b9a2f3831529da1530dc3acd66f886f90bbe534c85bfc8ba04ea",
+      "reviewed_candidate_bytes": 98156,
+      "reviewed_candidate_kind": "unchanged_photo_free_figure",
+      "reviewed_candidate_transformations": [
+        "Byte-for-byte exclusive copy of one existing photo-free aggregate figure.",
+        "No plotting code executed; photo-containing panel outputs and source JPEG files excluded."
+      ],
+      "transformations": [
+        "Byte-identical carry-forward from reviewed candidate."
+      ],
+      "license_expression": "Apache-2.0",
+      "rights_scope": "Owner's original authored expression only; external rights excluded; see docs/LICENSING.md",
+      "approved_working_copy_sha256": "fac99603dfb2b9a2f3831529da1530dc3acd66f886f90bbe534c85bfc8ba04ea",
+      "approved_working_copy_bytes": 98156,
+      "publication_status_transformations": []
+    },
+    {
+      "public_relative_path": "results/pope_spatial_heterogeneity_30/figures/gc_zero_regions_vs_heterogeneity.png",
+      "kind": "carried_forward_reviewed_candidate",
+      "sources": [
+        {
+          "source_relative_path": "results/pope_spatial_heterogeneity_30/figures/gc_zero_regions_vs_heterogeneity.png",
+          "source_raw_sha256": "dc5ad1f584a32fe86276d43759fc808f094aa55974c51b8d421d9df1903e7373",
+          "source_bytes": 94285
+        },
+        {
+          "source_relative_path": "examples/plot_pope_spatial_heterogeneity.py",
+          "source_raw_sha256": "4acc46f310687f2a61112c025061f625f75fa2fc30c44afa00487a6e0cbbc297",
+          "source_bytes": 17739
+        }
+      ],
+      "public_sha256": "dc5ad1f584a32fe86276d43759fc808f094aa55974c51b8d421d9df1903e7373",
+      "public_bytes": 94285,
+      "validation_row_count": null,
+      "reviewed_candidate_sha256": "dc5ad1f584a32fe86276d43759fc808f094aa55974c51b8d421d9df1903e7373",
+      "reviewed_candidate_bytes": 94285,
+      "reviewed_candidate_kind": "unchanged_photo_free_figure",
+      "reviewed_candidate_transformations": [
+        "Byte-for-byte exclusive copy of one existing photo-free aggregate figure.",
+        "No plotting code executed; photo-containing panel outputs and source JPEG files excluded."
+      ],
+      "transformations": [
+        "Byte-identical carry-forward from reviewed candidate."
+      ],
+      "license_expression": "Apache-2.0",
+      "rights_scope": "Owner's original authored expression only; external rights excluded; see docs/LICENSING.md",
+      "approved_working_copy_sha256": "dc5ad1f584a32fe86276d43759fc808f094aa55974c51b8d421d9df1903e7373",
+      "approved_working_copy_bytes": 94285,
+      "publication_status_transformations": []
+    },
+    {
+      "public_relative_path": "results/pope_spatial_heterogeneity_30/figures/heterogeneity_vs_ours_minus_gc.png",
+      "kind": "carried_forward_reviewed_candidate",
+      "sources": [
+        {
+          "source_relative_path": "results/pope_spatial_heterogeneity_30/figures/heterogeneity_vs_ours_minus_gc.png",
+          "source_raw_sha256": "36b9b7fd3158f146d4451814e44b8ee4ec98ee4bf6e2380ff0a9286ea5955a66",
+          "source_bytes": 76878
+        },
+        {
+          "source_relative_path": "examples/plot_pope_spatial_heterogeneity.py",
+          "source_raw_sha256": "4acc46f310687f2a61112c025061f625f75fa2fc30c44afa00487a6e0cbbc297",
+          "source_bytes": 17739
+        }
+      ],
+      "public_sha256": "36b9b7fd3158f146d4451814e44b8ee4ec98ee4bf6e2380ff0a9286ea5955a66",
+      "public_bytes": 76878,
+      "validation_row_count": null,
+      "reviewed_candidate_sha256": "36b9b7fd3158f146d4451814e44b8ee4ec98ee4bf6e2380ff0a9286ea5955a66",
+      "reviewed_candidate_bytes": 76878,
+      "reviewed_candidate_kind": "unchanged_photo_free_figure",
+      "reviewed_candidate_transformations": [
+        "Byte-for-byte exclusive copy of one existing photo-free aggregate figure.",
+        "No plotting code executed; photo-containing panel outputs and source JPEG files excluded."
+      ],
+      "transformations": [
+        "Byte-identical carry-forward from reviewed candidate."
+      ],
+      "license_expression": "Apache-2.0",
+      "rights_scope": "Owner's original authored expression only; external rights excluded; see docs/LICENSING.md",
+      "approved_working_copy_sha256": "36b9b7fd3158f146d4451814e44b8ee4ec98ee4bf6e2380ff0a9286ea5955a66",
+      "approved_working_copy_bytes": 76878,
+      "publication_status_transformations": []
+    },
+    {
+      "public_relative_path": "results/pope_spatial_heterogeneity_30/group_comparison.csv",
+      "kind": "carried_forward_reviewed_candidate",
+      "sources": [
+        {
+          "source_relative_path": "results/pope_spatial_heterogeneity_30/group_comparison.csv",
+          "source_raw_sha256": "fbdeb56d87b0a02e03eaaa473f7b31564d99112986ef3c87038da975cec8a30c",
+          "source_bytes": 3521
+        }
+      ],
+      "public_sha256": "3de6e8686978c6531bc41b36ff135d89b4861d6af0e338259e23c9a381c9d3b5",
+      "public_bytes": 3487,
+      "validation_row_count": 30,
+      "reviewed_candidate_sha256": "3de6e8686978c6531bc41b36ff135d89b4861d6af0e338259e23c9a381c9d3b5",
+      "reviewed_candidate_bytes": 3487,
+      "reviewed_candidate_kind": "whitelisted_result_derivative",
+      "reviewed_candidate_transformations": [
+        "Explicit eighteen-column whitelist; aggregate rows only; values preserved as stored."
+      ],
+      "transformations": [
+        "Byte-identical carry-forward from reviewed candidate."
+      ],
+      "license_expression": "Apache-2.0",
+      "rights_scope": "Owner's original authored expression only; external rights excluded; see docs/LICENSING.md",
+      "approved_working_copy_sha256": "3de6e8686978c6531bc41b36ff135d89b4861d6af0e338259e23c9a381c9d3b5",
+      "approved_working_copy_bytes": 3487,
+      "publication_status_transformations": []
+    },
+    {
+      "public_relative_path": "results/pope_spatial_heterogeneity_30/paired_group_comparison.csv",
+      "kind": "carried_forward_reviewed_candidate",
+      "sources": [
+        {
+          "source_relative_path": "results/pope_spatial_heterogeneity_30/paired_group_comparison.csv",
+          "source_raw_sha256": "aaf810db3e314a27fe8079f7e75a1d32bafdc5852a062ce8061444b66a9e4a18",
+          "source_bytes": 3154
+        }
+      ],
+      "public_sha256": "c0eed0cf41cf9327789fa589791d39cf879d8e85b7c8adb97ff8c8ead5f0243d",
+      "public_bytes": 1857,
+      "validation_row_count": 18,
+      "initial_candidate_sha256": "66a891ebc12155f809d733d41b61b4c3fac654a7cea73d3065da0fd22f146ba8",
+      "reviewed_candidate_sha256": "c0eed0cf41cf9327789fa589791d39cf879d8e85b7c8adb97ff8c8ead5f0243d",
+      "reviewed_candidate_bytes": 1857,
+      "reviewed_candidate_kind": "whitelisted_result_derivative",
+      "reviewed_candidate_transformations": [
+        "Explicit paired-aggregate columns only; numeric outcome question IDs retained; no questions or responses.",
+        "Remove original question-ID list columns and nested membership arrays; replace per-image original question IDs with consistent anonymous case IDs across both K; preserve all remaining metrics/row counts"
+      ],
+      "transformations": [
+        "Byte-identical carry-forward from reviewed candidate."
+      ],
+      "license_expression": "Apache-2.0",
+      "rights_scope": "Owner's original authored expression only; external rights excluded; see docs/LICENSING.md",
+      "approved_working_copy_sha256": "c0eed0cf41cf9327789fa589791d39cf879d8e85b7c8adb97ff8c8ead5f0243d",
+      "approved_working_copy_bytes": 1857,
+      "publication_status_transformations": []
+    },
+    {
+      "public_relative_path": "results/pope_spatial_heterogeneity_30/per_image_metrics.csv",
+      "kind": "carried_forward_reviewed_candidate",
+      "sources": [
+        {
+          "source_relative_path": "results/pope_spatial_heterogeneity_30/per_image_analysis.csv",
+          "source_raw_sha256": "b1e54f3b8a06b2c8c361a112a16ab1d3aa30e908e4ccf51c6247a8eb0d8548be",
+          "source_bytes": 442911
+        }
+      ],
+      "public_sha256": "477d209c5922a56d8d1232b5cd27b4e35ee6682b0040bb2d801a37f49e01fcce",
+      "public_bytes": 65076,
+      "validation_row_count": 60,
+      "initial_candidate_sha256": "14a976f0e1c478693de34910b1da8ad804883249f9b7f311970e2bb60d3d3429",
+      "reviewed_candidate_sha256": "477d209c5922a56d8d1232b5cd27b4e35ee6682b0040bb2d801a37f49e01fcce",
+      "reviewed_candidate_bytes": 65076,
+      "reviewed_candidate_kind": "whitelisted_result_derivative",
+      "reviewed_candidate_transformations": [
+        "Whitelisted numeric question identifiers, K/N/layout/H/group, region/local/global counts, zero regions, overlap and correctness/invalid booleans.",
+        "Excluded GT labels, filenames/image IDs/paths, questions, responses, parsed answers/reasons, generated token IDs and visual/floor/sequence index lists.",
+        "Region count matrices are counts, not token index lists. CV omitted because no such stored source column exists; no new statistic was computed.",
+        "Remove original question-ID list columns and nested membership arrays; replace per-image original question IDs with consistent anonymous case IDs across both K; preserve all remaining metrics/row counts"
+      ],
+      "transformations": [
+        "Byte-identical carry-forward from reviewed candidate."
+      ],
+      "license_expression": "Apache-2.0",
+      "rights_scope": "Owner's original authored expression only; external rights excluded; see docs/LICENSING.md",
+      "approved_working_copy_sha256": "477d209c5922a56d8d1232b5cd27b4e35ee6682b0040bb2d801a37f49e01fcce",
+      "approved_working_copy_bytes": 65076,
+      "publication_status_transformations": []
+    },
+    {
+      "public_relative_path": "results/pope_spatial_heterogeneity_30/sensitivity.csv",
+      "kind": "carried_forward_reviewed_candidate",
+      "sources": [
+        {
+          "source_relative_path": "results/pope_spatial_heterogeneity_30/sensitivity.csv",
+          "source_raw_sha256": "859e638b5a2e1e051e414f1f5407dd5442be011dc089668c8381a464a3604204",
+          "source_bytes": 19954
+        }
+      ],
+      "public_sha256": "6494ba2f77d11a37e49a66055dfd6b11dcd6021b6c6075e237011fab4624b621",
+      "public_bytes": 17163,
+      "validation_row_count": 10,
+      "initial_candidate_sha256": "cb87f76f85677fae6d3af30484c2d718addab7cc5de7337c4c9ced53cb339dc5",
+      "reviewed_candidate_sha256": "6494ba2f77d11a37e49a66055dfd6b11dcd6021b6c6075e237011fab4624b621",
+      "reviewed_candidate_bytes": 17163,
+      "reviewed_candidate_kind": "whitelisted_result_derivative",
+      "reviewed_candidate_transformations": [
+        "Explicit six-column whitelist; nested group summaries validated against an explicit field whitelist.",
+        "Retained the stored variant-specific subgroup correlations and numeric question identifiers.",
+        "Remove original question-ID list columns and nested membership arrays; replace per-image original question IDs with consistent anonymous case IDs across both K; preserve all remaining metrics/row counts"
+      ],
+      "transformations": [
+        "Byte-identical carry-forward from reviewed candidate."
+      ],
+      "license_expression": "Apache-2.0",
+      "rights_scope": "Owner's original authored expression only; external rights excluded; see docs/LICENSING.md",
+      "approved_working_copy_sha256": "6494ba2f77d11a37e49a66055dfd6b11dcd6021b6c6075e237011fab4624b621",
+      "approved_working_copy_bytes": 17163,
+      "publication_status_transformations": []
+    },
+    {
+      "public_relative_path": "src/evaluation/controlled_comparison.py",
+      "kind": "publication_annotated_python",
+      "sources": [
+        {
+          "source_relative_path": "src/evaluation/controlled_comparison.py",
+          "source_raw_sha256": "b4e19388dd371f96821984b2357ba01d8a9b46738e34093205834a817fb8c8cc",
+          "source_bytes": 21079
+        }
+      ],
+      "public_sha256": "027c665539e4b38c76488049eba18a765bd8478e3865e590759b143ad1b04b86",
+      "public_bytes": 21651,
+      "reviewed_candidate_sha256": "b4e19388dd371f96821984b2357ba01d8a9b46738e34093205834a817fb8c8cc",
+      "reviewed_candidate_bytes": 21079,
+      "reviewed_candidate_kind": "unchanged_source_copy",
+      "reviewed_candidate_transformations": [
+        "Byte-for-byte first-party source copy"
+      ],
+      "transformations": [
+        "Prepend license/copyright comments only; preserve complete reviewed Python body."
+      ],
+      "license_expression": "Apache-2.0",
+      "rights_scope": "Owner's original authored expression only; external rights excluded; see docs/LICENSING.md",
+      "approved_working_copy_sha256": "027c665539e4b38c76488049eba18a765bd8478e3865e590759b143ad1b04b86",
+      "approved_working_copy_bytes": 21651,
+      "publication_status_transformations": []
+    },
+    {
+      "public_relative_path": "src/evaluation/pope.py",
+      "kind": "publication_annotated_python",
+      "sources": [
+        {
+          "source_relative_path": "src/evaluation/pope.py",
+          "source_raw_sha256": "27c2d88592961ad9fe60e15fa013db1f94e65fd4d518ee622fa7831eceefcd6e",
+          "source_bytes": 11687
+        }
+      ],
+      "public_sha256": "c2a36c1da9f80f409444f708340b1bd1fbe90ea703cd40ee318d0bb7f1294be8",
+      "public_bytes": 12259,
+      "reviewed_candidate_sha256": "27c2d88592961ad9fe60e15fa013db1f94e65fd4d518ee622fa7831eceefcd6e",
+      "reviewed_candidate_bytes": 11687,
+      "reviewed_candidate_kind": "unchanged_source_copy",
+      "reviewed_candidate_transformations": [
+        "Byte-for-byte first-party source copy"
+      ],
+      "transformations": [
+        "Prepend license/copyright comments only; preserve complete reviewed Python body."
+      ],
+      "license_expression": "Apache-2.0",
+      "rights_scope": "Owner's original authored expression only; external rights excluded; see docs/LICENSING.md",
+      "approved_working_copy_sha256": "c2a36c1da9f80f409444f708340b1bd1fbe90ea703cd40ee318d0bb7f1294be8",
+      "approved_working_copy_bytes": 12259,
+      "publication_status_transformations": []
+    },
+    {
+      "public_relative_path": "src/evaluation/semantic_yes_no.py",
+      "kind": "publication_annotated_python",
+      "sources": [
+        {
+          "source_relative_path": "src/evaluation/semantic_yes_no.py",
+          "source_raw_sha256": "a432780ff8035ec5bea872b899d995433403e633a60ef24dd27fcc29f87a8a1e",
+          "source_bytes": 7247
+        }
+      ],
+      "public_sha256": "94aad16f5f2f33b21bbe77a106abe0a0b2a7ac8a8dd3431339927d05ca56987d",
+      "public_bytes": 7819,
+      "reviewed_candidate_sha256": "a432780ff8035ec5bea872b899d995433403e633a60ef24dd27fcc29f87a8a1e",
+      "reviewed_candidate_bytes": 7247,
+      "reviewed_candidate_kind": "unchanged_source_copy",
+      "reviewed_candidate_transformations": [
+        "Byte-for-byte first-party source copy"
+      ],
+      "transformations": [
+        "Prepend license/copyright comments only; preserve complete reviewed Python body."
+      ],
+      "license_expression": "Apache-2.0",
+      "rights_scope": "Owner's original authored expression only; external rights excluded; see docs/LICENSING.md",
+      "approved_working_copy_sha256": "94aad16f5f2f33b21bbe77a106abe0a0b2a7ac8a8dd3431339927d05ca56987d",
+      "approved_working_copy_bytes": 7819,
+      "publication_status_transformations": []
+    },
+    {
+      "public_relative_path": "src/inference/generation_audit.py",
+      "kind": "publication_annotated_python",
+      "sources": [
+        {
+          "source_relative_path": "src/inference/generation_audit.py",
+          "source_raw_sha256": "1c7c3d3184cb9c43937763733c9062b0d2b06d44fe351609ebf485631bc47a34",
+          "source_bytes": 12785
+        }
+      ],
+      "public_sha256": "923ff33bc5e765aa729469363a3f3a66a4f2226cddda5344208c9689c8cc0981",
+      "public_bytes": 13357,
+      "reviewed_candidate_sha256": "1c7c3d3184cb9c43937763733c9062b0d2b06d44fe351609ebf485631bc47a34",
+      "reviewed_candidate_bytes": 12785,
+      "reviewed_candidate_kind": "unchanged_source_copy",
+      "reviewed_candidate_transformations": [
+        "Byte-for-byte first-party source copy"
+      ],
+      "transformations": [
+        "Prepend license/copyright comments only; preserve complete reviewed Python body."
+      ],
+      "license_expression": "Apache-2.0",
+      "rights_scope": "Owner's original authored expression only; external rights excluded; see docs/LICENSING.md",
+      "approved_working_copy_sha256": "923ff33bc5e765aa729469363a3f3a66a4f2226cddda5344208c9689c8cc0981",
+      "approved_working_copy_bytes": 13357,
+      "publication_status_transformations": []
+    },
+    {
+      "public_relative_path": "src/inference/pruned_vlm.py",
+      "kind": "publication_annotated_python",
+      "sources": [
+        {
+          "source_relative_path": "src/inference/pruned_vlm.py",
+          "source_raw_sha256": "f03ea912cc10776f4dc6411a05dc4104720e899e8b6ada6a62059f1844f3e907",
+          "source_bytes": 9775
+        }
+      ],
+      "public_sha256": "33c44341ea393fd3d4d82126968929466f4b977f642260b6cd7bba6d5e3928ff",
+      "public_bytes": 10347,
+      "reviewed_candidate_sha256": "f03ea912cc10776f4dc6411a05dc4104720e899e8b6ada6a62059f1844f3e907",
+      "reviewed_candidate_bytes": 9775,
+      "reviewed_candidate_kind": "unchanged_source_copy",
+      "reviewed_candidate_transformations": [
+        "Byte-for-byte first-party source copy"
+      ],
+      "transformations": [
+        "Prepend license/copyright comments only; preserve complete reviewed Python body."
+      ],
+      "license_expression": "Apache-2.0",
+      "rights_scope": "Owner's original authored expression only; external rights excluded; see docs/LICENSING.md",
+      "approved_working_copy_sha256": "33c44341ea393fd3d4d82126968929466f4b977f642260b6cd7bba6d5e3928ff",
+      "approved_working_copy_bytes": 10347,
+      "publication_status_transformations": []
+    },
+    {
+      "public_relative_path": "src/pruning/coverage.py",
+      "kind": "publication_annotated_python",
+      "sources": [
+        {
+          "source_relative_path": "src/pruning/coverage.py",
+          "source_raw_sha256": "3fa659d891804b5b360240ac73d6c5554ac258750af5a488274a2df4e9cf344e",
+          "source_bytes": 2470
+        }
+      ],
+      "public_sha256": "1298b33d528566f9afb6dd68720c5be2398220a6acfe53b7011b42c7bf3361c2",
+      "public_bytes": 3697,
+      "reviewed_candidate_sha256": "3fa659d891804b5b360240ac73d6c5554ac258750af5a488274a2df4e9cf344e",
+      "reviewed_candidate_bytes": 2470,
+      "reviewed_candidate_kind": "unchanged_source_copy",
+      "reviewed_candidate_transformations": [
+        "Byte-for-byte first-party source copy"
+      ],
+      "transformations": [
+        "Prepend license/copyright comments only; preserve complete reviewed Python body.",
+        "Add scoped MMTok copyright, author, fixed commit, source function and change notice."
+      ],
+      "license_expression": "Apache-2.0",
+      "rights_scope": "Original contributions plus attributed Apache-2.0 greedy structure; neither owner claims sole authorship of all content",
+      "copyright_notices": [
+        "Copyright 2026 dongeunk (original contributions)",
+        "Copyright (c) 2025 Zoom Communications, Inc. (related greedy-update portions)"
+      ],
+      "external_reference": {
+        "repository": "https://github.com/Ironieser/MMTok",
+        "commit": "8e2686836ed5bbe05d064f1d1c20e50c73c70b94",
+        "file": "mmtok/core/semantic_selector.py",
+        "function": "greedy_merged_jit_kernel"
+      },
+      "approved_working_copy_sha256": "1298b33d528566f9afb6dd68720c5be2398220a6acfe53b7011b42c7bf3361c2",
+      "approved_working_copy_bytes": 3697,
+      "publication_status_transformations": []
+    },
+    {
+      "public_relative_path": "src/pruning/matched_allocation.py",
+      "kind": "publication_annotated_python",
+      "sources": [
+        {
+          "source_relative_path": "src/pruning/matched_allocation.py",
+          "source_raw_sha256": "efbb83200bec3dc5a6a122964c8aa46fd0813d5ef099adc2000caf8153fa198c",
+          "source_bytes": 9785
+        }
+      ],
+      "public_sha256": "a94be8b0089824377fa272e0166669af98e5399fda806a40d9656399429c4498",
+      "public_bytes": 10994,
+      "reviewed_candidate_sha256": "efbb83200bec3dc5a6a122964c8aa46fd0813d5ef099adc2000caf8153fa198c",
+      "reviewed_candidate_bytes": 9785,
+      "reviewed_candidate_kind": "unchanged_source_copy",
+      "reviewed_candidate_transformations": [
+        "Byte-for-byte first-party source copy"
+      ],
+      "transformations": [
+        "Prepend license/copyright comments only; preserve complete reviewed Python body.",
+        "Add scoped MMTok copyright, author, fixed commit, source function and change notice."
+      ],
+      "license_expression": "Apache-2.0",
+      "rights_scope": "Original contributions plus attributed Apache-2.0 greedy structure; neither owner claims sole authorship of all content",
+      "copyright_notices": [
+        "Copyright 2026 dongeunk (original contributions)",
+        "Copyright (c) 2025 Zoom Communications, Inc. (related greedy-update portions)"
+      ],
+      "external_reference": {
+        "repository": "https://github.com/Ironieser/MMTok",
+        "commit": "8e2686836ed5bbe05d064f1d1c20e50c73c70b94",
+        "file": "mmtok/core/semantic_selector.py",
+        "function": "greedy_merged_jit_kernel"
+      },
+      "approved_working_copy_sha256": "a94be8b0089824377fa272e0166669af98e5399fda806a40d9656399429c4498",
+      "approved_working_copy_bytes": 10994,
+      "publication_status_transformations": []
+    },
+    {
+      "public_relative_path": "src/pruning/spatial_floor_coverage.py",
+      "kind": "publication_annotated_python",
+      "sources": [
+        {
+          "source_relative_path": "src/pruning/spatial_floor_coverage.py",
+          "source_raw_sha256": "e30b87be81fb2be4cd1c353c1dded5ed4b207f497b5234c9774b9cbef8d07a8a",
+          "source_bytes": 7334
+        }
+      ],
+      "public_sha256": "c93fc7244d1f0694525cbb62e4a4065a7a25fa6d0608b61786f7b8ca1d76cb1b",
+      "public_bytes": 8551,
+      "reviewed_candidate_sha256": "e30b87be81fb2be4cd1c353c1dded5ed4b207f497b5234c9774b9cbef8d07a8a",
+      "reviewed_candidate_bytes": 7334,
+      "reviewed_candidate_kind": "unchanged_source_copy",
+      "reviewed_candidate_transformations": [
+        "Byte-for-byte first-party source copy"
+      ],
+      "transformations": [
+        "Prepend license/copyright comments only; preserve complete reviewed Python body.",
+        "Add scoped MMTok copyright, author, fixed commit, source function and change notice."
+      ],
+      "license_expression": "Apache-2.0",
+      "rights_scope": "Original contributions plus attributed Apache-2.0 greedy structure; neither owner claims sole authorship of all content",
+      "copyright_notices": [
+        "Copyright 2026 dongeunk (original contributions)",
+        "Copyright (c) 2025 Zoom Communications, Inc. (related greedy-update portions)"
+      ],
+      "external_reference": {
+        "repository": "https://github.com/Ironieser/MMTok",
+        "commit": "8e2686836ed5bbe05d064f1d1c20e50c73c70b94",
+        "file": "mmtok/core/semantic_selector.py",
+        "function": "greedy_merged_jit_kernel"
+      },
+      "approved_working_copy_sha256": "c93fc7244d1f0694525cbb62e4a4065a7a25fa6d0608b61786f7b8ca1d76cb1b",
+      "approved_working_copy_bytes": 8551,
+      "publication_status_transformations": []
+    },
+    {
+      "public_relative_path": "tests/test_controlled_comparison.py",
+      "kind": "publication_annotated_python",
+      "sources": [
+        {
+          "source_relative_path": "tests/test_controlled_comparison.py",
+          "source_raw_sha256": "dd20fcc88006491866ab48772deadbf8da8517b30df5b7d9fead15eba8599b61",
+          "source_bytes": 20001
+        }
+      ],
+      "public_sha256": "11096015679f2359687c7813ddfa08e40225f6ff5a3cdec886a579f486887187",
+      "public_bytes": 20573,
+      "reviewed_candidate_sha256": "dd20fcc88006491866ab48772deadbf8da8517b30df5b7d9fead15eba8599b61",
+      "reviewed_candidate_bytes": 20001,
+      "reviewed_candidate_kind": "unchanged_source_copy",
+      "reviewed_candidate_transformations": [
+        "Byte-for-byte first-party source copy"
+      ],
+      "transformations": [
+        "Prepend license/copyright comments only; preserve complete reviewed Python body."
+      ],
+      "license_expression": "Apache-2.0",
+      "rights_scope": "Owner's original authored expression only; external rights excluded; see docs/LICENSING.md",
+      "approved_working_copy_sha256": "11096015679f2359687c7813ddfa08e40225f6ff5a3cdec886a579f486887187",
+      "approved_working_copy_bytes": 20573,
+      "publication_status_transformations": []
+    },
+    {
+      "public_relative_path": "tests/test_coverage.py",
+      "kind": "publication_annotated_python",
+      "sources": [
+        {
+          "source_relative_path": "tests/test_coverage.py",
+          "source_raw_sha256": "9ea461194dee9a37f4fef8eac2f67d3eb933f786e98d868b1b7f0b37ae3bd35f",
+          "source_bytes": 3813
+        }
+      ],
+      "public_sha256": "90b32fc8af8cb9ecd7fcce9703f7db29d856f7c86daef97d7db8a66a91732f82",
+      "public_bytes": 4385,
+      "reviewed_candidate_sha256": "9ea461194dee9a37f4fef8eac2f67d3eb933f786e98d868b1b7f0b37ae3bd35f",
+      "reviewed_candidate_bytes": 3813,
+      "reviewed_candidate_kind": "unchanged_source_copy",
+      "reviewed_candidate_transformations": [
+        "Byte-for-byte first-party source copy"
+      ],
+      "transformations": [
+        "Prepend license/copyright comments only; preserve complete reviewed Python body."
+      ],
+      "license_expression": "Apache-2.0",
+      "rights_scope": "Owner's original authored expression only; external rights excluded; see docs/LICENSING.md",
+      "approved_working_copy_sha256": "90b32fc8af8cb9ecd7fcce9703f7db29d856f7c86daef97d7db8a66a91732f82",
+      "approved_working_copy_bytes": 4385,
+      "publication_status_transformations": []
+    },
+    {
+      "public_relative_path": "tests/test_coverage_diagnostic.py",
+      "kind": "publication_annotated_python",
+      "sources": [
+        {
+          "source_relative_path": "tests/test_coverage_diagnostic.py",
+          "source_raw_sha256": "f978ac39247df3865014dd7059fe8f601b25b86a82e7d159358a355538369d86",
+          "source_bytes": 3456
+        }
+      ],
+      "public_sha256": "04a0decf2487e593031eb7171d7da04e622ad7a671d974d9a10dc809da08e657",
+      "public_bytes": 4028,
+      "reviewed_candidate_sha256": "f978ac39247df3865014dd7059fe8f601b25b86a82e7d159358a355538369d86",
+      "reviewed_candidate_bytes": 3456,
+      "reviewed_candidate_kind": "unchanged_source_copy",
+      "reviewed_candidate_transformations": [
+        "Byte-for-byte first-party source copy"
+      ],
+      "transformations": [
+        "Prepend license/copyright comments only; preserve complete reviewed Python body."
+      ],
+      "license_expression": "Apache-2.0",
+      "rights_scope": "Owner's original authored expression only; external rights excluded; see docs/LICENSING.md",
+      "approved_working_copy_sha256": "04a0decf2487e593031eb7171d7da04e622ad7a671d974d9a10dc809da08e657",
+      "approved_working_copy_bytes": 4028,
+      "publication_status_transformations": []
+    },
+    {
+      "public_relative_path": "tests/test_generation_audit.py",
+      "kind": "publication_annotated_python",
+      "sources": [
+        {
+          "source_relative_path": "tests/test_generation_audit.py",
+          "source_raw_sha256": "b129257f8aba208b19943709daff8cd9325702cea51dfc26d8923857bc9b5236",
+          "source_bytes": 10375
+        }
+      ],
+      "public_sha256": "4ccd645ef0dd6581c79e3870bbff613bf4304b20ea2c6efc8593dd8ce6e36dc1",
+      "public_bytes": 10947,
+      "reviewed_candidate_sha256": "b129257f8aba208b19943709daff8cd9325702cea51dfc26d8923857bc9b5236",
+      "reviewed_candidate_bytes": 10375,
+      "reviewed_candidate_kind": "unchanged_source_copy",
+      "reviewed_candidate_transformations": [
+        "Byte-for-byte first-party source copy"
+      ],
+      "transformations": [
+        "Prepend license/copyright comments only; preserve complete reviewed Python body."
+      ],
+      "license_expression": "Apache-2.0",
+      "rights_scope": "Owner's original authored expression only; external rights excluded; see docs/LICENSING.md",
+      "approved_working_copy_sha256": "4ccd645ef0dd6581c79e3870bbff613bf4304b20ea2c6efc8593dd8ce6e36dc1",
+      "approved_working_copy_bytes": 10947,
+      "publication_status_transformations": []
+    },
+    {
+      "public_relative_path": "tests/test_matched_allocation.py",
+      "kind": "publication_annotated_python",
+      "sources": [
+        {
+          "source_relative_path": "tests/test_matched_allocation.py",
+          "source_raw_sha256": "1d88436919a517b4abd01ee2329c5cbc61f8f591dcdd2d9561e36cbc42a640d7",
+          "source_bytes": 12485
+        }
+      ],
+      "public_sha256": "ac67d26edb14de15c7167b00b84055ccb0d8b260c18b7ff3b6f22788f06932c2",
+      "public_bytes": 13057,
+      "reviewed_candidate_sha256": "1d88436919a517b4abd01ee2329c5cbc61f8f591dcdd2d9561e36cbc42a640d7",
+      "reviewed_candidate_bytes": 12485,
+      "reviewed_candidate_kind": "unchanged_source_copy",
+      "reviewed_candidate_transformations": [
+        "Byte-for-byte first-party source copy"
+      ],
+      "transformations": [
+        "Prepend license/copyright comments only; preserve complete reviewed Python body."
+      ],
+      "license_expression": "Apache-2.0",
+      "rights_scope": "Owner's original authored expression only; external rights excluded; see docs/LICENSING.md",
+      "approved_working_copy_sha256": "ac67d26edb14de15c7167b00b84055ccb0d8b260c18b7ff3b6f22788f06932c2",
+      "approved_working_copy_bytes": 13057,
+      "publication_status_transformations": []
+    },
+    {
+      "public_relative_path": "tests/test_matched_random_diagnostic.py",
+      "kind": "publication_annotated_python",
+      "sources": [
+        {
+          "source_relative_path": "tests/test_matched_random_diagnostic.py",
+          "source_raw_sha256": "7a68ee53f3d7766082e8c7c14264d4e1bc8ebd45df4798ea995cb2b2905d848b",
+          "source_bytes": 3479
+        }
+      ],
+      "public_sha256": "577282c48e975617e6f6ec12380e97f924b2013bbaaf77a09831fced8a0f52b9",
+      "public_bytes": 4051,
+      "reviewed_candidate_sha256": "7a68ee53f3d7766082e8c7c14264d4e1bc8ebd45df4798ea995cb2b2905d848b",
+      "reviewed_candidate_bytes": 3479,
+      "reviewed_candidate_kind": "unchanged_source_copy",
+      "reviewed_candidate_transformations": [
+        "Byte-for-byte first-party source copy"
+      ],
+      "transformations": [
+        "Prepend license/copyright comments only; preserve complete reviewed Python body."
+      ],
+      "license_expression": "Apache-2.0",
+      "rights_scope": "Owner's original authored expression only; external rights excluded; see docs/LICENSING.md",
+      "approved_working_copy_sha256": "577282c48e975617e6f6ec12380e97f924b2013bbaaf77a09831fced8a0f52b9",
+      "approved_working_copy_bytes": 4051,
+      "publication_status_transformations": []
+    },
+    {
+      "public_relative_path": "tests/test_pope.py",
+      "kind": "publication_annotated_python",
+      "sources": [
+        {
+          "source_relative_path": "tests/test_pope.py",
+          "source_raw_sha256": "e12d01fdb126e16a492a1c2359f82de5031e1739e61fc76571818525f9b9d864",
+          "source_bytes": 11569
+        }
+      ],
+      "public_sha256": "3407109805bba1d70a4565403168ee57db890cebfeb5a05aebaec74f31c4a761",
+      "public_bytes": 12141,
+      "reviewed_candidate_sha256": "e12d01fdb126e16a492a1c2359f82de5031e1739e61fc76571818525f9b9d864",
+      "reviewed_candidate_bytes": 11569,
+      "reviewed_candidate_kind": "unchanged_source_copy",
+      "reviewed_candidate_transformations": [
+        "Byte-for-byte first-party source copy"
+      ],
+      "transformations": [
+        "Prepend license/copyright comments only; preserve complete reviewed Python body."
+      ],
+      "license_expression": "Apache-2.0",
+      "rights_scope": "Owner's original authored expression only; external rights excluded; see docs/LICENSING.md",
+      "approved_working_copy_sha256": "3407109805bba1d70a4565403168ee57db890cebfeb5a05aebaec74f31c4a761",
+      "approved_working_copy_bytes": 12141,
+      "publication_status_transformations": []
+    },
+    {
+      "public_relative_path": "tests/test_pope_pilot.py",
+      "kind": "publication_annotated_python",
+      "sources": [
+        {
+          "source_relative_path": "tests/test_pope_pilot.py",
+          "source_raw_sha256": "7e1e1e581648148dcc2e650af8367e188f90a5bf7357e97917982d5dc8b41678",
+          "source_bytes": 14688
+        }
+      ],
+      "public_sha256": "e0b190755e49a923f59898513f44e95672230e42e06b7ab662f35a7d19da3148",
+      "public_bytes": 15260,
+      "reviewed_candidate_sha256": "7e1e1e581648148dcc2e650af8367e188f90a5bf7357e97917982d5dc8b41678",
+      "reviewed_candidate_bytes": 14688,
+      "reviewed_candidate_kind": "unchanged_source_copy",
+      "reviewed_candidate_transformations": [
+        "Byte-for-byte first-party source copy"
+      ],
+      "transformations": [
+        "Prepend license/copyright comments only; preserve complete reviewed Python body."
+      ],
+      "license_expression": "Apache-2.0",
+      "rights_scope": "Owner's original authored expression only; external rights excluded; see docs/LICENSING.md",
+      "approved_working_copy_sha256": "e0b190755e49a923f59898513f44e95672230e42e06b7ab662f35a7d19da3148",
+      "approved_working_copy_bytes": 15260,
+      "publication_status_transformations": []
+    },
+    {
+      "public_relative_path": "tests/test_pruned_vlm.py",
+      "kind": "publication_annotated_python",
+      "sources": [
+        {
+          "source_relative_path": "tests/test_pruned_vlm.py",
+          "source_raw_sha256": "21a08d718edd90dca9be2cf90fe1296606a45aa2a4c2082429292aa15beeab98",
+          "source_bytes": 11568
+        }
+      ],
+      "public_sha256": "7ada8a72264cb6a06929fdf02741882c5f21eb77d9decd6c4bc63ffadcd611c4",
+      "public_bytes": 12140,
+      "reviewed_candidate_sha256": "21a08d718edd90dca9be2cf90fe1296606a45aa2a4c2082429292aa15beeab98",
+      "reviewed_candidate_bytes": 11568,
+      "reviewed_candidate_kind": "unchanged_source_copy",
+      "reviewed_candidate_transformations": [
+        "Byte-for-byte first-party source copy"
+      ],
+      "transformations": [
+        "Prepend license/copyright comments only; preserve complete reviewed Python body."
+      ],
+      "license_expression": "Apache-2.0",
+      "rights_scope": "Owner's original authored expression only; external rights excluded; see docs/LICENSING.md",
+      "approved_working_copy_sha256": "7ada8a72264cb6a06929fdf02741882c5f21eb77d9decd6c4bc63ffadcd611c4",
+      "approved_working_copy_bytes": 12140,
+      "publication_status_transformations": []
+    },
+    {
+      "public_relative_path": "tests/test_semantic_yes_no.py",
+      "kind": "publication_annotated_python",
+      "sources": [
+        {
+          "source_relative_path": "tests/test_semantic_yes_no.py",
+          "source_raw_sha256": "fe62202b3ecb083cdf48add8008424f076accef1b8d6cd25168ed6c19a9a5ba4",
+          "source_bytes": 7576
+        }
+      ],
+      "public_sha256": "9021287c0e1c8aff0965285043fe0f3ef1056c12326c38d69a280a1a68becb47",
+      "public_bytes": 8148,
+      "reviewed_candidate_sha256": "fe62202b3ecb083cdf48add8008424f076accef1b8d6cd25168ed6c19a9a5ba4",
+      "reviewed_candidate_bytes": 7576,
+      "reviewed_candidate_kind": "unchanged_source_copy",
+      "reviewed_candidate_transformations": [
+        "Byte-for-byte first-party source copy"
+      ],
+      "transformations": [
+        "Prepend license/copyright comments only; preserve complete reviewed Python body."
+      ],
+      "license_expression": "Apache-2.0",
+      "rights_scope": "Owner's original authored expression only; external rights excluded; see docs/LICENSING.md",
+      "approved_working_copy_sha256": "9021287c0e1c8aff0965285043fe0f3ef1056c12326c38d69a280a1a68becb47",
+      "approved_working_copy_bytes": 8148,
+      "publication_status_transformations": []
+    },
+    {
+      "public_relative_path": "tests/test_spatial_budget_diagnostic.py",
+      "kind": "publication_annotated_python",
+      "sources": [
+        {
+          "source_relative_path": "tests/test_spatial_budget_diagnostic.py",
+          "source_raw_sha256": "89da0f33b5bac77fd6d03adcc5006bed3c137cf57c72f78b1d341d03411018ff",
+          "source_bytes": 3672
+        }
+      ],
+      "public_sha256": "8458d60460e3c61e7c524fe8e531a53ca1a7cc27862db7dc0949a10904b7ca50",
+      "public_bytes": 4244,
+      "reviewed_candidate_sha256": "89da0f33b5bac77fd6d03adcc5006bed3c137cf57c72f78b1d341d03411018ff",
+      "reviewed_candidate_bytes": 3672,
+      "reviewed_candidate_kind": "unchanged_source_copy",
+      "reviewed_candidate_transformations": [
+        "Byte-for-byte first-party source copy"
+      ],
+      "transformations": [
+        "Prepend license/copyright comments only; preserve complete reviewed Python body."
+      ],
+      "license_expression": "Apache-2.0",
+      "rights_scope": "Owner's original authored expression only; external rights excluded; see docs/LICENSING.md",
+      "approved_working_copy_sha256": "8458d60460e3c61e7c524fe8e531a53ca1a7cc27862db7dc0949a10904b7ca50",
+      "approved_working_copy_bytes": 4244,
+      "publication_status_transformations": []
+    },
+    {
+      "public_relative_path": "tests/test_spatial_floor_coverage.py",
+      "kind": "publication_annotated_python",
+      "sources": [
+        {
+          "source_relative_path": "tests/test_spatial_floor_coverage.py",
+          "source_raw_sha256": "9c36dd1ca17efb4aa3116f8e413bd703b0967f028a41340ba4c4c99ce64e7a6e",
+          "source_bytes": 12474
+        }
+      ],
+      "public_sha256": "ac72670f6f2212f38eabc6927e275cecfd329ba6d5d8a1e2911c654ce2464128",
+      "public_bytes": 13046,
+      "reviewed_candidate_sha256": "9c36dd1ca17efb4aa3116f8e413bd703b0967f028a41340ba4c4c99ce64e7a6e",
+      "reviewed_candidate_bytes": 12474,
+      "reviewed_candidate_kind": "unchanged_source_copy",
+      "reviewed_candidate_transformations": [
+        "Byte-for-byte first-party source copy"
+      ],
+      "transformations": [
+        "Prepend license/copyright comments only; preserve complete reviewed Python body."
+      ],
+      "license_expression": "Apache-2.0",
+      "rights_scope": "Owner's original authored expression only; external rights excluded; see docs/LICENSING.md",
+      "approved_working_copy_sha256": "ac72670f6f2212f38eabc6927e275cecfd329ba6d5d8a1e2911c654ce2464128",
+      "approved_working_copy_bytes": 13046,
+      "publication_status_transformations": []
+    },
+    {
+      "public_relative_path": "vlm.py",
+      "public_sha256": "0b69b4d24e32ce8cc95ef9edec733b6861469eff0061ec269a81e33175465e73",
+      "public_bytes": 413,
+      "kind": "retained_legacy_source",
+      "transformations": [
+        "Retain existing GitHub/Git LF blob exactly; preserve local CRLF source; license scope recorded separately."
+      ],
+      "license_expression": "NOASSERTION",
+      "rights_scope": "Retained legacy; no new license grant pending confirmation",
+      "sources": [
+        {
+          "source_relative_path": "vlm.py",
+          "source_raw_sha256": "0beda25ed2e0477f0efaef0419568f4b1ea2b37fdab8c2517e769b9db000187f",
+          "source_bytes": 430,
+          "representation": "Local CRLF working-tree bytes"
+        }
+      ],
+      "repository_source": {
+        "repository": "https://github.com/dongeunk/vlm-token-efficiency",
+        "commit": "e3057a3cb9b8e8dc4e464665334f822420b73d62",
+        "blob": "a1d7c229b4c67eeaf75b3cdb690ad44588e51c85",
+        "sha256": "0b69b4d24e32ce8cc95ef9edec733b6861469eff0061ec269a81e33175465e73",
+        "new_license_grant": "HOLD"
+      },
+      "approved_working_copy_sha256": "0b69b4d24e32ce8cc95ef9edec733b6861469eff0061ec269a81e33175465e73",
+      "approved_working_copy_bytes": 413,
+      "publication_status_transformations": []
+    }
+  ],
+  "publication_commit_reference": "Use the Git commit introducing this snapshot; no self-referential commit hash is embedded",
+  "publication_status_updated_utc": "2026-10-22T11:31:08.431504+00:00",
+  "approved_working_copy_manifest_sha256": "1771e21bce4e6be3e2582a58f06ca57b5d6ba841e7c906f87caccfbedcb40a9e",
+  "publication_approval_history": {
+    "previous_phase_status": "Phase-one local working copy: preparation/static review approved; upload not approved or performed",
+    "meaning": "Historical preparation-phase status, superseded by owner publication authorization on 2026-10-22"
+  }
+}

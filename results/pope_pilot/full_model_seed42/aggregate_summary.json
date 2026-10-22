@@ -1,0 +1,52 @@
+{
+  "artifact_kind": "derived_aggregate",
+  "source_artifacts": [
+    {
+      "path": "results/pope_pilot/full_model_seed42/summary.json",
+      "sha256": "96d4cae6c39cc569f10deba412a191891d8f85a9d2aea59f24c89123c297cd2a"
+    }
+  ],
+  "publication_note": "Explicitly whitelisted aggregates only. Redistribution clearance is not asserted.",
+  "evaluation_kind": "original_inference_strict_only",
+  "status": "completed",
+  "expected_questions": 30,
+  "completed_questions": 30,
+  "model_loaded": true,
+  "generation_executed": true,
+  "runtime_seconds": 379.09606259997236,
+  "error_count": 0,
+  "strict_metrics": {
+    "n": 30,
+    "accuracy": 0.6,
+    "yes_class_accuracy": 0.8666666666666667,
+    "no_class_accuracy": 0.3333333333333333,
+    "precision": 1.0,
+    "recall": 0.8666666666666667,
+    "f1": 0.9285714285714286,
+    "yes_prediction_ratio": 0.43333333333333335,
+    "invalid_ratio": 0.4,
+    "confusion_matrix": {
+      "yes": {
+        "yes": 13,
+        "no": 0,
+        "invalid": 2
+      },
+      "no": {
+        "yes": 0,
+        "no": 5,
+        "invalid": 10
+      }
+    },
+    "support": {
+      "yes": 15,
+      "no": 15
+    },
+    "tp": 13,
+    "fp": 0,
+    "fn": 0,
+    "tn": 5,
+    "invalid_yes": 2,
+    "invalid_no": 10
+  },
+  "semantic_evaluation": "Separate post-hoc evaluation; see semantic_review/aggregate_summary.json."
+}

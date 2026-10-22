@@ -1,0 +1,20 @@
+{
+  "python": "3.11.15",
+  "packages": {
+    "torch": "2.13.0+cu126",
+    "torchvision": "0.28.0+cu126",
+    "transformers": "5.15.1",
+    "Pillow": "12.3.0",
+    "numpy": "2.4.6",
+    "matplotlib": "3.11.1",
+    "accelerate": "1.14.0",
+    "safetensors": "0.8.0",
+    "huggingface-hub": "1.28.0"
+  },
+  "record_type": "observed metadata, not a fresh-install lock",
+  "historical_gpu": "NVIDIA GeForce GTX 1660 SUPER 6GB",
+  "model": "HuggingFaceTB/SmolVLM-256M-Instruct",
+  "model_revision": "7e3e67edbbed1bf9888184d9df282b700a323964",
+  "project_execution_commit": null,
+  "publication_commit": null
+}

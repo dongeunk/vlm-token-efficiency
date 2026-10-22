@@ -1,0 +1,21 @@
+{
+  "artifact_kind": "derived_aggregate",
+  "source_artifacts": [
+    {
+      "path": "results/pope_controlled_comparison/full/summary.json",
+      "sha256": "6b0b5b02756b3a09037d423621f597ac26c8715477f71d4a5611715595995178"
+    }
+  ],
+  "publication_note": "Explicitly whitelisted aggregates only. Redistribution clearance is not asserted.",
+  "status": "completed",
+  "mode": "full",
+  "generation_count": 300,
+  "full_model_rerun": false,
+  "full_300_started": true,
+  "automatic_full_transition": false,
+  "full_300_requires_separate_approval": false,
+  "runtime_seconds": 508.6086037000059,
+  "protected_files_unchanged": true,
+  "error_count": 0,
+  "runtime_note": "One shared run duration; not a per-method duration or end-to-end speedup."
+}

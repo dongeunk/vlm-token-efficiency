@@ -1,0 +1,53 @@
+{
+  "artifact_kind": "derived_aggregate",
+  "source_artifacts": [
+    {
+      "path": "results/pope_pruning_smoke/summary.json",
+      "sha256": "4a281feaf3ec3615c010267ebb8714d7652e078120b58381f0c4c6d0037b9c1b"
+    },
+    {
+      "path": "results/pope_pruning_smoke/kn_identity.jsonl",
+      "sha256": "2533ac8a8285a77b791ec5a6151bd42b479a3d8ee75dc2ad89c9405eb377d93c"
+    }
+  ],
+  "publication_note": "Explicitly whitelisted aggregates only. Redistribution clearance is not asserted.",
+  "status": "completed",
+  "kn_identity_passed": true,
+  "initial_two_passed": true,
+  "expanded_to_five": true,
+  "planned_questions": 5,
+  "ours_generation_count": 10,
+  "runtime_seconds": 104.27847479999764,
+  "original_files_unchanged": true,
+  "completed_question_count": 5,
+  "error_count": 0,
+  "kn_identity": [
+    {
+      "n": 832,
+      "passed": true,
+      "input_embeddings_max_abs_difference": 0.0,
+      "first_step_logits_max_abs_difference": 0.0,
+      "checks": {
+        "input_embeddings_exact": true,
+        "first_step_logits_exact": true,
+        "generated_token_ids_equal": true,
+        "raw_answer_equal": true,
+        "historical_full_token_ids_equal": true
+      }
+    },
+    {
+      "n": 1088,
+      "passed": true,
+      "input_embeddings_max_abs_difference": 0.0,
+      "first_step_logits_max_abs_difference": 0.0,
+      "checks": {
+        "input_embeddings_exact": true,
+        "first_step_logits_exact": true,
+        "generated_token_ids_equal": true,
+        "raw_answer_equal": true,
+        "historical_full_token_ids_equal": true
+      }
+    }
+  ],
+  "identity_note": "Identity of the inference connection, not a claim of answer correctness."
+}
