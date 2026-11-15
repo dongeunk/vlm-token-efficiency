@@ -1,0 +1,137 @@
+{
+  "diagnostic_only": true,
+  "groups": [
+    {
+      "method": "full",
+      "instrumentation": "full_gate_b_audit",
+      "n": 2,
+      "median": {
+        "ttft_e2e_ms": 6560.00705000406,
+        "ttft_decoder_ms": 944.4101000008231,
+        "selection_overhead_ms": 0.0,
+        "layer0_ms": 54.57430000024033,
+        "suffix_prefill_ms": 862.4815999974089,
+        "allocation_ms": 0.0,
+        "coverage_greedy_ms": 0.0,
+        "coverage_calibration_ms": 0.0,
+        "generation_wall_seconds": 7.679195600001549
+      }
+    },
+    {
+      "method": "s2_l",
+      "instrumentation": "full_gate_b_audit",
+      "n": 2,
+      "median": {
+        "ttft_e2e_ms": 5779.39150000384,
+        "ttft_decoder_ms": 427.96220000309404,
+        "selection_overhead_ms": 62.9287000047043,
+        "layer0_ms": 39.725350001390325,
+        "suffix_prefill_ms": 158.49334999802522,
+        "allocation_ms": 6.871900000987807,
+        "coverage_greedy_ms": 0.0,
+        "coverage_calibration_ms": 0.0,
+        "generation_wall_seconds": 6.947244550003234
+      }
+    },
+    {
+      "method": "s2_u",
+      "instrumentation": "full_gate_b_audit",
+      "n": 2,
+      "median": {
+        "ttft_e2e_ms": 5898.494400000345,
+        "ttft_decoder_ms": 412.02399999747286,
+        "selection_overhead_ms": 43.38479999569245,
+        "layer0_ms": 41.261850001319544,
+        "suffix_prefill_ms": 158.65770000164048,
+        "allocation_ms": 2.4001499987207353,
+        "coverage_greedy_ms": 0.0,
+        "coverage_calibration_ms": 0.0,
+        "generation_wall_seconds": 7.128654950000055
+      }
+    },
+    {
+      "method": "s2_c",
+      "instrumentation": "full_gate_b_audit",
+      "n": 2,
+      "median": {
+        "ttft_e2e_ms": 5961.028100002295,
+        "ttft_decoder_ms": 460.0457999986247,
+        "selection_overhead_ms": 92.08855000179028,
+        "layer0_ms": 39.27979999934905,
+        "suffix_prefill_ms": 156.90119999999297,
+        "allocation_ms": 50.625249998120125,
+        "coverage_greedy_ms": 26.633399997081142,
+        "coverage_calibration_ms": 21.23204999952577,
+        "generation_wall_seconds": 7.125693700003467
+      }
+    },
+    {
+      "method": "full",
+      "instrumentation": "main_light_audit",
+      "n": 1198,
+      "median": {
+        "ttft_e2e_ms": 5813.5653999997885,
+        "ttft_decoder_ms": 529.6030999998038,
+        "selection_overhead_ms": 0.0,
+        "layer0_ms": 17.091149999032496,
+        "suffix_prefill_ms": 506.23280000218074,
+        "allocation_ms": 0.0,
+        "coverage_greedy_ms": 0.0,
+        "coverage_calibration_ms": 0.0,
+        "generation_wall_seconds": 6.51878189999843
+      }
+    },
+    {
+      "method": "s2_l",
+      "instrumentation": "main_light_audit",
+      "n": 1198,
+      "median": {
+        "ttft_e2e_ms": 5399.849749999703,
+        "ttft_decoder_ms": 212.6002500008326,
+        "selection_overhead_ms": 47.77654999634251,
+        "layer0_ms": 17.073299997719005,
+        "suffix_prefill_ms": 94.32825000112643,
+        "allocation_ms": 6.582099998922786,
+        "coverage_greedy_ms": 0.0,
+        "coverage_calibration_ms": 0.0,
+        "generation_wall_seconds": 6.145503149997239
+      }
+    },
+    {
+      "method": "s2_u",
+      "instrumentation": "main_light_audit",
+      "n": 1198,
+      "median": {
+        "ttft_e2e_ms": 5396.114549999766,
+        "ttft_decoder_ms": 208.3699999966484,
+        "selection_overhead_ms": 43.57714999059681,
+        "layer0_ms": 17.025850000209175,
+        "suffix_prefill_ms": 94.39165000003413,
+        "allocation_ms": 2.3284500020963605,
+        "coverage_greedy_ms": 0.0,
+        "coverage_calibration_ms": 0.0,
+        "generation_wall_seconds": 6.14216320000196
+      }
+    },
+    {
+      "method": "s2_c",
+      "instrumentation": "main_light_audit",
+      "n": 1198,
+      "median": {
+        "ttft_e2e_ms": 5442.678549999982,
+        "ttft_decoder_ms": 255.43910000124015,
+        "selection_overhead_ms": 90.33434999946621,
+        "layer0_ms": 17.116499995609047,
+        "suffix_prefill_ms": 94.31929999846034,
+        "allocation_ms": 49.29735000041546,
+        "coverage_greedy_ms": 24.458649997541215,
+        "coverage_calibration_ms": 21.764300006907433,
+        "generation_wall_seconds": 6.187284949999594
+      }
+    }
+  ],
+  "peak_allocated_mib": 2402.01806640625,
+  "peak_reserved_mib": 3264.0,
+  "fixed_method_order": true,
+  "no_warmup_or_extra_generations": true
+}

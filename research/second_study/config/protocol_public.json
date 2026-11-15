@@ -1,0 +1,215 @@
+{
+  "public_view": true,
+  "protocol": {
+    "version": "smol_s3a_v1",
+    "created_utc": "2026-11-14T13:20:25.508788+00:00",
+    "phase": "S3-A CPU ONLY",
+    "model": {
+      "id": "HuggingFaceTB/SmolVLM-256M-Instruct",
+      "revision": "7e3e67edbbed1bf9888184d9df282b700a323964",
+      "architecture": "Idefics3ForConditionalGeneration + Llama",
+      "dtype": "float16",
+      "attention_backend": "eager",
+      "batch_size": 1,
+      "local_files_only": true
+    },
+    "generation": {
+      "max_new_tokens": 16,
+      "do_sample": false,
+      "num_beams": 1,
+      "use_cache": true,
+      "eos_token_id": 49279,
+      "pad_token_id": 2,
+      "bos_token_id": 0,
+      "logits_processors": "none; verify native inactive controls in S3-B"
+    },
+    "preprocessing": {
+      "processor": "Idefics3Processor",
+      "image_processor": "Idefics3ImageProcessor",
+      "backend": "torchvision (S2-A observed); verify S3-B",
+      "image_mode": "RGB",
+      "do_image_splitting": true,
+      "longest_edge": 2048,
+      "max_image_size": 512,
+      "prompt": "<|im_start|>User:<image>{official_question}<end_of_utterance>\nAssistant:",
+      "extra_yes_no_instruction": false,
+      "prompt_question_unchanged": true
+    },
+    "pruning": {
+      "methods": [
+        "full",
+        "s2_l",
+        "s2_u",
+        "s2_c"
+      ],
+      "local_budget": 48,
+      "global_budget": 16,
+      "total_budget": 64,
+      "local_regions": [
+        4,
+        4
+      ],
+      "local_base": 1,
+      "local_extra": 32,
+      "query_weight": false,
+      "cell_and_erc": "unchanged S1/S2-B common partition; per-cell Layer0 ERC argmax",
+      "global_rule": "unchanged single global 8x8 region, recursive 16 cells + ERC",
+      "location": "after full decoder block 0; gather Layer0 KV and preserve nonvisual tokens",
+      "coverage": {
+        "demand": "local+global",
+        "candidates": "local",
+        "dtype": "FP32",
+        "calibration": "cosine; row mean-center; nonnegative clip",
+        "weights": 1
+      }
+    },
+    "selection": {
+      "seed": 42,
+      "pilot_images": 10,
+      "main_images": 200,
+      "questions_per_image": 6,
+      "canonical_order": "ascending integer image_id; question_id within image",
+      "eligibility": [
+        "official original COCO POPE Random image ID",
+        "not in old30 or old80 (image ID union)",
+        "exactly six unique official question IDs/texts: yes3/no3",
+        "local JPEG filename/ID/dimensions/decode and historical source SHA match"
+      ],
+      "fatal_errors": [
+        "invalid annotation JSON/field/duplicate question ID",
+        "source annotation SHA/provenance mismatch",
+        "old exclusion duplicate or overlap",
+        "candidate manifest vs actual filename ID population mismatch"
+      ],
+      "incomplete_policy": "exclude whole image before sampling; record reason; no repair/download",
+      "main_rule": "FIRST random.Random(42).sample(sorted eligible IDs,200); retain draw order",
+      "pilot_rule": "independent random.Random(42); from remaining IDs select one per 832/1088 stratum (prefer stored processor observation; else static geometry prediction), then uniform fill to10; no outcome-based replacement",
+      "geometry_status": "static arithmetic of installed resize sizes only, NOT observed preprocessing",
+      "replacements_after_lock": false,
+      "old_selection_flags_ignored": true,
+      "annotation_scope": "original POPE Random; no COCO annotation support or C/D filtering"
+    },
+    "scoring": {
+      "primary_parser": "visual_semantic_yes_no_v1 (unchanged existing source)",
+      "strict_parser": "existing conservative leading yes/no parse_yes_no",
+      "primary_metric": "pope_f1",
+      "primary_comparison": "s2_c - s2_l",
+      "pope_accuracy_equals_semantic_accuracy": true,
+      "official_pope_equivalence": false,
+      "invalid": "separate prediction column; always wrong for accuracy; invalid_yes enters recall FN",
+      "f1": "2TP/(2TP+FP+FN+invalid_yes); zero denominator=0",
+      "missing_or_runtime_error": "fail closed: no complete metrics or bootstrap; no silent drop",
+      "secondary": [
+        "pope_accuracy",
+        "precision",
+        "recall",
+        "invalid_count",
+        "invalid_rate",
+        "strict_accuracy"
+      ],
+      "truncation": "record EOS and generated IDs; no EOS at16 = potential truncation, not semantic certainty"
+    },
+    "statistics": {
+      "unit": "image paired cluster (all six questions)",
+      "resamples": 10000,
+      "seed": 42,
+      "rng": "numpy.random.Generator(PCG64(42))",
+      "confidence": 0.95,
+      "interval": "percentile [2.5,97.5], numpy linear quantile",
+      "aggregation": "resample image confusion counts, recompute micro F1; never mean image F1",
+      "primary": "C-L pope_f1",
+      "other_comparisons": "exploratory; no multiplicity-adjusted claim"
+    },
+    "authorization": {
+      "cuda": false,
+      "model_load": false,
+      "processor_execution": false,
+      "generation": false,
+      "downloads": false,
+      "installs": false,
+      "old_file_modification": false,
+      "paid_services": false,
+      "git_commit_push": false,
+      "s2prune_license": "HOLD"
+    },
+    "python": "3.11.15",
+    "cached_config_files": {
+      "config.json": {
+        "path": "<HOME>\\.cache\\huggingface\\hub\\models--HuggingFaceTB--SmolVLM-256M-Instruct\\snapshots\\7e3e67edbbed1bf9888184d9df282b700a323964\\config.json",
+        "sha256": "b70fb4bfde88df9eeebc9d8ff523733b8bf70d6c9b06c610325960e06ae9db52",
+        "bytes": 7353
+      },
+      "preprocessor_config.json": {
+        "path": "<HOME>\\.cache\\huggingface\\hub\\models--HuggingFaceTB--SmolVLM-256M-Instruct\\snapshots\\7e3e67edbbed1bf9888184d9df282b700a323964\\preprocessor_config.json",
+        "sha256": "6cb6e36d6fcb88ca1502c4a26750715dc3e7dedddc9a8f17b27d8d167d1457e7",
+        "bytes": 486
+      },
+      "processor_config.json": {
+        "path": "<HOME>\\.cache\\huggingface\\hub\\models--HuggingFaceTB--SmolVLM-256M-Instruct\\snapshots\\7e3e67edbbed1bf9888184d9df282b700a323964\\processor_config.json",
+        "sha256": "e7bff42da73ae9eec9042ef20e066e11f1ee20f025358ff79131e3c0fb549b46",
+        "bytes": 68
+      },
+      "chat_template.json": {
+        "path": "<HOME>\\.cache\\huggingface\\hub\\models--HuggingFaceTB--SmolVLM-256M-Instruct\\snapshots\\7e3e67edbbed1bf9888184d9df282b700a323964\\chat_template.json",
+        "sha256": "a68ad1a42681ae44eacd109ff8dd56a840f761c03d72f4ff4c515d092f882168",
+        "bytes": 429
+      },
+      "generation_config.json": {
+        "path": "<HOME>\\.cache\\huggingface\\hub\\models--HuggingFaceTB--SmolVLM-256M-Instruct\\snapshots\\7e3e67edbbed1bf9888184d9df282b700a323964\\generation_config.json",
+        "sha256": "067a2a54e5f87162ecac6e0e911cc4665fc8f7f3324794ecbac0f76badb56636",
+        "bytes": 136
+      },
+      "tokenizer_config.json": {
+        "path": "<HOME>\\.cache\\huggingface\\hub\\models--HuggingFaceTB--SmolVLM-256M-Instruct\\snapshots\\7e3e67edbbed1bf9888184d9df282b700a323964\\tokenizer_config.json",
+        "sha256": "36c6fd44d07d10fd8180ee6b46dcccf69fb7c06753968ff0d7e17b8bfe17b777",
+        "bytes": 28249
+      },
+      "tokenizer.json": {
+        "path": "<HOME>\\.cache\\huggingface\\hub\\models--HuggingFaceTB--SmolVLM-256M-Instruct\\snapshots\\7e3e67edbbed1bf9888184d9df282b700a323964\\tokenizer.json",
+        "sha256": "5ece781dc8d2b2f3e2f289ca0ae50b17cfc27dd27bfe7971bb8241e0b964331a",
+        "bytes": 3548256
+      },
+      "special_tokens_map.json": {
+        "path": "<HOME>\\.cache\\huggingface\\hub\\models--HuggingFaceTB--SmolVLM-256M-Instruct\\snapshots\\7e3e67edbbed1bf9888184d9df282b700a323964\\special_tokens_map.json",
+        "sha256": "aa0ff906077086dfa9734a7f97f68c825877a48f9468807be65504495cdeef09",
+        "bytes": 1069
+      }
+    },
+    "weights": "not opened, loaded or rehashed",
+    "input_sources": {
+      "data/pope/coco_pope_random.json": {
+        "path": "data/pope/coco_pope_random.json",
+        "sha256": "ac25245170b975a5bdf9080b23fd431dfe6be458bc038259c1f4f09a6bef7994"
+      },
+      "data/pope/SOURCE.json": {
+        "path": "data/pope/SOURCE.json",
+        "sha256": "d8c32b8e154f949bd2d97ddfd2e2b958ccdfd222066628b5c3d0754f76ecd4f6"
+      },
+      "results/pope_pilot/sample_manifest.jsonl": {
+        "path": "results/pope_pilot/sample_manifest.jsonl",
+        "sha256": "7673a9d700d3c283c5d7bfc11af51e6fdf1cf197a184ba3f4eb6547567a0b0e8"
+      },
+      "results/pope_spatial_floor_80_preparation/cohort80_five_methods_v2/selected_images.jsonl": {
+        "path": "results/pope_spatial_floor_80_preparation/cohort80_five_methods_v2/selected_images.jsonl",
+        "sha256": "38e26752b79e2403f304319b745a6271d8c50503f05f25b5a03178a58a2f172f"
+      },
+      "results/pope_spatial_floor_80_preparation/candidate_pool.csv": {
+        "path": "results/pope_spatial_floor_80_preparation/candidate_pool.csv",
+        "sha256": "8bf907305cf45a13ef88b41c7175eec633626bbb1864e20b3a4b10cda0b66cdf"
+      },
+      "results/pope_spatial_floor_80_preparation/cd_screening_470_v1/per_image.csv": {
+        "path": "results/pope_spatial_floor_80_preparation/cd_screening_470_v1/per_image.csv",
+        "sha256": "f15303908e23bf16dfbc716ae240a50d47944af2c9a85ac3d5de0492e0d0d7b1"
+      },
+      "results/pope_spatial_floor_80_preparation/cohort80_five_methods_v2/cpu_images.jsonl": {
+        "path": "results/pope_spatial_floor_80_preparation/cohort80_five_methods_v2/cpu_images.jsonl",
+        "sha256": "8ca3ff5090986bb7639b3ef4f670f076a3eb378af58689e3fe7f724ef50b597e"
+      },
+      "results/smolvlm_s2_coverage_phase_s2a/phase_s2a_20261114_01/gpu_run_03/ACTUAL_INPUT.json": {
+        "path": "results/smolvlm_s2_coverage_phase_s2a/phase_s2a_20261114_01/gpu_run_03/ACTUAL_INPUT.json",
+        "sha256": "77a10f948b38b8214b1ef621d26eee5fde59b769ecd9b6adb77fc65dd7a69018"
+      }
+    }
+  },
+  "redaction": "home prefixes"
+}

@@ -1,0 +1,35 @@
+{
+  "C_minus_L": {
+    "correctness_changes": {
+      "0": 1170,
+      "1": 11,
+      "-1": 19
+    },
+    "valid_yes_no_flips": 21,
+    "invalid_transitions": {
+      "both_valid": 1139,
+      "both_invalid": 50,
+      "left_valid_right_invalid": 7,
+      "left_invalid_right_valid": 4
+    },
+    "eos_changes": 9,
+    "truncation_changes": 9,
+    "selected_changed": 1200,
+    "budget_changed": 1200,
+    "coverage_increase": 678,
+    "coverage_decrease": 522
+  },
+  "changed_image_budgets": 200,
+  "mean_budget_L1": 29.51,
+  "median_budget_L1": 30.0,
+  "temporary32_retained_in_final_local48_mean": 2.625,
+  "temporary32_retained_fraction_mean": 0.08203125,
+  "final64_F_less_than_temporary32_count": 1200,
+  "coverage_accuracy_association": {
+    "n_images": 200,
+    "pearson": -0.07656949098849228,
+    "spearman": -0.094474100958092
+  },
+  "allocation_question_independent_in_observations": true,
+  "actual_allocation_or_ERC_cache_reused": false
+}

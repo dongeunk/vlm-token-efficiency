@@ -1,0 +1,170 @@
+{
+  "public_view": true,
+  "source_configuration_hash": "29353695d02ffbc200baf544349ead5ed2ab453430ed616567cb55421b84eee8",
+  "original_config_sha256": "84ddc39d0bd615f683540d665a7a659d6df2c9dac254a65195885045141c70df",
+  "redaction": "user home prefixes; original source/config/data digests retained as provenance, not hashes of these public views",
+  "config": {
+    "full_route": "Native HF Full",
+    "revision": "7e3e67edbbed1bf9888184d9df282b700a323964",
+    "generation": {
+      "max_new_tokens": 16,
+      "do_sample": false,
+      "num_beams": 1,
+      "use_cache": true,
+      "bos_token_id": 0,
+      "eos_token_id": 49279,
+      "pad_token_id": 2
+    },
+    "model": {
+      "id": "HuggingFaceTB/SmolVLM-256M-Instruct",
+      "revision": "7e3e67edbbed1bf9888184d9df282b700a323964",
+      "architecture": "Idefics3ForConditionalGeneration + Llama",
+      "dtype": "float16",
+      "attention_backend": "eager",
+      "batch_size": 1,
+      "local_files_only": true
+    },
+    "preprocessing": {
+      "processor": "Idefics3Processor",
+      "image_processor": "Idefics3ImageProcessor",
+      "backend": "torchvision (S2-A observed); verify S3-B",
+      "image_mode": "RGB",
+      "do_image_splitting": true,
+      "longest_edge": 2048,
+      "max_image_size": 512,
+      "prompt": "<|im_start|>User:<image>{official_question}<end_of_utterance>\nAssistant:",
+      "extra_yes_no_instruction": false,
+      "prompt_question_unchanged": true
+    },
+    "pruning": {
+      "methods": [
+        "full",
+        "s2_l",
+        "s2_u",
+        "s2_c"
+      ],
+      "local_budget": 48,
+      "global_budget": 16,
+      "total_budget": 64,
+      "local_regions": [
+        4,
+        4
+      ],
+      "local_base": 1,
+      "local_extra": 32,
+      "query_weight": false,
+      "cell_and_erc": "unchanged S1/S2-B common partition; per-cell Layer0 ERC argmax",
+      "global_rule": "unchanged single global 8x8 region, recursive 16 cells + ERC",
+      "location": "after full decoder block 0; gather Layer0 KV and preserve nonvisual tokens",
+      "coverage": {
+        "demand": "local+global",
+        "candidates": "local",
+        "dtype": "FP32",
+        "calibration": "cosine; row mean-center; nonnegative clip",
+        "weights": 1
+      }
+    },
+    "scoring": {
+      "primary_parser": "visual_semantic_yes_no_v1 (unchanged existing source)",
+      "strict_parser": "existing conservative leading yes/no parse_yes_no",
+      "primary_metric": "pope_f1",
+      "primary_comparison": "s2_c - s2_l",
+      "pope_accuracy_equals_semantic_accuracy": true,
+      "official_pope_equivalence": false,
+      "invalid": "separate prediction column; always wrong for accuracy; invalid_yes enters recall FN",
+      "f1": "2TP/(2TP+FP+FN+invalid_yes); zero denominator=0",
+      "missing_or_runtime_error": "fail closed: no complete metrics or bootstrap; no silent drop",
+      "secondary": [
+        "pope_accuracy",
+        "precision",
+        "recall",
+        "invalid_count",
+        "invalid_rate",
+        "strict_accuracy"
+      ],
+      "truncation": "record EOS and generated IDs; no EOS at16 = potential truncation, not semantic certainty"
+    },
+    "statistics": {
+      "unit": "image paired cluster (all six questions)",
+      "resamples": 10000,
+      "seed": 42,
+      "rng": "numpy.random.Generator(PCG64(42))",
+      "confidence": 0.95,
+      "interval": "percentile [2.5,97.5], numpy linear quantile",
+      "aggregation": "resample image confusion counts, recompute micro F1; never mean image F1",
+      "primary": "C-L pope_f1",
+      "other_comparisons": "exploratory; no multiplicity-adjusted claim"
+    },
+    "timing": {
+      "kind": "diagnostic; GateB full audit vs remaining light audit must be separated",
+      "ttft_start": "each route original JPEG open/preprocessing start",
+      "decoder_start": "actual inputs_merger return (merged H0 ready before allocation)",
+      "ttft_end": "first greedy torch.argmax return, synchronized",
+      "selection": "CPU handoff/allocation/partition/ERC norm+select/gather; no dense Layer0 cost added",
+      "component_profiler": "read-only sys.setprofile callbacks; no runtime/function mutation"
+    },
+    "package_versions": {
+      "torch": "2.13.0+cu126",
+      "torchvision": "0.28.0+cu126",
+      "transformers": "5.15.1",
+      "numpy": "2.4.6",
+      "Pillow": "12.3.0"
+    },
+    "source_algorithms": {
+      "src/evaluation/pope.py": "27c2d88592961ad9fe60e15fa013db1f94e65fd4d518ee622fa7831eceefcd6e",
+      "src/evaluation/semantic_yes_no.py": "a432780ff8035ec5bea872b899d995433403e633a60ef24dd27fcc29f87a8a1e",
+      "src/s2_coverage_study/allocation.py": "82b227d37f7f3ff3fd0c58b2fc649ceaa4f4e59d8ee656863ccd220138f322c8",
+      "src/s2_coverage_study/reference.py": "a2c2d378b2e42aff36fe5258575a49813efee6a5a4090bcc8e555e20c684aefc",
+      "src/smol_s2_pruning_runtime/__init__.py": "de4e38f37a12bb8cfeb1aaaa6fe70c0b53e529b439b61dde5183f4e82a532a8a",
+      "src/smol_s2_pruning_runtime/boundary.py": "2a940560d7e4da390f1d7883973dacae79dec34a2b669888dd6ff4ff13c137df",
+      "src/smol_s2_pruning_runtime/compare.py": "7bb534543c0356edb95df8e23d33d2d4e033a1d649531c03d0f2f2acf81f8250",
+      "src/smol_s2_pruning_runtime/observer.py": "e034f7056554d5be9d4900196a27ae6e1a8bcf903e3fed43bd0a8e2cb7372fa6",
+      "src/smol_s2_pruning_runtime/plan.py": "9225969b82d8565d00fb95cb1bbdaa5e7c57a73796ea65526d26a299205a664f",
+      "src/smol_s2_pruning_runtime/runtime.py": "a9c3d631c662a15fecfabdd54ea413d6aa1cb735aee908a6c018e39920e56570",
+      "src/smol_s2_runtime/__init__.py": "3f30f7cfc517174aabdaa5cfef1acebfcf40c8705108fc13cb54eb88eea4d24d",
+      "src/smol_s2_runtime/compare.py": "7bf67a119d509a1b46d3b8f0a30a26a12102c88dfb7c2ac0874821e6a5ac8196",
+      "src/smol_s2_runtime/observer.py": "a571f14023e15ad11aaa95aa0d9cea08be8f0e17aedf843d508498421a811369",
+      "src/smol_s2_runtime/plan.py": "c7bfb08a97bfcc9c3c53f9ae0d813b8124763e1bdf7b13d4e4a4620e3b9f1339",
+      "src/smol_s2_runtime/runtime.py": "db42b222b0c778a6f4e86f4b0ce3197dbdd604035f4107f1fc32136abf6ae100",
+      "src/smol_s2_study/__init__.py": "98829e343c544d69860ebdd23e82b2b6c8d591e6dfdc01c9afad30478a1b7fe9",
+      "src/smol_s2_study/allocation.py": "a6365fe76857d0915092fc3ddb6932c4096c4ebe863c09a69dd13f59ed8a3a2a",
+      "src/smol_s2_study/cache.py": "4cf2f2f671ed7d4042b212f2d06b6ee97c32beda0585108724befd63d7f7f0b8",
+      "src/smol_s2_study/diagnostics.py": "20e14b925aa158dbf36d232d5bce2265116f6c2fc0e996e26b12f44f1cd8bf02",
+      "src/smol_s2_study/mapping.py": "2547cceb73e8bbc7892f781ba3b0d0665e710a55a8e9618a890ccfa9aca91a09",
+      "src/smol_s2_study/offline.py": "2be273e59fe17640d45fb1b9dfc293de2d3a224b0884137dae0a55cdea0d346a",
+      "src/smol_s2_study/prefill.py": "27cc192c47c30281f913c353dd84d21b1796d4faa644b8fbd6e7b36f3759676d",
+      "src/smol_s2_study/selection.py": "c3029d90af8d085062f71f2e50f5391473f849949d1d03f36f7b94be0e48444e",
+      "src/smol_s3_eval/__init__.py": "d130b0a17d54fffd95272d98f21f2dd57b828cad8cbd903040cb47bb2811efcd",
+      "src/smol_s3_eval/contracts.py": "72bb10c547ced5761734f7202281b3340ae7baae07f0bb4fde6a6120728e89a1",
+      "src/smol_s3_eval/cpu_guard.py": "dfbb06005f7039908d31265605f5aed282904924877ed2dedfc8757cfbe81f12",
+      "src/smol_s3_eval/dataset.py": "96c590d00f39169fb395b6b39923afe6d49f8b94bbcc75c3ed298331444e6103",
+      "src/smol_s3_eval/lock.py": "7cd8ba9e9878836b975892d4f75635b6a741171c9a7f2d66f4307d9cb7c6fa7d",
+      "src/smol_s3_eval/scoring.py": "e601614c918ab39509a708dd0d1bd31ec6ec697c8e816ed323b6aab585461d2f",
+      "src/smol_s3_eval/statistics.py": "155da282b2aaaf3389a239cc0fe2b193e464517036a36db9c830ad117b8e5af5",
+      "src/smol_s3_functional/__init__.py": "ab8d60fb0d1c37fd37360a3257af3c06b0e1ac47f018833f2b43ebabc03e6803",
+      "src/smol_s3_functional/plan.py": "453c498de66e76b16d9393cdbe827fd1aa3c48b4965acad51157ca27875f04ea",
+      "src/smol_s3_functional/runtime.py": "a68a40bf8b60ed801e8765323b1503c1f85ba6ad6cc5bfabf0fb581b1056af16"
+    },
+    "phase": "S3-C",
+    "main_images_sha256": "b67be607afd6d0020ec1e5a49156395060bdd567ec9c6018bb6c2421b06d6c11",
+    "main_questions_sha256": "834bd6b81bb6e3e9dda35fdbd97f3d5913877c7b876e8215d8f6a57929fafeab",
+    "protocol_sha256": "46f649236a264acfde37c11fe65b6b83ac4679212d76fba4d17408595ac3e844",
+    "selection_lock_sha256": "736df83ed876ee5628d110a31d43e7255739df14265003356dc75d4f242f1cca",
+    "actual_inputs_sha256": "765082c9b90f736b1a7147906f34a4c61a872739685efdaaba0eff7a376ab559",
+    "maximum_generations": 4800,
+    "segment_images": 10,
+    "segment_maximum_generations": 240,
+    "gate_b_question_ids": [
+      2011,
+      2012
+    ],
+    "gate_b_length_policy": "first two original main questions, fixed order; first8 records audited without extra generation",
+    "actual_main_data_access": true,
+    "allocation_cache_reused": false,
+    "ERC_or_selection_cache_reused": false,
+    "pilot_config_sha256": "d6a7972e2fcbc61f9590a428d687b07ed656ada9615e4bf87d6161b9cc0d8126",
+    "pilot_configuration_hash": "c2c3edc2730cf3d64141f818c1645e4b1dcdbcf2ab8ef47e62943778b7e2a71c",
+    "main_evaluation_allowed": true,
+    "license": "S2Prune HOLD"
+  }
+}

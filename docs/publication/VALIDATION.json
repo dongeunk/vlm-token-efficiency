@@ -1,0 +1,98 @@
+{
+  "status": "PASS",
+  "base_commit": "66bbfaf44770b99473fbe94fdde2554f5c94f368",
+  "baseline_files_retained": 72,
+  "baseline_files_byte_identical": 71,
+  "baseline_changed_only": [
+    "README.md additive prefix"
+  ],
+  "baseline_README_original_body_exact": true,
+  "LICENSE_NOTICE_unchanged": true,
+  "first_study_original_remote_code_results_unchanged": true,
+  "MMTok_notice_files_retained": 3,
+  "MMTok_operative_terms_match": true,
+  "held10_candidate_count": 0,
+  "all11_holds_absent": true,
+  "new_python_files": 6,
+  "new_experimental_python_AST_unchanged": 5,
+  "original_C_worktree_candidates_unchanged": 201,
+  "original_C_status_index_HEAD_unchanged": true,
+  "secret_findings": [],
+  "broken_relative_links": [],
+  "README_numbers_match": true,
+  "CPU_count_reproduction": {
+    "status": "PASS",
+    "images": 200,
+    "questions": 1200,
+    "methods": [
+      "full",
+      "s2_l",
+      "s2_u",
+      "s2_c"
+    ],
+    "metrics": {
+      "full": {
+        "F1": 0.8548094373865699,
+        "accuracy": 0.8333333333333334,
+        "invalid_rate": 0.065,
+        "strict_accuracy": 0.5641666666666667
+      },
+      "s2_l": {
+        "F1": 0.8347031963470319,
+        "accuracy": 0.8091666666666667,
+        "invalid_rate": 0.045,
+        "strict_accuracy": 0.6458333333333334
+      },
+      "s2_u": {
+        "F1": 0.8322639780018332,
+        "accuracy": 0.8058333333333333,
+        "invalid_rate": 0.04583333333333333,
+        "strict_accuracy": 0.6425
+      },
+      "s2_c": {
+        "F1": 0.8290441176470589,
+        "accuracy": 0.8025,
+        "invalid_rate": 0.0475,
+        "strict_accuracy": 0.6408333333333334
+      }
+    },
+    "optional_bootstrap_recomputed": false,
+    "raw_response_parser_replayed": false,
+    "held_helper_imported": false,
+    "model_loads": 0,
+    "GPU_operations": 0,
+    "new_generation": 0,
+    "files_written": 0
+  },
+  "large_revalidation": false,
+  "real_index_staging": false,
+  "commit_push": false,
+  "final_candidate_bytes": 3116539,
+  "candidate_diff_summary": {
+    "candidate_files": 138,
+    "baseline_files": 72,
+    "new_files": 66,
+    "modified_existing": [
+      "README.md"
+    ],
+    "deleted_files": 0,
+    "changed_files": 67,
+    "HOLD_paths": 0,
+    "new_file_bytes": 2010079,
+    "largest_file": "research/second_study/main/FEATURE_COVERAGE.csv",
+    "largest_file_bytes": 496747,
+    "git_stat": "67 files changed, 26931 insertions(+)"
+  },
+  "all_absolute_path_findings": [],
+  "git_diff_check": "PASS",
+  "real_indexes_staged_file_count": 0,
+  "external_review_index_only": true,
+  "remote_main_confirmed": "66bbfaf44770b99473fbe94fdde2554f5c94f368",
+  "extra_checks": {
+    "all_candidate_Python_AST_valid": true,
+    "all_candidate_JSON_valid": true,
+    "all_absolute_paths_absent": true,
+    "first_release_deletions": 0,
+    "S4A_public_copy_trailing_blank_line_removed": true
+  }
+}

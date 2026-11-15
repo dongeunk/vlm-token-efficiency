@@ -1,3 +1,44 @@
+# VLM Token Efficiency — 1차·2차 연구
+
+기존 1차 공개 커밋66bbfaf를 보존하고, 후속1차80이미지 결과와2차 S0–S4-A 결과를 별도 공개 view로 추가하는 검토안이다. Commit·Push는 아직 하지 않았다.
+
+- [1차 후속800/320 결과](research/first_study/README.md) · 기존 30이미지 파일럿 원문은 아래에 그대로 보존.
+- [2차 연구 S0–S4-A](research/second_study/README.md) · [S3-C 본 평가](research/second_study/reports/S3C.md) · [S4-A 원인 분석](research/second_study/reports/S4A.md).
+- [현재 공개 범위·권리/의존성 HOLD](docs/SECOND_STUDY_RELEASE_SCOPE.md) · [새 후보 목록](docs/publication/FILE_LIST.md).
+
+기존 루트 PUBLICATION_MANIFEST.json은66bbfaf의 역사적 snapshot 기록으로 보존한다. 현재 추가 안내가 붙은 README와 새 후보의 hash는 docs/publication/UPLOAD_MANIFEST.json에서 구분한다.
+
+## 2차 본 평가 핵심 결과
+
+SmolVLM-256M-Instruct, GTX1660 SUPER6GB, FP16/eager, batch1, greedy16. Pruning은 Local48+Global16=K64, Local4×4와 공통 Layer-0 ERC/Cell/Global 규칙을 사용했다. 네 방법의 고정200이미지·1200문항·4800 Generation이 완료됐다. 새 준비 과정에서는 GPU/Generation을 하지 않았다.
+
+|방법|Semantic Accuracy|Semantic F1|Invalid/1200|
+|---|---:|---:|---:|
+|Full|83.333%|85.481%|78|
+|S2-L|80.917%|83.470%|54|
+|S2-U|80.583%|83.226%|55|
+|S2-C|80.250%|82.904%|57|
+
+주 비교 C−L F1은 **−0.566%p**, 기존 image-paired bootstrap95%CI **[−1.575,+0.432]%p**다. Coverage Allocation의 성능 우위는 확인되지 않았다. 공식 POPE Random 부분집합이며 전체 benchmark 점수가 아니다. Invalid를 분모에서 제거하지 않는다.
+
+S0구조/설계→S1 CPU→S2 Full/No-op/Pruning 기능→S3 데이터 고정·다양한 구조 검증·파일럿·본 평가→S4-A CPU 원인 분석으로 진행했다. C의 임시Coverage32 중 최종Local48 보존은평균2.625개였고, C/L 정답 변화는11개 개선·19개 악화였다. 후속 후보는 목적 전달/객체 정렬·demand 범위·생성 길이 민감도이며 아직 실행하지 않았다.
+
+**S²Prune-inspired SmolVLM adaptation**이다. 원본 Qwen S²Prune/CoverPruner 전체 재현으로 표기하지 않는다. 권리/의존성 HOLD 코드는 제외하고, 자체 CPU 평가 요약 부분만 제공한다. 현재 공개 범위는 aggregate-only 재현이며 원시 응답의 Parser 재실행이나 full GPU 실행을 제공하지 않는다.
+
+```console
+python -B tools/reproduce_summary_cpu.py
+```
+
+위 명령은200개 이미지의 저장 count vectors로 본 평가 지표를 검산한다. NumPy가 필요하며 모델/HOLD-helper import와 다운로드·GPU·Generation·파일 쓰기를 차단한다. `--bootstrap` 옵션은 별도로 기존10000회·seed42 CI를 재계산하며, 이번 정리에서는 실행하지 않았다. [소형 데이터와 재현 한계](research/second_study/README.md).
+
+기존 LICENSE/NOTICE와 MMTok 저작권·SPDX 고지는 유지한다. [기존 라이선스 범위](docs/LICENSING.md)와 [이번 추가 범위](docs/SECOND_STUDY_RELEASE_SCOPE.md)를 구분한다. 원본 C 작업 폴더·로컬 변경·기존 실험 결과는 이동/수정하지 않았다.
+
+---
+
+## 아래는66bbfaf의 1차 README 원문 — 본문 그대로 보존
+
+과거의 파일 수·준비/실행 상태는 원래 공개 시점의 기록이다. 현재 추가 공개 범위는 위 링크와 addendum을 따른다.
+
 # Visual Token Pruning: Representational Coverage and Spatial Floors
 
 **Phase-one research snapshot | historical 30-question pilot**

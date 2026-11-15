@@ -1,0 +1,876 @@
+{
+  "version": 2,
+  "base_commit": "66bbfaf44770b99473fbe94fdde2554f5c94f368",
+  "remote": "https://github.com/dongeunk/vlm-token-efficiency.git",
+  "status": "SEPARATE_WORKTREE_REVIEW_ONLY",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "kind": "baseline_preserved",
+      "bytes": 88,
+      "sha256": "36f565689df342e074e725f44031bc7fbd5aacaa80c9e538fe9d6f7a595b889a"
+    },
+    {
+      "path": ".gitignore",
+      "kind": "baseline_preserved",
+      "bytes": 412,
+      "sha256": "bec54be3f5e960cc320f5f9359431838fb5a2c1d7689478942785b8b1c882684"
+    },
+    {
+      "path": "EXCLUSIONS.json",
+      "kind": "baseline_preserved",
+      "bytes": 27141,
+      "sha256": "ce62838ccb02b64b4a631c6020b20bd362be16f657ead4fc5f4b86c711565d71"
+    },
+    {
+      "path": "EXCLUSIONS.md",
+      "kind": "baseline_preserved",
+      "bytes": 20401,
+      "sha256": "8777b00ba66e4a60a7ce5cfdfb643fa11377f647411261a0f56a8e6058d679c8"
+    },
+    {
+      "path": "LICENSE",
+      "kind": "baseline_preserved",
+      "bytes": 11560,
+      "sha256": "3ddf9be5c28fe27dad143a5dc76eea25222ad1dd68934a047064e56ed2fa40c5"
+    },
+    {
+      "path": "NOTICE",
+      "kind": "baseline_preserved",
+      "bytes": 2130,
+      "sha256": "5bd6ab346eab236dbb17c1ac92bc1e66e3a01fae6c988e8e5f8a540f8982c34b"
+    },
+    {
+      "path": "PUBLICATION_MANIFEST.json",
+      "kind": "baseline_preserved",
+      "bytes": 113258,
+      "sha256": "8a1084d00d39f20eb7a63b81ba75be63d6a1b4679d928dc70bfcaa549a94bccf"
+    },
+    {
+      "path": "PUBLIC_FILES.md",
+      "kind": "baseline_preserved",
+      "bytes": 9117,
+      "sha256": "71cedda9f99602f19f91c3e6c4ec63439fd5d7d64a7e0f34bb89b49ff59535b9"
+    },
+    {
+      "path": "README.md",
+      "kind": "baseline_preserved",
+      "bytes": 16691,
+      "sha256": "062aa0920d543cda4bca9f8de4493b3935e33d2d7ef69f5a17af30b8a1d95223"
+    },
+    {
+      "path": "SECURITY_REVIEW.md",
+      "kind": "baseline_preserved",
+      "bytes": 3135,
+      "sha256": "70a7231b326b758cd8f66b6b1f10c60527ba79b555b9a3ae9dde902e961401b5"
+    },
+    {
+      "path": "docs/CODE_AVAILABILITY.md",
+      "kind": "baseline_preserved",
+      "bytes": 4845,
+      "sha256": "e09b70dd868b4c0417b7f8843dd1a393bd5e506e0642e6bf6c3648b53e9d0cc9"
+    },
+    {
+      "path": "docs/ETHICS_AND_RELEASE_SCOPE.md",
+      "kind": "baseline_preserved",
+      "bytes": 6644,
+      "sha256": "9205d3cf40cecaad2458cf3bf73074243c5444d7edec12d0a3245576496f43e3"
+    },
+    {
+      "path": "docs/HETEROGENEITY.md",
+      "kind": "baseline_preserved",
+      "bytes": 5989,
+      "sha256": "161b01cc98c57a1f1e875c31f2e988130a90790856ce73618f889077c07bec65"
+    },
+    {
+      "path": "docs/LICENSING.md",
+      "kind": "baseline_preserved",
+      "bytes": 5773,
+      "sha256": "9bfaa2e70b1ab546b11f02db69c3c1786987d6c7be2f26d537e179babecbaa6a"
+    },
+    {
+      "path": "docs/LITERATURE.md",
+      "kind": "baseline_preserved",
+      "bytes": 9371,
+      "sha256": "11b5900976e31958979a260a9810e268f0326769b6e60c18b2423de9da931b75"
+    },
+    {
+      "path": "docs/METHODS.md",
+      "kind": "baseline_preserved",
+      "bytes": 5721,
+      "sha256": "aa376546fe634c3280e3c33c71b8d8367aa68e985016f3253ec7b1ee7cb1de4f"
+    },
+    {
+      "path": "docs/REPRODUCIBILITY.md",
+      "kind": "baseline_preserved",
+      "bytes": 7204,
+      "sha256": "33d98436a88f6e48b799e0916cbc3422dc41306827bacc378d7e15d9031f4ed6"
+    },
+    {
+      "path": "docs/RESULTS.md",
+      "kind": "baseline_preserved",
+      "bytes": 5154,
+      "sha256": "9abbe019f9f89bcbef7df622b207cd4327efdb016ae0df81651c1a4a0ca9d6a9"
+    },
+    {
+      "path": "docs/SECOND_STUDY_RELEASE_SCOPE.md",
+      "kind": "new_public_candidate",
+      "bytes": 5046,
+      "sha256": "430c5d61a8de2216545bb83b89f9181597ffe637d78034ef269de0f05988d4ab"
+    },
+    {
+      "path": "docs/publication/FILE_LIST.md",
+      "kind": "new_public_candidate",
+      "bytes": null,
+      "sha256": null,
+      "self_describing_metadata": true
+    },
+    {
+      "path": "docs/publication/PREPARATION_REPORT.md",
+      "kind": "new_public_candidate",
+      "bytes": null,
+      "sha256": null,
+      "self_describing_metadata": true
+    },
+    {
+      "path": "docs/publication/PROVENANCE.json",
+      "kind": "new_public_candidate",
+      "bytes": null,
+      "sha256": null,
+      "self_describing_metadata": true
+    },
+    {
+      "path": "docs/publication/UPLOAD_MANIFEST.json",
+      "kind": "new_public_candidate",
+      "bytes": null,
+      "sha256": null,
+      "self_describing_metadata": true
+    },
+    {
+      "path": "docs/publication/VALIDATION.json",
+      "kind": "new_public_candidate",
+      "bytes": null,
+      "sha256": null,
+      "self_describing_metadata": true
+    },
+    {
+      "path": "environment/observed_versions.json",
+      "kind": "baseline_preserved",
+      "bytes": 604,
+      "sha256": "3b29ee341bd5c04b407b2c6ac92915a79b65cf4271e450afd27a774633d07d03"
+    },
+    {
+      "path": "examples/README_pope_controlled_comparison.md",
+      "kind": "baseline_preserved",
+      "bytes": 1644,
+      "sha256": "80b2e507746f2230097a83d6780931b27bb0ed8548b711f2c6c7eea33805d9e2"
+    },
+    {
+      "path": "examples/diagnose_global_coverage.py",
+      "kind": "baseline_preserved",
+      "bytes": 12249,
+      "sha256": "fed371423ae6e4b1fd21dd5458efc4ed683b94a7704b14880f97b947be4a9c1f"
+    },
+    {
+      "path": "examples/diagnose_matched_random.py",
+      "kind": "baseline_preserved",
+      "bytes": 10625,
+      "sha256": "d39f4e22f201e0d447324454df29a887a2fd00852ef553bb0fb33275a9c7fee9"
+    },
+    {
+      "path": "examples/diagnose_spatial_budgets.py",
+      "kind": "baseline_preserved",
+      "bytes": 10682,
+      "sha256": "bcf08b012751639beeaadec6348bd495f62b9f7c8cde4ad92bcfdd2cb2237b98"
+    },
+    {
+      "path": "examples/download_pope_pilot_images.py",
+      "kind": "baseline_preserved",
+      "bytes": 8389,
+      "sha256": "76a36126ad9e184cdb8422786024ba8a0d176e7e826c9e1b8433df264f38d972"
+    },
+    {
+      "path": "examples/inspect_llm_input.py",
+      "kind": "baseline_preserved",
+      "bytes": 7238,
+      "sha256": "1bd96881c6f01163f02718caa2789dcc0c856f6d726448bcf04d7d5fbac276e7"
+    },
+    {
+      "path": "examples/inspect_visual_tokens.py",
+      "kind": "baseline_preserved",
+      "bytes": 4878,
+      "sha256": "ec825b115f0bddf1c13d614a4227cba3e93bb53c37415d80f66d64cf71d91c75"
+    },
+    {
+      "path": "examples/plot_pope_spatial_heterogeneity.py",
+      "kind": "baseline_preserved",
+      "bytes": 18311,
+      "sha256": "786dd746f201814b0be7170d0278218b91ff3dc94d3f91af2e06643733269ac2"
+    },
+    {
+      "path": "examples/report_pope_spatial_heterogeneity.py",
+      "kind": "baseline_preserved",
+      "bytes": 36747,
+      "sha256": "c3920bea264bb199d5e48cf96798d86bbec20e36a9f518c6c86d48b6bfb422d1"
+    },
+    {
+      "path": "examples/rescore_pope_semantic.py",
+      "kind": "baseline_preserved",
+      "bytes": 13871,
+      "sha256": "41f991ba4f1cd0d7aa47ea5c637113993f2218b679a04710487592218b3a0270"
+    },
+    {
+      "path": "examples/run_global_coverage.py",
+      "kind": "baseline_preserved",
+      "bytes": 11357,
+      "sha256": "b25cbcbaa9e5d539fc8b25449c38464bebb7ed086e305af995a4658dfae38f57"
+    },
+    {
+      "path": "examples/run_pope_pilot.py",
+      "kind": "baseline_preserved",
+      "bytes": 16843,
+      "sha256": "37c4f5acf2dc4d8989f903f3b463bd36cb4106c1f837eaaef02e5589e63ea1f8"
+    },
+    {
+      "path": "examples/run_pope_pruning_smoke.py",
+      "kind": "baseline_preserved",
+      "bytes": 20938,
+      "sha256": "8519582f9870e3e7c75ca7f2e40f4fa5cc6608428f589320107fa1f8814bff35"
+    },
+    {
+      "path": "examples/run_random_pruning.py",
+      "kind": "baseline_preserved",
+      "bytes": 10669,
+      "sha256": "053aaf924fc5e9ee853a50ff3e8ea5ef133179cf65af675e598db61922a90e8b"
+    },
+    {
+      "path": "examples/run_small_vlm.py",
+      "kind": "baseline_preserved",
+      "bytes": 2518,
+      "sha256": "fb88bc5757a5734df2c8b6ca0d320298033bf2e96114e813771071365556a130"
+    },
+    {
+      "path": "examples/run_spatial_floor_coverage.py",
+      "kind": "baseline_preserved",
+      "bytes": 11550,
+      "sha256": "936b3373454ec556f8c42fdf6014a2e1130b43ae1560245137b2b4ecac774b52"
+    },
+    {
+      "path": "examples/test_noop_visual_tokens.py",
+      "kind": "baseline_preserved",
+      "bytes": 7229,
+      "sha256": "06d0ba7a779eaacafdc6e3e4b63a6b96a411c7c2ae6a27969eea092f90b2800b"
+    },
+    {
+      "path": "research/first_study/README.md",
+      "kind": "new_public_candidate",
+      "bytes": 1326,
+      "sha256": "7562322e65d0bd0bc23486227718a02e9ef56434c9fd3120e4319f6b5b80da41"
+    },
+    {
+      "path": "research/first_study/paired320/metrics.json",
+      "kind": "new_public_candidate",
+      "bytes": 15180,
+      "sha256": "a09acc94987bcf26cffd64e9b31a4f82731a8a3910d7f7c36e99251591ed8c09"
+    },
+    {
+      "path": "research/first_study/paired320/paired_bootstrap_CI.json",
+      "kind": "new_public_candidate",
+      "bytes": 1877,
+      "sha256": "630da70e0b904914bf7a447c926d6895b169beb23123a88710d5e46644adbe91"
+    },
+    {
+      "path": "research/first_study/pope80/metrics.json",
+      "kind": "new_public_candidate",
+      "bytes": 37565,
+      "sha256": "bb393d27875ae06de705b014eb3671acb3dd8e63a768b9387e6be026d10d1ab7"
+    },
+    {
+      "path": "research/first_study/pope80/paired_comparisons.json",
+      "kind": "new_public_candidate",
+      "bytes": 16190,
+      "sha256": "758e123e0faaffc95247bc761ac99bde8034c99729f29165f797b502a1430692"
+    },
+    {
+      "path": "research/first_study/reports/floor_vs_no_floor.md",
+      "kind": "new_public_candidate",
+      "bytes": 23874,
+      "sha256": "297628bb285e3e63599a817b7a658c749ef4c75eb3a33bb29283e07c379e0027"
+    },
+    {
+      "path": "research/first_study/reports/pope80_five_methods.md",
+      "kind": "new_public_candidate",
+      "bytes": 16131,
+      "sha256": "a06dc2e7d267b133a801751e1a589834f6fd1eeda590a3489652bf70eca9af3d"
+    },
+    {
+      "path": "research/requirements-summary.txt",
+      "kind": "new_public_candidate",
+      "bytes": 91,
+      "sha256": "1dac291ca86da3096e6376640841c6af05e4cb66cd2599f63f592f6c6d1b519d"
+    },
+    {
+      "path": "research/second_study/README.md",
+      "kind": "new_public_candidate",
+      "bytes": 2605,
+      "sha256": "a11a9ecf94942deee2e4ef1a58041d258b818785abd1b0bbe5c9da1f25704acc"
+    },
+    {
+      "path": "research/second_study/config/cohort_ids.json",
+      "kind": "new_public_candidate",
+      "bytes": 471479,
+      "sha256": "62f2e1b484435b93ca28d81aa8855d46c8d853cc949ce02e4e8ff7bfaa1c089e"
+    },
+    {
+      "path": "research/second_study/config/main_config_public.json",
+      "kind": "new_public_candidate",
+      "bytes": 9159,
+      "sha256": "4ef613da44681de8078c592d9cc80ab8f059f79993bc11bec7d32fdd0607865a"
+    },
+    {
+      "path": "research/second_study/config/protocol_public.json",
+      "kind": "new_public_candidate",
+      "bytes": 9920,
+      "sha256": "df6768748f097ecb779fd8b459efc12b89c99487b6454b09cce75bb09209204f"
+    },
+    {
+      "path": "research/second_study/figures/COVERAGE_VS_ACCURACY.png",
+      "kind": "new_public_candidate",
+      "bytes": 46326,
+      "sha256": "2e102629f4f2216765ac173dc36c2e1b09567fdfc0f32d912826d04edbb17a68"
+    },
+    {
+      "path": "research/second_study/figures/REGION_BUDGETS.png",
+      "kind": "new_public_candidate",
+      "bytes": 201215,
+      "sha256": "7effbf882c39dbf42eec13265dc72b4cf832d583119a26e4762accbc0f60bacd"
+    },
+    {
+      "path": "research/second_study/main/FEATURE_COVERAGE.csv",
+      "kind": "new_public_candidate",
+      "bytes": 496747,
+      "sha256": "1e3a095c026de7761ecc739bf034f06897e40dd9e0438c21b8fac1b46bd9245e"
+    },
+    {
+      "path": "research/second_study/main/IMAGE_LEVEL_PRIMARY_DELTAS.jsonl",
+      "kind": "new_public_candidate",
+      "bytes": 37537,
+      "sha256": "0022e0efbe22e9dc22dc332b1565d34ca77773c13037d5c463b356d9b0d04d6e"
+    },
+    {
+      "path": "research/second_study/main/IMAGE_REGION_BUDGET_DIFFERENCES.jsonl",
+      "kind": "new_public_candidate",
+      "bytes": 176195,
+      "sha256": "f664edb5cbc2110aed74aa8de60655feaa0dc2e0071ac6deb503a068917e305a"
+    },
+    {
+      "path": "research/second_study/main/INVALID_TRUNCATION_DETAIL.json",
+      "kind": "new_public_candidate",
+      "bytes": 3843,
+      "sha256": "1ec59a816083cb639a1af669b325f56732186d402c288e0438e86ca551b6f128"
+    },
+    {
+      "path": "research/second_study/main/LATENCY_SUMMARY.json",
+      "kind": "new_public_candidate",
+      "bytes": 4400,
+      "sha256": "8e312159e9151c7740a791d625d50ac1578523ff2ff7c1b6a2922f50a0081c74"
+    },
+    {
+      "path": "research/second_study/main/MECHANISM_SUMMARY.json",
+      "kind": "new_public_candidate",
+      "bytes": 954,
+      "sha256": "9d1918abd414bd17608ae78481121a7f1721cd6c1af7c6a866ab82614b118e20"
+    },
+    {
+      "path": "research/second_study/main/METHOD_COMPARISON.csv",
+      "kind": "new_public_candidate",
+      "bytes": 836,
+      "sha256": "70238c6408012d40ff2d87241e4738bfdd64a68492c2ec3154bfa2a26f28e4de"
+    },
+    {
+      "path": "research/second_study/main/PAIRED_BOOTSTRAP_10000.json",
+      "kind": "new_public_candidate",
+      "bytes": 7674,
+      "sha256": "f6c727402b9ed6d2a7f44807fc6f241b7989b86b7b7c7c6778fbafb9d6736d99"
+    },
+    {
+      "path": "research/second_study/main/TOKEN_STRUCTURE_METRICS.json",
+      "kind": "new_public_candidate",
+      "bytes": 29777,
+      "sha256": "14c6cdeede19baad9219ef99ce0c5dbb55c4d491b97bbd9f04e07313e06c4868"
+    },
+    {
+      "path": "research/second_study/main/per_image.jsonl",
+      "kind": "new_public_candidate",
+      "bytes": 36964,
+      "sha256": "848b8f70daea1b72d777c49303104676b0d71eecab2fb6b3c6e014397356ffcb"
+    },
+    {
+      "path": "research/second_study/reports/S0/EXPERIMENT_PROTOCOL.md",
+      "kind": "new_public_candidate",
+      "bytes": 12782,
+      "sha256": "83cc1504d086edd2299c840a5ab3994ccc76fc78c5ea15b4e1c057b70b3892be"
+    },
+    {
+      "path": "research/second_study/reports/S0/GPU_MEMORY_AND_SMOKE_PLAN.md",
+      "kind": "new_public_candidate",
+      "bytes": 10145,
+      "sha256": "16a115722bd2810fc116efe946e75ad2bcf0bfc13a203bb4cf0c75a2df2ab1f1"
+    },
+    {
+      "path": "research/second_study/reports/S0/LAYER0_ERC_FEASIBILITY.md",
+      "kind": "new_public_candidate",
+      "bytes": 10739,
+      "sha256": "f1c1deba6b203b23c3ee09cdf8753a4d81f417e906b56c52b6e5649e840a4056"
+    },
+    {
+      "path": "research/second_study/reports/S0/NEXT_IMPLEMENTATION_PLAN.md",
+      "kind": "new_public_candidate",
+      "bytes": 9611,
+      "sha256": "a93a991ba030af89a62fe116e8a708d1afebd8726a0acd06888516a8b693101e"
+    },
+    {
+      "path": "research/second_study/reports/S0/SMOLVLM_ARCHITECTURE_AUDIT.md",
+      "kind": "new_public_candidate",
+      "bytes": 12419,
+      "sha256": "51cb27ba7100cf97340e74ebab4a8fa50f7f5f4c6e74d4bc28bf8b6f8f3c8f10"
+    },
+    {
+      "path": "research/second_study/reports/S0/SPATIAL_ALLOCATION_ADAPTATION.md",
+      "kind": "new_public_candidate",
+      "bytes": 10870,
+      "sha256": "4bfa8295df3b644d8a3e78a948239dbfb96d0824b89f2160dd7f3ca450ce9367"
+    },
+    {
+      "path": "research/second_study/reports/S1.md",
+      "kind": "new_public_candidate",
+      "bytes": 7732,
+      "sha256": "c2e4de6bb9e326a4b1dcd282c506e862609c8920a016f414dd35495f5e74ccd2"
+    },
+    {
+      "path": "research/second_study/reports/S1/ALLOCATION_SPEC.md",
+      "kind": "new_public_candidate",
+      "bytes": 5242,
+      "sha256": "55c7b8ba214f086e124b999ceab9f9b0aa20dfe56511619311a343344ef4968e"
+    },
+    {
+      "path": "research/second_study/reports/S1/CELL_ERC_VALIDATION.md",
+      "kind": "new_public_candidate",
+      "bytes": 3943,
+      "sha256": "e99fadf4c2a9b0b32b9a66f8c58b811cf6973d5a8b0ae530fb9d6123ee563e62"
+    },
+    {
+      "path": "research/second_study/reports/S1/MAPPING_SPEC.md",
+      "kind": "new_public_candidate",
+      "bytes": 3938,
+      "sha256": "7b885ff951e6d0943bcb71fe1bedae124d74ec432151040d689c4b767ce22e8c"
+    },
+    {
+      "path": "research/second_study/reports/S1/MOCK_PREFILL_CACHE_CONTRACT.md",
+      "kind": "new_public_candidate",
+      "bytes": 4942,
+      "sha256": "947ff08d61e5c376865ae8943824ea25370fe96a5084dd0e45952ed96d7af8a1"
+    },
+    {
+      "path": "research/second_study/reports/S2A.md",
+      "kind": "new_public_candidate",
+      "bytes": 7454,
+      "sha256": "11545cff709fad96f964e7ae50df5b8dd37eae324b0729cd16de275a64d42ce3"
+    },
+    {
+      "path": "research/second_study/reports/S2A/ROPE_KV_APPEND_AUDIT.md",
+      "kind": "new_public_candidate",
+      "bytes": 2942,
+      "sha256": "6ff8c3e0177f0c8128feaec4e5f0cacf297885b3dfdb7423b74ad0036d2bcf5e"
+    },
+    {
+      "path": "research/second_study/reports/S2B.md",
+      "kind": "new_public_candidate",
+      "bytes": 7908,
+      "sha256": "1969349417e31f6dd82217fdbee38de6c31ca1b13c18dc25a961d4e76201bfd9"
+    },
+    {
+      "path": "research/second_study/reports/S2B/ALLOCATION_AND_SELECTION.md",
+      "kind": "new_public_candidate",
+      "bytes": 4544,
+      "sha256": "0e4df4760a078d50a2f807de86c432f89571f31d262ea44abe34e33a17b8da85"
+    },
+    {
+      "path": "research/second_study/reports/S2B/ROPE_KV_APPEND_AUDIT.md",
+      "kind": "new_public_candidate",
+      "bytes": 3424,
+      "sha256": "c495b9845db7ec7d2df8f99b1b420461412f8be8c301efbd451a23c0d2fb78e6"
+    },
+    {
+      "path": "research/second_study/reports/S3A.md",
+      "kind": "new_public_candidate",
+      "bytes": 12188,
+      "sha256": "2f188bdbd5e56927f75812167b6a06ac3477b65a59a38870eb7b5a81b864b438"
+    },
+    {
+      "path": "research/second_study/reports/S3A/EVALUATION_PROTOCOL.md",
+      "kind": "new_public_candidate",
+      "bytes": 12410,
+      "sha256": "deab096c30bbe87507f655e488705bddbea9f2a14379683cf1d293620641bd96"
+    },
+    {
+      "path": "research/second_study/reports/S3A/PHASE_S3B_GPU_GATE_AND_PILOT_PLAN.md",
+      "kind": "new_public_candidate",
+      "bytes": 7634,
+      "sha256": "f8fa2c15971b98bea891b65fac44227287df5871cf320436bfcbbd7c901c7690"
+    },
+    {
+      "path": "research/second_study/reports/S3A/RUN_RECORD_SCHEMA.md",
+      "kind": "new_public_candidate",
+      "bytes": 6811,
+      "sha256": "d265d4e9e549be479e15d8a49af09a3000856a99e0bcb617cbbd5814751f0fb5"
+    },
+    {
+      "path": "research/second_study/reports/S3B1.md",
+      "kind": "new_public_candidate",
+      "bytes": 10532,
+      "sha256": "411fd43f5ad8fcbb594e11196ae17564bcb28843699e1591e79f540309db5fc3"
+    },
+    {
+      "path": "research/second_study/reports/S3B1/ACTUAL_MAPPING_AND_576.md",
+      "kind": "new_public_candidate",
+      "bytes": 4180,
+      "sha256": "6b97e39763bb8ef2d748f8982bfda30350096f8c55fed5ec21ef56a0fe3ffd5f"
+    },
+    {
+      "path": "research/second_study/reports/S3B1/FULL_PARITY_AND_CACHE.md",
+      "kind": "new_public_candidate",
+      "bytes": 4010,
+      "sha256": "164eef4fc5b4e4f6a8a950631800243f1343309aeb3eb17cf6972f7c56ccfec7"
+    },
+    {
+      "path": "research/second_study/reports/S3B2.md",
+      "kind": "new_public_candidate",
+      "bytes": 10902,
+      "sha256": "df6286653adbe3186758c1373a8df1c2cc770115040d2903e66052553c01ad91"
+    },
+    {
+      "path": "research/second_study/reports/S3B2/CONFIG_AND_EXECUTION_PROTOCOL.md",
+      "kind": "new_public_candidate",
+      "bytes": 8070,
+      "sha256": "53cd8cc746576af91687a673a9ff9e391520f9c14bbd21f7d85f63e92e46b28f"
+    },
+    {
+      "path": "research/second_study/reports/S3C.md",
+      "kind": "new_public_candidate",
+      "bytes": 8919,
+      "sha256": "61cf5daed3a539489beef16f08795e3517fdfbfc1b636df28db062d3d3b7846c"
+    },
+    {
+      "path": "research/second_study/reports/S3C/NEXT_ABLATION_CANDIDATES.md",
+      "kind": "new_public_candidate",
+      "bytes": 1760,
+      "sha256": "228f1d5feda9c947bde1f127442797c86653f086f7adbe4604714737dfaf5153"
+    },
+    {
+      "path": "research/second_study/reports/S3C/RUN_PROTOCOL.md",
+      "kind": "new_public_candidate",
+      "bytes": 5044,
+      "sha256": "076eda2b8cb5a35037020043bfe7c4fcccf331b9660b2bdbb952ff1a2227e327"
+    },
+    {
+      "path": "research/second_study/reports/S4A.md",
+      "kind": "new_public_candidate",
+      "bytes": 13512,
+      "sha256": "822efbaf99963815156ef8b001b749559ad5f14802ffd6717337e9c3fe3ea52e"
+    },
+    {
+      "path": "research/second_study/reports/qwen_cpu_background.md",
+      "kind": "new_public_candidate",
+      "bytes": 10101,
+      "sha256": "2eadf98557a2b32ce63a5516081031833ba43343a303834a8bb3bcb10a68171d"
+    },
+    {
+      "path": "results/allocation_comparison/aggregate_results.json",
+      "kind": "baseline_preserved",
+      "bytes": 19910,
+      "sha256": "7963d4ae9b3e7f53e51350f10b1103342d7026be50aa418ee2b38adc6755bf44"
+    },
+    {
+      "path": "results/pope_controlled_comparison/full/aggregate_metrics.json",
+      "kind": "baseline_preserved",
+      "bytes": 38849,
+      "sha256": "66340dde112d6698ea810cf8fb878df72498563df3b69367156557688e7ea460"
+    },
+    {
+      "path": "results/pope_controlled_comparison/full/run_summary.json",
+      "kind": "baseline_preserved",
+      "bytes": 749,
+      "sha256": "c0e3c68232337447acf56934beaa8731f493675814b711fb171e698aef335ade"
+    },
+    {
+      "path": "results/pope_controlled_comparison/smoke/aggregate_summary.json",
+      "kind": "baseline_preserved",
+      "bytes": 802,
+      "sha256": "2e595b39c9ccc351b87529b54565f87d5d4eeeca5d7e5b4c95dbf4850f78457f"
+    },
+    {
+      "path": "results/pope_pilot/full_model_seed42/aggregate_summary.json",
+      "kind": "baseline_preserved",
+      "bytes": 1354,
+      "sha256": "f58a0561ba766a6729093334935075d2a147c141961a257c46a2171e77714210"
+    },
+    {
+      "path": "results/pope_pilot/semantic_review/aggregate_summary.json",
+      "kind": "baseline_preserved",
+      "bytes": 2719,
+      "sha256": "a88924a400d521101fd1cb103e1f623d9353af807e345c745fe2c2cdec237c8f"
+    },
+    {
+      "path": "results/pope_pruning_smoke/aggregate_summary.json",
+      "kind": "baseline_preserved",
+      "bytes": 1676,
+      "sha256": "87f3aea7abcdcfce9efc2fe4b826571b401ef4278423570a70a781913e11279e"
+    },
+    {
+      "path": "results/pope_spatial_heterogeneity_30/aggregate_summary.json",
+      "kind": "baseline_preserved",
+      "bytes": 11415,
+      "sha256": "6c1c9d3ff7458f3114527443c9a389cccfe22a17a754ddcf6e39869670d43fda"
+    },
+    {
+      "path": "results/pope_spatial_heterogeneity_30/figures/accuracy_by_heterogeneity_group.png",
+      "kind": "baseline_preserved",
+      "bytes": 98156,
+      "sha256": "fac99603dfb2b9a2f3831529da1530dc3acd66f886f90bbe534c85bfc8ba04ea"
+    },
+    {
+      "path": "results/pope_spatial_heterogeneity_30/figures/gc_zero_regions_vs_heterogeneity.png",
+      "kind": "baseline_preserved",
+      "bytes": 94285,
+      "sha256": "dc5ad1f584a32fe86276d43759fc808f094aa55974c51b8d421d9df1903e7373"
+    },
+    {
+      "path": "results/pope_spatial_heterogeneity_30/figures/heterogeneity_vs_ours_minus_gc.png",
+      "kind": "baseline_preserved",
+      "bytes": 76878,
+      "sha256": "36b9b7fd3158f146d4451814e44b8ee4ec98ee4bf6e2380ff0a9286ea5955a66"
+    },
+    {
+      "path": "results/pope_spatial_heterogeneity_30/group_comparison.csv",
+      "kind": "baseline_preserved",
+      "bytes": 3487,
+      "sha256": "3de6e8686978c6531bc41b36ff135d89b4861d6af0e338259e23c9a381c9d3b5"
+    },
+    {
+      "path": "results/pope_spatial_heterogeneity_30/paired_group_comparison.csv",
+      "kind": "baseline_preserved",
+      "bytes": 1857,
+      "sha256": "c0eed0cf41cf9327789fa589791d39cf879d8e85b7c8adb97ff8c8ead5f0243d"
+    },
+    {
+      "path": "results/pope_spatial_heterogeneity_30/per_image_metrics.csv",
+      "kind": "baseline_preserved",
+      "bytes": 65076,
+      "sha256": "477d209c5922a56d8d1232b5cd27b4e35ee6682b0040bb2d801a37f49e01fcce"
+    },
+    {
+      "path": "results/pope_spatial_heterogeneity_30/sensitivity.csv",
+      "kind": "baseline_preserved",
+      "bytes": 17163,
+      "sha256": "6494ba2f77d11a37e49a66055dfd6b11dcd6021b6c6075e237011fab4624b621"
+    },
+    {
+      "path": "src/evaluation/controlled_comparison.py",
+      "kind": "baseline_preserved",
+      "bytes": 21651,
+      "sha256": "027c665539e4b38c76488049eba18a765bd8478e3865e590759b143ad1b04b86"
+    },
+    {
+      "path": "src/evaluation/pope.py",
+      "kind": "baseline_preserved",
+      "bytes": 12259,
+      "sha256": "c2a36c1da9f80f409444f708340b1bd1fbe90ea703cd40ee318d0bb7f1294be8"
+    },
+    {
+      "path": "src/evaluation/semantic_yes_no.py",
+      "kind": "baseline_preserved",
+      "bytes": 7819,
+      "sha256": "94aad16f5f2f33b21bbe77a106abe0a0b2a7ac8a8dd3431339927d05ca56987d"
+    },
+    {
+      "path": "src/inference/generation_audit.py",
+      "kind": "baseline_preserved",
+      "bytes": 13357,
+      "sha256": "923ff33bc5e765aa729469363a3f3a66a4f2226cddda5344208c9689c8cc0981"
+    },
+    {
+      "path": "src/inference/pruned_vlm.py",
+      "kind": "baseline_preserved",
+      "bytes": 10347,
+      "sha256": "33c44341ea393fd3d4d82126968929466f4b977f642260b6cd7bba6d5e3928ff"
+    },
+    {
+      "path": "src/pruning/coverage.py",
+      "kind": "baseline_preserved",
+      "bytes": 3697,
+      "sha256": "1298b33d528566f9afb6dd68720c5be2398220a6acfe53b7011b42c7bf3361c2"
+    },
+    {
+      "path": "src/pruning/matched_allocation.py",
+      "kind": "baseline_preserved",
+      "bytes": 10994,
+      "sha256": "a94be8b0089824377fa272e0166669af98e5399fda806a40d9656399429c4498"
+    },
+    {
+      "path": "src/pruning/spatial_floor_coverage.py",
+      "kind": "baseline_preserved",
+      "bytes": 8551,
+      "sha256": "c93fc7244d1f0694525cbb62e4a4065a7a25fa6d0608b61786f7b8ca1d76cb1b"
+    },
+    {
+      "path": "src/smol_s3_eval/__init__.py",
+      "kind": "new_public_candidate",
+      "bytes": 287,
+      "sha256": "77ddbd75118abe4c00a3a929dae0c61df1175607929e37e29e8bbee945720561"
+    },
+    {
+      "path": "src/smol_s3_eval/contracts.py",
+      "kind": "new_public_candidate",
+      "bytes": 10680,
+      "sha256": "a3612c2e96e4a3f8d6be5f304af606a7603d1a421b1daefc8250d40089bcd195"
+    },
+    {
+      "path": "src/smol_s3_eval/lock.py",
+      "kind": "new_public_candidate",
+      "bytes": 10937,
+      "sha256": "5cbdb213de02d09f20a71dbf3e54334d93a00a0d9c9d9c5d2e81158f4ea96ecf"
+    },
+    {
+      "path": "src/smol_s3_eval/scoring.py",
+      "kind": "new_public_candidate",
+      "bytes": 10309,
+      "sha256": "2891321c461edcdebf11b56123ebd0cdcae8c4224f47539c68c6f325db66d6dd"
+    },
+    {
+      "path": "src/smol_s3_eval/statistics.py",
+      "kind": "new_public_candidate",
+      "bytes": 4429,
+      "sha256": "daa46a73e2e6bcbaf8f1ab02a6552845c579e8e51bbe4e8593c3776ba369a837"
+    },
+    {
+      "path": "tests/test_controlled_comparison.py",
+      "kind": "baseline_preserved",
+      "bytes": 20573,
+      "sha256": "11096015679f2359687c7813ddfa08e40225f6ff5a3cdec886a579f486887187"
+    },
+    {
+      "path": "tests/test_coverage.py",
+      "kind": "baseline_preserved",
+      "bytes": 4385,
+      "sha256": "90b32fc8af8cb9ecd7fcce9703f7db29d856f7c86daef97d7db8a66a91732f82"
+    },
+    {
+      "path": "tests/test_coverage_diagnostic.py",
+      "kind": "baseline_preserved",
+      "bytes": 4028,
+      "sha256": "04a0decf2487e593031eb7171d7da04e622ad7a671d974d9a10dc809da08e657"
+    },
+    {
+      "path": "tests/test_generation_audit.py",
+      "kind": "baseline_preserved",
+      "bytes": 10947,
+      "sha256": "4ccd645ef0dd6581c79e3870bbff613bf4304b20ea2c6efc8593dd8ce6e36dc1"
+    },
+    {
+      "path": "tests/test_matched_allocation.py",
+      "kind": "baseline_preserved",
+      "bytes": 13057,
+      "sha256": "ac67d26edb14de15c7167b00b84055ccb0d8b260c18b7ff3b6f22788f06932c2"
+    },
+    {
+      "path": "tests/test_matched_random_diagnostic.py",
+      "kind": "baseline_preserved",
+      "bytes": 4051,
+      "sha256": "577282c48e975617e6f6ec12380e97f924b2013bbaaf77a09831fced8a0f52b9"
+    },
+    {
+      "path": "tests/test_pope.py",
+      "kind": "baseline_preserved",
+      "bytes": 12141,
+      "sha256": "3407109805bba1d70a4565403168ee57db890cebfeb5a05aebaec74f31c4a761"
+    },
+    {
+      "path": "tests/test_pope_pilot.py",
+      "kind": "baseline_preserved",
+      "bytes": 15260,
+      "sha256": "e0b190755e49a923f59898513f44e95672230e42e06b7ab662f35a7d19da3148"
+    },
+    {
+      "path": "tests/test_pruned_vlm.py",
+      "kind": "baseline_preserved",
+      "bytes": 12140,
+      "sha256": "7ada8a72264cb6a06929fdf02741882c5f21eb77d9decd6c4bc63ffadcd611c4"
+    },
+    {
+      "path": "tests/test_semantic_yes_no.py",
+      "kind": "baseline_preserved",
+      "bytes": 8148,
+      "sha256": "9021287c0e1c8aff0965285043fe0f3ef1056c12326c38d69a280a1a68becb47"
+    },
+    {
+      "path": "tests/test_spatial_budget_diagnostic.py",
+      "kind": "baseline_preserved",
+      "bytes": 4244,
+      "sha256": "8458d60460e3c61e7c524fe8e531a53ca1a7cc27862db7dc0949a10904b7ca50"
+    },
+    {
+      "path": "tests/test_spatial_floor_coverage.py",
+      "kind": "baseline_preserved",
+      "bytes": 13046,
+      "sha256": "ac72670f6f2212f38eabc6927e275cecfd329ba6d5d8a1e2911c654ce2464128"
+    },
+    {
+      "path": "tools/reproduce_summary_cpu.py",
+      "kind": "new_public_candidate",
+      "bytes": 3954,
+      "sha256": "aaaebe8258a351264d9d7237d1746a7788f5607f7c6df8c10e15992f8fb14aee"
+    },
+    {
+      "path": "vlm.py",
+      "kind": "baseline_preserved",
+      "bytes": 413,
+      "sha256": "0b69b4d24e32ce8cc95ef9edec733b6861469eff0061ec269a81e33175465e73"
+    }
+  ],
+  "held_paths_excluded": [
+    "examples/analyze_pope_spatial_heterogeneity.py",
+    "examples/compare_allocation_strategies.py",
+    "examples/run_pope_controlled_comparison.py",
+    "src/analysis/spatial_heterogeneity.py",
+    "src/inference/controlled_selectors.py",
+    "src/pruning/s2_style_allocation.py",
+    "tests/test_controlled_runner.py",
+    "tests/test_controlled_selectors.py",
+    "tests/test_pope_heterogeneity_analysis.py",
+    "tests/test_s2_style_allocation.py",
+    "tests/test_spatial_heterogeneity.py"
+  ],
+  "held10_excluded": [
+    "examples/analyze_pope_spatial_heterogeneity.py",
+    "examples/compare_allocation_strategies.py",
+    "examples/run_pope_controlled_comparison.py",
+    "src/analysis/spatial_heterogeneity.py",
+    "src/inference/controlled_selectors.py",
+    "src/pruning/s2_style_allocation.py",
+    "tests/test_controlled_runner.py",
+    "tests/test_controlled_selectors.py",
+    "tests/test_pope_heterogeneity_analysis.py",
+    "tests/test_spatial_heterogeneity.py"
+  ],
+  "original_worktree_modified": false,
+  "first_release_files_deleted": false,
+  "baseline_modified": [
+    "README.md"
+  ],
+  "raw_responses_included": false,
+  "full_gpu_runtime_included": false,
+  "CPU_subset": "stored image counts and frozen statistics only",
+  "commit_push": false,
+  "hash_scope": "bounded publication files; review metadata has null hashes to avoid self-reference; text uses repository LF normalization"
+}

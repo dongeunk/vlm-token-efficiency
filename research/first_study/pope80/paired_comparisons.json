@@ -1,0 +1,688 @@
+{
+  "ours_minus_pure_gc": {
+    "estimates": {
+      "simple_concentrated": {
+        "estimate": -0.05,
+        "ci95": [
+          -0.125,
+          0.0
+        ]
+      },
+      "simple_dispersed": {
+        "estimate": 0.025,
+        "ci95": [
+          -0.05,
+          0.1
+        ]
+      },
+      "complex_concentrated": {
+        "estimate": 0.075,
+        "ci95": [
+          0.0,
+          0.15
+        ]
+      },
+      "complex_dispersed": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "interaction_HD_minus_LC": {
+        "estimate": 0.05,
+        "ci95": [
+          0.0,
+          0.125
+        ]
+      },
+      "all_equal_group_weight": {
+        "estimate": 0.0125,
+        "ci95": [
+          -0.018750000000000003,
+          0.043750000000000004
+        ]
+      }
+    },
+    "transitions": {
+      "all": {
+        "left_only_correct": 5,
+        "right_only_correct": 3,
+        "both_correct": 126,
+        "both_incorrect": 26,
+        "left_semantic_invalid": 4,
+        "right_semantic_invalid": 6,
+        "n": 160,
+        "accuracy_difference": 0.0125
+      },
+      "simple_concentrated": {
+        "left_only_correct": 0,
+        "right_only_correct": 2,
+        "both_correct": 32,
+        "both_incorrect": 6,
+        "left_semantic_invalid": 3,
+        "right_semantic_invalid": 2,
+        "n": 40,
+        "accuracy_difference": -0.05
+      },
+      "simple_dispersed": {
+        "left_only_correct": 2,
+        "right_only_correct": 1,
+        "both_correct": 30,
+        "both_incorrect": 7,
+        "left_semantic_invalid": 1,
+        "right_semantic_invalid": 1,
+        "n": 40,
+        "accuracy_difference": 0.025
+      },
+      "complex_concentrated": {
+        "left_only_correct": 3,
+        "right_only_correct": 0,
+        "both_correct": 30,
+        "both_incorrect": 7,
+        "left_semantic_invalid": 0,
+        "right_semantic_invalid": 3,
+        "n": 40,
+        "accuracy_difference": 0.075
+      },
+      "complex_dispersed": {
+        "left_only_correct": 0,
+        "right_only_correct": 0,
+        "both_correct": 34,
+        "both_incorrect": 6,
+        "left_semantic_invalid": 0,
+        "right_semantic_invalid": 0,
+        "n": 40,
+        "accuracy_difference": 0.0
+      }
+    }
+  },
+  "ours_minus_a_local_only": {
+    "estimates": {
+      "simple_concentrated": {
+        "estimate": -0.05,
+        "ci95": [
+          -0.175,
+          0.075
+        ]
+      },
+      "simple_dispersed": {
+        "estimate": -0.025,
+        "ci95": [
+          -0.075,
+          0.0
+        ]
+      },
+      "complex_concentrated": {
+        "estimate": 0.075,
+        "ci95": [
+          -0.025,
+          0.175
+        ]
+      },
+      "complex_dispersed": {
+        "estimate": 0.0,
+        "ci95": [
+          -0.1,
+          0.1
+        ]
+      },
+      "interaction_HD_minus_LC": {
+        "estimate": 0.05,
+        "ci95": [
+          -0.1,
+          0.2
+        ]
+      },
+      "all_equal_group_weight": {
+        "estimate": 0.0,
+        "ci95": [
+          -0.049999999999999996,
+          0.049999999999999996
+        ]
+      }
+    },
+    "transitions": {
+      "all": {
+        "left_only_correct": 8,
+        "right_only_correct": 8,
+        "both_correct": 123,
+        "both_incorrect": 21,
+        "left_semantic_invalid": 4,
+        "right_semantic_invalid": 3,
+        "n": 160,
+        "accuracy_difference": 0.0
+      },
+      "simple_concentrated": {
+        "left_only_correct": 2,
+        "right_only_correct": 4,
+        "both_correct": 30,
+        "both_incorrect": 4,
+        "left_semantic_invalid": 3,
+        "right_semantic_invalid": 2,
+        "n": 40,
+        "accuracy_difference": -0.05
+      },
+      "simple_dispersed": {
+        "left_only_correct": 0,
+        "right_only_correct": 1,
+        "both_correct": 32,
+        "both_incorrect": 7,
+        "left_semantic_invalid": 1,
+        "right_semantic_invalid": 0,
+        "n": 40,
+        "accuracy_difference": -0.025
+      },
+      "complex_concentrated": {
+        "left_only_correct": 4,
+        "right_only_correct": 1,
+        "both_correct": 29,
+        "both_incorrect": 6,
+        "left_semantic_invalid": 0,
+        "right_semantic_invalid": 1,
+        "n": 40,
+        "accuracy_difference": 0.075
+      },
+      "complex_dispersed": {
+        "left_only_correct": 2,
+        "right_only_correct": 2,
+        "both_correct": 32,
+        "both_incorrect": 4,
+        "left_semantic_invalid": 0,
+        "right_semantic_invalid": 0,
+        "n": 40,
+        "accuracy_difference": 0.0
+      }
+    }
+  },
+  "a_local_only_minus_b_laplacian_quota": {
+    "estimates": {
+      "simple_concentrated": {
+        "estimate": 0.075,
+        "ci95": [
+          -0.025,
+          0.175
+        ]
+      },
+      "simple_dispersed": {
+        "estimate": 0.025,
+        "ci95": [
+          -0.075,
+          0.125
+        ]
+      },
+      "complex_concentrated": {
+        "estimate": 0.05,
+        "ci95": [
+          0.0,
+          0.125
+        ]
+      },
+      "complex_dispersed": {
+        "estimate": 0.0,
+        "ci95": [
+          -0.075,
+          0.075
+        ]
+      },
+      "interaction_HD_minus_LC": {
+        "estimate": -0.075,
+        "ci95": [
+          -0.2,
+          0.05
+        ]
+      },
+      "all_equal_group_weight": {
+        "estimate": 0.0375,
+        "ci95": [
+          -0.00625,
+          0.08125
+        ]
+      }
+    },
+    "transitions": {
+      "all": {
+        "left_only_correct": 10,
+        "right_only_correct": 4,
+        "both_correct": 121,
+        "both_incorrect": 25,
+        "left_semantic_invalid": 3,
+        "right_semantic_invalid": 4,
+        "n": 160,
+        "accuracy_difference": 0.0375
+      },
+      "simple_concentrated": {
+        "left_only_correct": 4,
+        "right_only_correct": 1,
+        "both_correct": 30,
+        "both_incorrect": 5,
+        "left_semantic_invalid": 2,
+        "right_semantic_invalid": 1,
+        "n": 40,
+        "accuracy_difference": 0.075
+      },
+      "simple_dispersed": {
+        "left_only_correct": 3,
+        "right_only_correct": 2,
+        "both_correct": 30,
+        "both_incorrect": 5,
+        "left_semantic_invalid": 0,
+        "right_semantic_invalid": 1,
+        "n": 40,
+        "accuracy_difference": 0.025
+      },
+      "complex_concentrated": {
+        "left_only_correct": 2,
+        "right_only_correct": 0,
+        "both_correct": 28,
+        "both_incorrect": 10,
+        "left_semantic_invalid": 1,
+        "right_semantic_invalid": 1,
+        "n": 40,
+        "accuracy_difference": 0.05
+      },
+      "complex_dispersed": {
+        "left_only_correct": 1,
+        "right_only_correct": 1,
+        "both_correct": 33,
+        "both_incorrect": 5,
+        "left_semantic_invalid": 0,
+        "right_semantic_invalid": 1,
+        "n": 40,
+        "accuracy_difference": 0.0
+      }
+    }
+  },
+  "pure_gc_minus_random": {
+    "estimates": {
+      "simple_concentrated": {
+        "estimate": 0.175,
+        "ci95": [
+          0.025,
+          0.325
+        ]
+      },
+      "simple_dispersed": {
+        "estimate": -0.075,
+        "ci95": [
+          -0.175,
+          0.025
+        ]
+      },
+      "complex_concentrated": {
+        "estimate": -0.025,
+        "ci95": [
+          -0.175,
+          0.125
+        ]
+      },
+      "complex_dispersed": {
+        "estimate": 0.05,
+        "ci95": [
+          -0.05,
+          0.15
+        ]
+      },
+      "interaction_HD_minus_LC": {
+        "estimate": -0.12499999999999999,
+        "ci95": [
+          -0.3,
+          0.05
+        ]
+      },
+      "all_equal_group_weight": {
+        "estimate": 0.03125,
+        "ci95": [
+          -0.03125,
+          0.09375
+        ]
+      }
+    },
+    "transitions": {
+      "all": {
+        "left_only_correct": 16,
+        "right_only_correct": 11,
+        "both_correct": 113,
+        "both_incorrect": 20,
+        "left_semantic_invalid": 6,
+        "right_semantic_invalid": 9,
+        "n": 160,
+        "accuracy_difference": 0.03125
+      },
+      "simple_concentrated": {
+        "left_only_correct": 8,
+        "right_only_correct": 1,
+        "both_correct": 26,
+        "both_incorrect": 5,
+        "left_semantic_invalid": 2,
+        "right_semantic_invalid": 6,
+        "n": 40,
+        "accuracy_difference": 0.175
+      },
+      "simple_dispersed": {
+        "left_only_correct": 1,
+        "right_only_correct": 4,
+        "both_correct": 30,
+        "both_incorrect": 5,
+        "left_semantic_invalid": 1,
+        "right_semantic_invalid": 1,
+        "n": 40,
+        "accuracy_difference": -0.075
+      },
+      "complex_concentrated": {
+        "left_only_correct": 4,
+        "right_only_correct": 5,
+        "both_correct": 26,
+        "both_incorrect": 5,
+        "left_semantic_invalid": 3,
+        "right_semantic_invalid": 1,
+        "n": 40,
+        "accuracy_difference": -0.025
+      },
+      "complex_dispersed": {
+        "left_only_correct": 3,
+        "right_only_correct": 1,
+        "both_correct": 31,
+        "both_incorrect": 5,
+        "left_semantic_invalid": 0,
+        "right_semantic_invalid": 1,
+        "n": 40,
+        "accuracy_difference": 0.05
+      }
+    }
+  },
+  "ours_minus_random": {
+    "estimates": {
+      "simple_concentrated": {
+        "estimate": 0.125,
+        "ci95": [
+          -0.025,
+          0.275
+        ]
+      },
+      "simple_dispersed": {
+        "estimate": -0.05,
+        "ci95": [
+          -0.175,
+          0.075
+        ]
+      },
+      "complex_concentrated": {
+        "estimate": 0.05,
+        "ci95": [
+          -0.1,
+          0.2
+        ]
+      },
+      "complex_dispersed": {
+        "estimate": 0.05,
+        "ci95": [
+          -0.05,
+          0.15
+        ]
+      },
+      "interaction_HD_minus_LC": {
+        "estimate": -0.075,
+        "ci95": [
+          -0.25,
+          0.1
+        ]
+      },
+      "all_equal_group_weight": {
+        "estimate": 0.04375,
+        "ci95": [
+          -0.018750000000000003,
+          0.10625000000000001
+        ]
+      }
+    },
+    "transitions": {
+      "all": {
+        "left_only_correct": 17,
+        "right_only_correct": 10,
+        "both_correct": 114,
+        "both_incorrect": 19,
+        "left_semantic_invalid": 4,
+        "right_semantic_invalid": 9,
+        "n": 160,
+        "accuracy_difference": 0.04375
+      },
+      "simple_concentrated": {
+        "left_only_correct": 7,
+        "right_only_correct": 2,
+        "both_correct": 25,
+        "both_incorrect": 6,
+        "left_semantic_invalid": 3,
+        "right_semantic_invalid": 6,
+        "n": 40,
+        "accuracy_difference": 0.125
+      },
+      "simple_dispersed": {
+        "left_only_correct": 2,
+        "right_only_correct": 4,
+        "both_correct": 30,
+        "both_incorrect": 4,
+        "left_semantic_invalid": 1,
+        "right_semantic_invalid": 1,
+        "n": 40,
+        "accuracy_difference": -0.05
+      },
+      "complex_concentrated": {
+        "left_only_correct": 5,
+        "right_only_correct": 3,
+        "both_correct": 28,
+        "both_incorrect": 4,
+        "left_semantic_invalid": 0,
+        "right_semantic_invalid": 1,
+        "n": 40,
+        "accuracy_difference": 0.05
+      },
+      "complex_dispersed": {
+        "left_only_correct": 3,
+        "right_only_correct": 1,
+        "both_correct": 31,
+        "both_incorrect": 5,
+        "left_semantic_invalid": 0,
+        "right_semantic_invalid": 1,
+        "n": 40,
+        "accuracy_difference": 0.05
+      }
+    }
+  },
+  "a_local_only_minus_random": {
+    "estimates": {
+      "simple_concentrated": {
+        "estimate": 0.175,
+        "ci95": [
+          0.025,
+          0.325
+        ]
+      },
+      "simple_dispersed": {
+        "estimate": -0.025,
+        "ci95": [
+          -0.125,
+          0.075
+        ]
+      },
+      "complex_concentrated": {
+        "estimate": -0.025,
+        "ci95": [
+          -0.175,
+          0.15
+        ]
+      },
+      "complex_dispersed": {
+        "estimate": 0.05,
+        "ci95": [
+          -0.07562499999999943,
+          0.2
+        ]
+      },
+      "interaction_HD_minus_LC": {
+        "estimate": -0.12499999999999999,
+        "ci95": [
+          -0.325,
+          0.075
+        ]
+      },
+      "all_equal_group_weight": {
+        "estimate": 0.04375,
+        "ci95": [
+          -0.025,
+          0.11250000000000002
+        ]
+      }
+    },
+    "transitions": {
+      "all": {
+        "left_only_correct": 19,
+        "right_only_correct": 12,
+        "both_correct": 112,
+        "both_incorrect": 17,
+        "left_semantic_invalid": 3,
+        "right_semantic_invalid": 9,
+        "n": 160,
+        "accuracy_difference": 0.04375
+      },
+      "simple_concentrated": {
+        "left_only_correct": 8,
+        "right_only_correct": 1,
+        "both_correct": 26,
+        "both_incorrect": 5,
+        "left_semantic_invalid": 2,
+        "right_semantic_invalid": 6,
+        "n": 40,
+        "accuracy_difference": 0.175
+      },
+      "simple_dispersed": {
+        "left_only_correct": 2,
+        "right_only_correct": 3,
+        "both_correct": 31,
+        "both_incorrect": 4,
+        "left_semantic_invalid": 0,
+        "right_semantic_invalid": 1,
+        "n": 40,
+        "accuracy_difference": -0.025
+      },
+      "complex_concentrated": {
+        "left_only_correct": 4,
+        "right_only_correct": 5,
+        "both_correct": 26,
+        "both_incorrect": 5,
+        "left_semantic_invalid": 1,
+        "right_semantic_invalid": 1,
+        "n": 40,
+        "accuracy_difference": -0.025
+      },
+      "complex_dispersed": {
+        "left_only_correct": 5,
+        "right_only_correct": 3,
+        "both_correct": 29,
+        "both_incorrect": 3,
+        "left_semantic_invalid": 0,
+        "right_semantic_invalid": 1,
+        "n": 40,
+        "accuracy_difference": 0.05
+      }
+    }
+  },
+  "b_laplacian_quota_minus_random": {
+    "estimates": {
+      "simple_concentrated": {
+        "estimate": 0.1,
+        "ci95": [
+          -0.075,
+          0.275
+        ]
+      },
+      "simple_dispersed": {
+        "estimate": -0.05,
+        "ci95": [
+          -0.15,
+          0.05
+        ]
+      },
+      "complex_concentrated": {
+        "estimate": -0.075,
+        "ci95": [
+          -0.2,
+          0.05
+        ]
+      },
+      "complex_dispersed": {
+        "estimate": 0.05,
+        "ci95": [
+          -0.075,
+          0.175
+        ]
+      },
+      "interaction_HD_minus_LC": {
+        "estimate": -0.05,
+        "ci95": [
+          -0.25,
+          0.15000000000000002
+        ]
+      },
+      "all_equal_group_weight": {
+        "estimate": 0.00625,
+        "ci95": [
+          -0.05625000000000001,
+          0.075
+        ]
+      }
+    },
+    "transitions": {
+      "all": {
+        "left_only_correct": 14,
+        "right_only_correct": 13,
+        "both_correct": 111,
+        "both_incorrect": 22,
+        "left_semantic_invalid": 4,
+        "right_semantic_invalid": 9,
+        "n": 160,
+        "accuracy_difference": 0.00625
+      },
+      "simple_concentrated": {
+        "left_only_correct": 7,
+        "right_only_correct": 3,
+        "both_correct": 24,
+        "both_incorrect": 6,
+        "left_semantic_invalid": 1,
+        "right_semantic_invalid": 6,
+        "n": 40,
+        "accuracy_difference": 0.1
+      },
+      "simple_dispersed": {
+        "left_only_correct": 1,
+        "right_only_correct": 3,
+        "both_correct": 31,
+        "both_incorrect": 5,
+        "left_semantic_invalid": 1,
+        "right_semantic_invalid": 1,
+        "n": 40,
+        "accuracy_difference": -0.05
+      },
+      "complex_concentrated": {
+        "left_only_correct": 2,
+        "right_only_correct": 5,
+        "both_correct": 26,
+        "both_incorrect": 7,
+        "left_semantic_invalid": 1,
+        "right_semantic_invalid": 1,
+        "n": 40,
+        "accuracy_difference": -0.075
+      },
+      "complex_dispersed": {
+        "left_only_correct": 4,
+        "right_only_correct": 2,
+        "both_correct": 30,
+        "both_incorrect": 4,
+        "left_semantic_invalid": 1,
+        "right_semantic_invalid": 1,
+        "n": 40,
+        "accuracy_difference": 0.05
+      }
+    }
+  }
+}

@@ -1,0 +1,798 @@
+{
+  "base_commit": "66bbfaf44770b99473fbe94fdde2554f5c94f368",
+  "baseline_file_count": 72,
+  "baseline_modified_only": "README.md additive prefix; original body exact suffix",
+  "all_existing_source_license_notice_results_preserved": true,
+  "MMTok": {
+    "upstream_revision": "8e2686836ed5bbe05d064f1d1c20e50c73c70b94",
+    "license_text_equal_ignoring_outer_whitespace": false,
+    "files": [
+      {
+        "path": "src/pruning/coverage.py",
+        "decision": "KEEP_REMOTE_BYTES_AND_ALL_NOTICES",
+        "remote_sha256": "1298b33d528566f9afb6dd68720c5be2398220a6acfe53b7011b42c7bf3361c2",
+        "local_AST_equal": true
+      },
+      {
+        "path": "src/pruning/spatial_floor_coverage.py",
+        "decision": "KEEP_REMOTE_BYTES_AND_ALL_NOTICES",
+        "remote_sha256": "c93fc7244d1f0694525cbb62e4a4065a7a25fa6d0608b61786f7b8ca1d76cb1b",
+        "local_AST_equal": true
+      },
+      {
+        "path": "src/pruning/matched_allocation.py",
+        "decision": "KEEP_REMOTE_BYTES_AND_ALL_NOTICES",
+        "remote_sha256": "a94be8b0089824377fa272e0166669af98e5399fda806a40d9656399429c4498",
+        "local_AST_equal": true
+      }
+    ],
+    "operative_terms_equal_ignoring_whitespace": true,
+    "appendix_difference": "upstream Zoom copyright example; existing remote placeholder example, Zoom retained in NOTICE/source"
+  },
+  "new_views": [
+    {
+      "path": "research/first_study/paired320/metrics.json",
+      "source": "research/first_study/paired320/metrics.json",
+      "source_sha256": "a09acc94987bcf26cffd64e9b31a4f82731a8a3910d7f7c36e99251591ed8c09",
+      "mode": "historical_public_view"
+    },
+    {
+      "path": "research/first_study/paired320/paired_bootstrap_CI.json",
+      "source": "research/first_study/paired320/paired_bootstrap_CI.json",
+      "source_sha256": "630da70e0b904914bf7a447c926d6895b169beb23123a88710d5e46644adbe91",
+      "mode": "historical_public_view"
+    },
+    {
+      "path": "research/first_study/pope80/metrics.json",
+      "source": "research/first_study/pope80/metrics.json",
+      "source_sha256": "bb393d27875ae06de705b014eb3671acb3dd8e63a768b9387e6be026d10d1ab7",
+      "mode": "historical_public_view"
+    },
+    {
+      "path": "research/first_study/pope80/paired_comparisons.json",
+      "source": "research/first_study/pope80/paired_comparisons.json",
+      "source_sha256": "758e123e0faaffc95247bc761ac99bde8034c99729f29165f797b502a1430692",
+      "mode": "historical_public_view"
+    },
+    {
+      "path": "research/first_study/reports/floor_vs_no_floor.md",
+      "source": "research/first_study/reports/floor_vs_no_floor.md",
+      "source_sha256": "1277b11d9b2e04828a68eca2aec14075f8e55d651651395ad8befd22e3517182",
+      "mode": "historical_public_view"
+    },
+    {
+      "path": "research/first_study/reports/pope80_five_methods.md",
+      "source": "research/first_study/reports/pope80_five_methods.md",
+      "source_sha256": "5116e9d31afb8da55e81d74d9a4df8580a48cd57f32e837511e60790e8e6823f",
+      "mode": "historical_public_view"
+    },
+    {
+      "path": "research/requirements-summary.txt",
+      "source": "research/requirements-summary.txt",
+      "source_sha256": "1dac291ca86da3096e6376640841c6af05e4cb66cd2599f63f592f6c6d1b519d",
+      "mode": "historical_public_view"
+    },
+    {
+      "path": "research/second_study/config/cohort_ids.json",
+      "source": "research/second_study/config/cohort_ids.json",
+      "source_sha256": "62f2e1b484435b93ca28d81aa8855d46c8d853cc949ce02e4e8ff7bfaa1c089e",
+      "mode": "historical_public_view"
+    },
+    {
+      "path": "research/second_study/config/main_config_public.json",
+      "source": "research/second_study/config/main_config_public.json",
+      "source_sha256": "4ef613da44681de8078c592d9cc80ab8f059f79993bc11bec7d32fdd0607865a",
+      "mode": "historical_public_view"
+    },
+    {
+      "path": "research/second_study/config/protocol_public.json",
+      "source": "research/second_study/config/protocol_public.json",
+      "source_sha256": "df6768748f097ecb779fd8b459efc12b89c99487b6454b09cce75bb09209204f",
+      "mode": "historical_public_view"
+    },
+    {
+      "path": "research/second_study/figures/COVERAGE_VS_ACCURACY.png",
+      "source": "research/second_study/figures/COVERAGE_VS_ACCURACY.png",
+      "source_sha256": "2e102629f4f2216765ac173dc36c2e1b09567fdfc0f32d912826d04edbb17a68",
+      "mode": "historical_public_view"
+    },
+    {
+      "path": "research/second_study/figures/REGION_BUDGETS.png",
+      "source": "research/second_study/figures/REGION_BUDGETS.png",
+      "source_sha256": "7effbf882c39dbf42eec13265dc72b4cf832d583119a26e4762accbc0f60bacd",
+      "mode": "historical_public_view"
+    },
+    {
+      "path": "research/second_study/main/FEATURE_COVERAGE.csv",
+      "source": "research/second_study/main/FEATURE_COVERAGE.csv",
+      "source_sha256": "1e3a095c026de7761ecc739bf034f06897e40dd9e0438c21b8fac1b46bd9245e",
+      "mode": "historical_public_view"
+    },
+    {
+      "path": "research/second_study/main/IMAGE_LEVEL_PRIMARY_DELTAS.jsonl",
+      "source": "research/second_study/main/IMAGE_LEVEL_PRIMARY_DELTAS.jsonl",
+      "source_sha256": "0022e0efbe22e9dc22dc332b1565d34ca77773c13037d5c463b356d9b0d04d6e",
+      "mode": "historical_public_view"
+    },
+    {
+      "path": "research/second_study/main/IMAGE_REGION_BUDGET_DIFFERENCES.jsonl",
+      "source": "research/second_study/main/IMAGE_REGION_BUDGET_DIFFERENCES.jsonl",
+      "source_sha256": "f664edb5cbc2110aed74aa8de60655feaa0dc2e0071ac6deb503a068917e305a",
+      "mode": "historical_public_view"
+    },
+    {
+      "path": "research/second_study/main/INVALID_TRUNCATION_DETAIL.json",
+      "source": "research/second_study/main/INVALID_TRUNCATION_DETAIL.json",
+      "source_sha256": "1ec59a816083cb639a1af669b325f56732186d402c288e0438e86ca551b6f128",
+      "mode": "historical_public_view"
+    },
+    {
+      "path": "research/second_study/main/LATENCY_SUMMARY.json",
+      "source": "research/second_study/main/LATENCY_SUMMARY.json",
+      "source_sha256": "8e312159e9151c7740a791d625d50ac1578523ff2ff7c1b6a2922f50a0081c74",
+      "mode": "historical_public_view"
+    },
+    {
+      "path": "research/second_study/main/MECHANISM_SUMMARY.json",
+      "source": "research/second_study/main/MECHANISM_SUMMARY.json",
+      "source_sha256": "9d1918abd414bd17608ae78481121a7f1721cd6c1af7c6a866ab82614b118e20",
+      "mode": "historical_public_view"
+    },
+    {
+      "path": "research/second_study/main/METHOD_COMPARISON.csv",
+      "source": "research/second_study/main/METHOD_COMPARISON.csv",
+      "source_sha256": "70238c6408012d40ff2d87241e4738bfdd64a68492c2ec3154bfa2a26f28e4de",
+      "mode": "historical_public_view"
+    },
+    {
+      "path": "research/second_study/main/PAIRED_BOOTSTRAP_10000.json",
+      "source": "research/second_study/main/PAIRED_BOOTSTRAP_10000.json",
+      "source_sha256": "f6c727402b9ed6d2a7f44807fc6f241b7989b86b7b7c7c6778fbafb9d6736d99",
+      "mode": "historical_public_view"
+    },
+    {
+      "path": "research/second_study/main/TOKEN_STRUCTURE_METRICS.json",
+      "source": "research/second_study/main/TOKEN_STRUCTURE_METRICS.json",
+      "source_sha256": "14c6cdeede19baad9219ef99ce0c5dbb55c4d491b97bbd9f04e07313e06c4868",
+      "mode": "historical_public_view"
+    },
+    {
+      "path": "research/second_study/main/per_image.jsonl",
+      "source": "research/second_study/main/per_image.jsonl",
+      "source_sha256": "848b8f70daea1b72d777c49303104676b0d71eecab2fb6b3c6e014397356ffcb",
+      "mode": "historical_public_view"
+    },
+    {
+      "path": "research/second_study/reports/S0/EXPERIMENT_PROTOCOL.md",
+      "source": "research/second_study/reports/S0/EXPERIMENT_PROTOCOL.md",
+      "source_sha256": "8fc4929fdc6bc8411c6e60048a78947a4dc9725e125fd782b94d6216a730b162",
+      "mode": "historical_public_view"
+    },
+    {
+      "path": "research/second_study/reports/S0/GPU_MEMORY_AND_SMOKE_PLAN.md",
+      "source": "research/second_study/reports/S0/GPU_MEMORY_AND_SMOKE_PLAN.md",
+      "source_sha256": "4bf57a48fd421b884cd3026bbd9627c1fed551f4ea8e92d02fc1c1bdd203ac58",
+      "mode": "historical_public_view"
+    },
+    {
+      "path": "research/second_study/reports/S0/LAYER0_ERC_FEASIBILITY.md",
+      "source": "research/second_study/reports/S0/LAYER0_ERC_FEASIBILITY.md",
+      "source_sha256": "63dee2d0696a3565b15e6ab80ea8cc3c9bd5a94efa31b1df37fefef4b64d72eb",
+      "mode": "historical_public_view"
+    },
+    {
+      "path": "research/second_study/reports/S0/NEXT_IMPLEMENTATION_PLAN.md",
+      "source": "research/second_study/reports/S0/NEXT_IMPLEMENTATION_PLAN.md",
+      "source_sha256": "e6ea102b0dc1496a042b2346d5263411e9d0ceff08093d223efac33c1d79b560",
+      "mode": "historical_public_view"
+    },
+    {
+      "path": "research/second_study/reports/S0/SMOLVLM_ARCHITECTURE_AUDIT.md",
+      "source": "research/second_study/reports/S0/SMOLVLM_ARCHITECTURE_AUDIT.md",
+      "source_sha256": "14282a09576db2a648092a2b21f00e436ac59cd44cbe802a2a6e60e864d337de",
+      "mode": "historical_public_view"
+    },
+    {
+      "path": "research/second_study/reports/S0/SPATIAL_ALLOCATION_ADAPTATION.md",
+      "source": "research/second_study/reports/S0/SPATIAL_ALLOCATION_ADAPTATION.md",
+      "source_sha256": "3d68873066242c395b51c03593763d190229f2d86271e549ebe3a1baaf8e34d7",
+      "mode": "historical_public_view"
+    },
+    {
+      "path": "research/second_study/reports/S1.md",
+      "source": "research/second_study/reports/S1.md",
+      "source_sha256": "79a1aafd488fef1f28f12cd4324050e2312df69325f8838b4a91577aea990c57",
+      "mode": "historical_public_view"
+    },
+    {
+      "path": "research/second_study/reports/S1/ALLOCATION_SPEC.md",
+      "source": "research/second_study/reports/S1/ALLOCATION_SPEC.md",
+      "source_sha256": "e1ed1e24f875218964be14d936b3b4db596d250d5516df62e607ad1bee79cbec",
+      "mode": "historical_public_view"
+    },
+    {
+      "path": "research/second_study/reports/S1/CELL_ERC_VALIDATION.md",
+      "source": "research/second_study/reports/S1/CELL_ERC_VALIDATION.md",
+      "source_sha256": "5a31b51e2f961eea09db225a5f092ec0077300511d35806e1d1c9eaf4785618d",
+      "mode": "historical_public_view"
+    },
+    {
+      "path": "research/second_study/reports/S1/MAPPING_SPEC.md",
+      "source": "research/second_study/reports/S1/MAPPING_SPEC.md",
+      "source_sha256": "3332a7e35e2f08bd24d005369215272154bb7e4719a86b95d96592107525ae64",
+      "mode": "historical_public_view"
+    },
+    {
+      "path": "research/second_study/reports/S1/MOCK_PREFILL_CACHE_CONTRACT.md",
+      "source": "research/second_study/reports/S1/MOCK_PREFILL_CACHE_CONTRACT.md",
+      "source_sha256": "3014ff82be5f9ee4f7d5a8623978348d704bfd10e9348f9c84faa4857a46d231",
+      "mode": "historical_public_view"
+    },
+    {
+      "path": "research/second_study/reports/S2A.md",
+      "source": "research/second_study/reports/S2A.md",
+      "source_sha256": "b6c58deb81679045b98a6d7f2572e0ea7fca156510b547fddba5dfd2c11b79f6",
+      "mode": "historical_public_view"
+    },
+    {
+      "path": "research/second_study/reports/S2A/ROPE_KV_APPEND_AUDIT.md",
+      "source": "research/second_study/reports/S2A/ROPE_KV_APPEND_AUDIT.md",
+      "source_sha256": "2cb6f90503f36f990f6fcd7e263542957b40bbec5042c69ad5ce0ed76327afea",
+      "mode": "historical_public_view"
+    },
+    {
+      "path": "research/second_study/reports/S2B.md",
+      "source": "research/second_study/reports/S2B.md",
+      "source_sha256": "7b91c49de558c266a83d916bf82dbebf5afc05e077b269011522d671d9b30c46",
+      "mode": "historical_public_view"
+    },
+    {
+      "path": "research/second_study/reports/S2B/ALLOCATION_AND_SELECTION.md",
+      "source": "research/second_study/reports/S2B/ALLOCATION_AND_SELECTION.md",
+      "source_sha256": "e7e604be724a56e9aa59d50dd89e5b3d89d1e5cd8a9de7af8d9362de9e1a9a2d",
+      "mode": "historical_public_view"
+    },
+    {
+      "path": "research/second_study/reports/S2B/ROPE_KV_APPEND_AUDIT.md",
+      "source": "research/second_study/reports/S2B/ROPE_KV_APPEND_AUDIT.md",
+      "source_sha256": "2e4f742ce0281a135f0e629f17c69b21bd2197e2d3fc612877b3eb3450530c5d",
+      "mode": "historical_public_view"
+    },
+    {
+      "path": "research/second_study/reports/S3A.md",
+      "source": "research/second_study/reports/S3A.md",
+      "source_sha256": "a3ef75f91f36601d1935041fc94f4a2c92e8e1fc8e1f07a42bb25640cb6f2a33",
+      "mode": "historical_public_view"
+    },
+    {
+      "path": "research/second_study/reports/S3A/EVALUATION_PROTOCOL.md",
+      "source": "research/second_study/reports/S3A/EVALUATION_PROTOCOL.md",
+      "source_sha256": "b79a6a4ed00eb63ca14e3ba567f4de3441d7f1fd5a65c874db8d96cc3b366adc",
+      "mode": "historical_public_view"
+    },
+    {
+      "path": "research/second_study/reports/S3A/PHASE_S3B_GPU_GATE_AND_PILOT_PLAN.md",
+      "source": "research/second_study/reports/S3A/PHASE_S3B_GPU_GATE_AND_PILOT_PLAN.md",
+      "source_sha256": "bf5d6cffce2a77bf6d655529302c0c9ed9a4fa9277661b7d94ac07fc12bdae34",
+      "mode": "historical_public_view"
+    },
+    {
+      "path": "research/second_study/reports/S3A/RUN_RECORD_SCHEMA.md",
+      "source": "research/second_study/reports/S3A/RUN_RECORD_SCHEMA.md",
+      "source_sha256": "6297fc1d546cd14951deee3ce26038aa95a4a1b73bfb4ee2e3eedd828a4c84a9",
+      "mode": "historical_public_view"
+    },
+    {
+      "path": "research/second_study/reports/S3B1.md",
+      "source": "research/second_study/reports/S3B1.md",
+      "source_sha256": "d313e5d12690b57c0e4ba2195f625b057ad541790526449ce983ada42ec12b8b",
+      "mode": "historical_public_view"
+    },
+    {
+      "path": "research/second_study/reports/S3B1/ACTUAL_MAPPING_AND_576.md",
+      "source": "research/second_study/reports/S3B1/ACTUAL_MAPPING_AND_576.md",
+      "source_sha256": "7b35f725aa118a1009ba221e9bc791c7a819d2866d9696fa3fac8c742fcccba3",
+      "mode": "historical_public_view"
+    },
+    {
+      "path": "research/second_study/reports/S3B1/FULL_PARITY_AND_CACHE.md",
+      "source": "research/second_study/reports/S3B1/FULL_PARITY_AND_CACHE.md",
+      "source_sha256": "1462efdfb34631f49a06af8c79ce9edfc4635bf58ce9536c029f82582de2b5b6",
+      "mode": "historical_public_view"
+    },
+    {
+      "path": "research/second_study/reports/S3B2.md",
+      "source": "research/second_study/reports/S3B2.md",
+      "source_sha256": "18029e65939a6f3599427b4e57a9791b2817e09740d1abc427a76ec5153649e0",
+      "mode": "historical_public_view"
+    },
+    {
+      "path": "research/second_study/reports/S3B2/CONFIG_AND_EXECUTION_PROTOCOL.md",
+      "source": "research/second_study/reports/S3B2/CONFIG_AND_EXECUTION_PROTOCOL.md",
+      "source_sha256": "142be26df02ecc277e3bbc5eee2e72eccf7a3c811edb5080450e262cc5ee0ba8",
+      "mode": "historical_public_view"
+    },
+    {
+      "path": "research/second_study/reports/S3C.md",
+      "source": "research/second_study/reports/S3C.md",
+      "source_sha256": "0c0824acde13a936bf6ceb3873a740a9885adaa7931b9fe1a9808bd4435932a5",
+      "mode": "historical_public_view"
+    },
+    {
+      "path": "research/second_study/reports/S3C/NEXT_ABLATION_CANDIDATES.md",
+      "source": "research/second_study/reports/S3C/NEXT_ABLATION_CANDIDATES.md",
+      "source_sha256": "b0f71c83fea43b3c295f13a323b88965ea3f7664b424bfaff80bddf58eb59a3c",
+      "mode": "historical_public_view"
+    },
+    {
+      "path": "research/second_study/reports/S3C/RUN_PROTOCOL.md",
+      "source": "research/second_study/reports/S3C/RUN_PROTOCOL.md",
+      "source_sha256": "09b487e6e68d7d715c19ba7e64c68fd6c1cbe5bce831eaced7e356c167836a60",
+      "mode": "historical_public_view"
+    },
+    {
+      "path": "research/second_study/reports/S4A.md",
+      "source": "research/second_study/reports/S4A.md",
+      "source_sha256": "2591cd5a6dba50569c9104bc52a816acff207f7282c7177fd3195f15ce75507b",
+      "mode": "historical_public_view"
+    },
+    {
+      "path": "research/second_study/reports/qwen_cpu_background.md",
+      "source": "research/second_study/reports/qwen_cpu_background.md",
+      "source_sha256": "76133a30893d18dac4cea07b6db505ca2139f5702373e23822b51f4e462b50cb",
+      "mode": "historical_public_view"
+    },
+    {
+      "path": "src/smol_s3_eval/__init__.py",
+      "mode": "own_CPU_evaluation_body_unchanged_license_comments_added",
+      "source": "src/smol_s3_eval/__init__.py",
+      "source_sha256": "d130b0a17d54fffd95272d98f21f2dd57b828cad8cbd903040cb47bb2811efcd"
+    },
+    {
+      "path": "src/smol_s3_eval/contracts.py",
+      "mode": "own_CPU_evaluation_body_unchanged_license_comments_added",
+      "source": "src/smol_s3_eval/contracts.py",
+      "source_sha256": "72bb10c547ced5761734f7202281b3340ae7baae07f0bb4fde6a6120728e89a1"
+    },
+    {
+      "path": "src/smol_s3_eval/lock.py",
+      "mode": "own_CPU_evaluation_body_unchanged_license_comments_added",
+      "source": "src/smol_s3_eval/lock.py",
+      "source_sha256": "7cd8ba9e9878836b975892d4f75635b6a741171c9a7f2d66f4307d9cb7c6fa7d"
+    },
+    {
+      "path": "src/smol_s3_eval/scoring.py",
+      "mode": "own_CPU_evaluation_body_unchanged_license_comments_added",
+      "source": "src/smol_s3_eval/scoring.py",
+      "source_sha256": "e601614c918ab39509a708dd0d1bd31ec6ec697c8e816ed323b6aab585461d2f"
+    },
+    {
+      "path": "src/smol_s3_eval/statistics.py",
+      "mode": "own_CPU_evaluation_body_unchanged_license_comments_added",
+      "source": "src/smol_s3_eval/statistics.py",
+      "source_sha256": "155da282b2aaaf3389a239cc0fe2b193e464517036a36db9c830ad117b8e5af5"
+    }
+  ],
+  "new_CPU_helper": "aggregate-only packaging wrapper; original experimental helper untouched",
+  "withheld_old_candidates": [
+    {
+      "path": "research/first_study/paired320/predictions.jsonl",
+      "reason": "Preserve existing remote privacy policy: raw model responses withheld"
+    },
+    {
+      "path": "research/first_study/pope80/predictions.jsonl",
+      "reason": "Preserve existing remote privacy policy: raw model responses withheld"
+    },
+    {
+      "path": "research/first_study/reports/controlled_pilot.md",
+      "reason": "Existing remote already preserves pilot evidence; avoid duplicate raw-question/response tables"
+    },
+    {
+      "path": "research/first_study/reports/pilot_full.md",
+      "reason": "Existing remote already preserves pilot evidence; avoid duplicate raw-question/response tables"
+    },
+    {
+      "path": "research/second_study/main/predictions.jsonl",
+      "reason": "Preserve existing remote privacy policy: raw model responses withheld"
+    },
+    {
+      "path": "examples/analyze_pope_spatial_heterogeneity.py",
+      "reason": "Existing HOLD classification"
+    },
+    {
+      "path": "examples/analyze_smol_s3_cpu.py",
+      "reason": "Conservative second-release boundary: held/dependent/unreviewed provenance; not bundled"
+    },
+    {
+      "path": "examples/analyze_smol_s3b2_cpu.py",
+      "reason": "Conservative second-release boundary: held/dependent/unreviewed provenance; not bundled"
+    },
+    {
+      "path": "examples/analyze_smol_s3c_cpu.py",
+      "reason": "Conservative second-release boundary: held/dependent/unreviewed provenance; not bundled"
+    },
+    {
+      "path": "examples/compare_allocation_strategies.py",
+      "reason": "Existing HOLD classification"
+    },
+    {
+      "path": "examples/finalize_smol_s3a_cpu.py",
+      "reason": "Conservative second-release boundary: held/dependent/unreviewed provenance; not bundled"
+    },
+    {
+      "path": "examples/finalize_smol_s3b1_cpu.py",
+      "reason": "Conservative second-release boundary: held/dependent/unreviewed provenance; not bundled"
+    },
+    {
+      "path": "examples/finalize_smol_s3b2_cpu.py",
+      "reason": "Conservative second-release boundary: held/dependent/unreviewed provenance; not bundled"
+    },
+    {
+      "path": "examples/finalize_smol_s3c_cpu.py",
+      "reason": "Conservative second-release boundary: held/dependent/unreviewed provenance; not bundled"
+    },
+    {
+      "path": "examples/inspect_smol_s2_cpu.py",
+      "reason": "Conservative second-release boundary: held/dependent/unreviewed provenance; not bundled"
+    },
+    {
+      "path": "examples/inspect_smol_s2a_cpu.py",
+      "reason": "Conservative second-release boundary: held/dependent/unreviewed provenance; not bundled"
+    },
+    {
+      "path": "examples/inspect_smol_s2b_cpu.py",
+      "reason": "Conservative second-release boundary: held/dependent/unreviewed provenance; not bundled"
+    },
+    {
+      "path": "examples/monitor_smol_s3c.py",
+      "reason": "Conservative second-release boundary: held/dependent/unreviewed provenance; not bundled"
+    },
+    {
+      "path": "examples/prepare_pope80_v2.py",
+      "reason": "Conservative second-release boundary: held/dependent/unreviewed provenance; not bundled"
+    },
+    {
+      "path": "examples/prepare_smol_s3a_cpu.py",
+      "reason": "Conservative second-release boundary: held/dependent/unreviewed provenance; not bundled"
+    },
+    {
+      "path": "examples/prepare_smol_s3b1_cpu.py",
+      "reason": "Conservative second-release boundary: held/dependent/unreviewed provenance; not bundled"
+    },
+    {
+      "path": "examples/prepare_smol_s3b2_cpu.py",
+      "reason": "Conservative second-release boundary: held/dependent/unreviewed provenance; not bundled"
+    },
+    {
+      "path": "examples/prepare_smol_s3c_cpu.py",
+      "reason": "Conservative second-release boundary: held/dependent/unreviewed provenance; not bundled"
+    },
+    {
+      "path": "examples/render_smol_s3b2_figures_cpu.py",
+      "reason": "Conservative second-release boundary: held/dependent/unreviewed provenance; not bundled"
+    },
+    {
+      "path": "examples/run_pope80_five_methods.py",
+      "reason": "Conservative second-release boundary: held/dependent/unreviewed provenance; not bundled"
+    },
+    {
+      "path": "examples/run_pope_controlled_comparison.py",
+      "reason": "Existing HOLD classification"
+    },
+    {
+      "path": "examples/run_pope_local_floor_paired.py",
+      "reason": "Conservative second-release boundary: held/dependent/unreviewed provenance; not bundled"
+    },
+    {
+      "path": "examples/run_smol_s3b1_gpu.py",
+      "reason": "Conservative second-release boundary: held/dependent/unreviewed provenance; not bundled"
+    },
+    {
+      "path": "examples/run_smol_s3b2_gpu.py",
+      "reason": "Conservative second-release boundary: held/dependent/unreviewed provenance; not bundled"
+    },
+    {
+      "path": "examples/run_smol_s3c_gpu.py",
+      "reason": "Conservative second-release boundary: held/dependent/unreviewed provenance; not bundled"
+    },
+    {
+      "path": "examples/supplement_smol_s3c_cpu.py",
+      "reason": "Conservative second-release boundary: held/dependent/unreviewed provenance; not bundled"
+    },
+    {
+      "path": "examples/validate_local_gc_no_floor.py",
+      "reason": "Conservative second-release boundary: held/dependent/unreviewed provenance; not bundled"
+    },
+    {
+      "path": "examples/verify_smol_s3a_cpu.py",
+      "reason": "Conservative second-release boundary: held/dependent/unreviewed provenance; not bundled"
+    },
+    {
+      "path": "examples/verify_smol_s3b1_cpu.py",
+      "reason": "Conservative second-release boundary: held/dependent/unreviewed provenance; not bundled"
+    },
+    {
+      "path": "examples/verify_smol_s3b2_cpu.py",
+      "reason": "Conservative second-release boundary: held/dependent/unreviewed provenance; not bundled"
+    },
+    {
+      "path": "examples/verify_smol_s3c_cpu.py",
+      "reason": "Conservative second-release boundary: held/dependent/unreviewed provenance; not bundled"
+    },
+    {
+      "path": "src/analysis/spatial_heterogeneity.py",
+      "reason": "Existing HOLD classification"
+    },
+    {
+      "path": "src/evaluation/local_floor_paired.py",
+      "reason": "Conservative second-release boundary: held/dependent/unreviewed provenance; not bundled"
+    },
+    {
+      "path": "src/evaluation/pope80.py",
+      "reason": "Conservative second-release boundary: held/dependent/unreviewed provenance; not bundled"
+    },
+    {
+      "path": "src/inference/controlled_selectors.py",
+      "reason": "Existing HOLD classification"
+    },
+    {
+      "path": "src/pruning/local_gc_no_floor.py",
+      "reason": "Conservative second-release boundary: held/dependent/unreviewed provenance; not bundled"
+    },
+    {
+      "path": "src/pruning/s2_style_allocation.py",
+      "reason": "Existing HOLD classification"
+    },
+    {
+      "path": "src/s2_coverage_study/__init__.py",
+      "reason": "Conservative second-release boundary: held/dependent/unreviewed provenance; not bundled"
+    },
+    {
+      "path": "src/s2_coverage_study/allocation.py",
+      "reason": "Conservative second-release boundary: held/dependent/unreviewed provenance; not bundled"
+    },
+    {
+      "path": "src/s2_coverage_study/cpu_runtime.py",
+      "reason": "Conservative second-release boundary: held/dependent/unreviewed provenance; not bundled"
+    },
+    {
+      "path": "src/s2_coverage_study/reference.py",
+      "reason": "Conservative second-release boundary: held/dependent/unreviewed provenance; not bundled"
+    },
+    {
+      "path": "src/smol_s2_pruning_runtime/__init__.py",
+      "reason": "Conservative second-release boundary: held/dependent/unreviewed provenance; not bundled"
+    },
+    {
+      "path": "src/smol_s2_pruning_runtime/boundary.py",
+      "reason": "Conservative second-release boundary: held/dependent/unreviewed provenance; not bundled"
+    },
+    {
+      "path": "src/smol_s2_pruning_runtime/compare.py",
+      "reason": "Conservative second-release boundary: held/dependent/unreviewed provenance; not bundled"
+    },
+    {
+      "path": "src/smol_s2_pruning_runtime/observer.py",
+      "reason": "Conservative second-release boundary: held/dependent/unreviewed provenance; not bundled"
+    },
+    {
+      "path": "src/smol_s2_pruning_runtime/plan.py",
+      "reason": "Conservative second-release boundary: held/dependent/unreviewed provenance; not bundled"
+    },
+    {
+      "path": "src/smol_s2_pruning_runtime/runtime.py",
+      "reason": "Conservative second-release boundary: held/dependent/unreviewed provenance; not bundled"
+    },
+    {
+      "path": "src/smol_s2_runtime/__init__.py",
+      "reason": "Conservative second-release boundary: held/dependent/unreviewed provenance; not bundled"
+    },
+    {
+      "path": "src/smol_s2_runtime/compare.py",
+      "reason": "Conservative second-release boundary: held/dependent/unreviewed provenance; not bundled"
+    },
+    {
+      "path": "src/smol_s2_runtime/observer.py",
+      "reason": "Conservative second-release boundary: held/dependent/unreviewed provenance; not bundled"
+    },
+    {
+      "path": "src/smol_s2_runtime/plan.py",
+      "reason": "Conservative second-release boundary: held/dependent/unreviewed provenance; not bundled"
+    },
+    {
+      "path": "src/smol_s2_runtime/runtime.py",
+      "reason": "Conservative second-release boundary: held/dependent/unreviewed provenance; not bundled"
+    },
+    {
+      "path": "src/smol_s2_study/__init__.py",
+      "reason": "Conservative second-release boundary: held/dependent/unreviewed provenance; not bundled"
+    },
+    {
+      "path": "src/smol_s2_study/allocation.py",
+      "reason": "Conservative second-release boundary: held/dependent/unreviewed provenance; not bundled"
+    },
+    {
+      "path": "src/smol_s2_study/cache.py",
+      "reason": "Conservative second-release boundary: held/dependent/unreviewed provenance; not bundled"
+    },
+    {
+      "path": "src/smol_s2_study/diagnostics.py",
+      "reason": "Conservative second-release boundary: held/dependent/unreviewed provenance; not bundled"
+    },
+    {
+      "path": "src/smol_s2_study/mapping.py",
+      "reason": "Conservative second-release boundary: held/dependent/unreviewed provenance; not bundled"
+    },
+    {
+      "path": "src/smol_s2_study/offline.py",
+      "reason": "Conservative second-release boundary: held/dependent/unreviewed provenance; not bundled"
+    },
+    {
+      "path": "src/smol_s2_study/prefill.py",
+      "reason": "Conservative second-release boundary: held/dependent/unreviewed provenance; not bundled"
+    },
+    {
+      "path": "src/smol_s2_study/selection.py",
+      "reason": "Conservative second-release boundary: held/dependent/unreviewed provenance; not bundled"
+    },
+    {
+      "path": "src/smol_s3_eval/cpu_guard.py",
+      "reason": "Conservative second-release boundary: held/dependent/unreviewed provenance; not bundled"
+    },
+    {
+      "path": "src/smol_s3_eval/dataset.py",
+      "reason": "Conservative second-release boundary: held/dependent/unreviewed provenance; not bundled"
+    },
+    {
+      "path": "src/smol_s3_functional/__init__.py",
+      "reason": "Conservative second-release boundary: held/dependent/unreviewed provenance; not bundled"
+    },
+    {
+      "path": "src/smol_s3_functional/plan.py",
+      "reason": "Conservative second-release boundary: held/dependent/unreviewed provenance; not bundled"
+    },
+    {
+      "path": "src/smol_s3_functional/runtime.py",
+      "reason": "Conservative second-release boundary: held/dependent/unreviewed provenance; not bundled"
+    },
+    {
+      "path": "src/smol_s3_main/__init__.py",
+      "reason": "Conservative second-release boundary: held/dependent/unreviewed provenance; not bundled"
+    },
+    {
+      "path": "src/smol_s3_main/plan.py",
+      "reason": "Conservative second-release boundary: held/dependent/unreviewed provenance; not bundled"
+    },
+    {
+      "path": "src/smol_s3_main/records.py",
+      "reason": "Conservative second-release boundary: held/dependent/unreviewed provenance; not bundled"
+    },
+    {
+      "path": "src/smol_s3_pilot/__init__.py",
+      "reason": "Conservative second-release boundary: held/dependent/unreviewed provenance; not bundled"
+    },
+    {
+      "path": "src/smol_s3_pilot/diagnostics.py",
+      "reason": "Conservative second-release boundary: held/dependent/unreviewed provenance; not bundled"
+    },
+    {
+      "path": "src/smol_s3_pilot/monitor.py",
+      "reason": "Conservative second-release boundary: held/dependent/unreviewed provenance; not bundled"
+    },
+    {
+      "path": "src/smol_s3_pilot/plan.py",
+      "reason": "Conservative second-release boundary: held/dependent/unreviewed provenance; not bundled"
+    },
+    {
+      "path": "src/smol_s3_pilot/records.py",
+      "reason": "Conservative second-release boundary: held/dependent/unreviewed provenance; not bundled"
+    },
+    {
+      "path": "tests/smol_s2_oracles.py",
+      "reason": "Conservative second-release boundary: held/dependent/unreviewed provenance; not bundled"
+    },
+    {
+      "path": "tests/smol_s3_oracles.py",
+      "reason": "Conservative second-release boundary: held/dependent/unreviewed provenance; not bundled"
+    },
+    {
+      "path": "tests/test_controlled_runner.py",
+      "reason": "Existing HOLD classification"
+    },
+    {
+      "path": "tests/test_controlled_selectors.py",
+      "reason": "Existing HOLD classification"
+    },
+    {
+      "path": "tests/test_local_floor_paired.py",
+      "reason": "Conservative second-release boundary: held/dependent/unreviewed provenance; not bundled"
+    },
+    {
+      "path": "tests/test_local_gc_no_floor.py",
+      "reason": "Conservative second-release boundary: held/dependent/unreviewed provenance; not bundled"
+    },
+    {
+      "path": "tests/test_pope80_runner.py",
+      "reason": "Conservative second-release boundary: held/dependent/unreviewed provenance; not bundled"
+    },
+    {
+      "path": "tests/test_pope_heterogeneity_analysis.py",
+      "reason": "Existing HOLD classification"
+    },
+    {
+      "path": "tests/test_smol_s2_contract_edges.py",
+      "reason": "Conservative second-release boundary: held/dependent/unreviewed provenance; not bundled"
+    },
+    {
+      "path": "tests/test_smol_s2_offline.py",
+      "reason": "Conservative second-release boundary: held/dependent/unreviewed provenance; not bundled"
+    },
+    {
+      "path": "tests/test_smol_s2_pruning_runtime.py",
+      "reason": "Conservative second-release boundary: held/dependent/unreviewed provenance; not bundled"
+    },
+    {
+      "path": "tests/test_smol_s2_runtime.py",
+      "reason": "Conservative second-release boundary: held/dependent/unreviewed provenance; not bundled"
+    },
+    {
+      "path": "tests/test_smol_s2_study.py",
+      "reason": "Conservative second-release boundary: held/dependent/unreviewed provenance; not bundled"
+    },
+    {
+      "path": "tests/test_smol_s3_eval.py",
+      "reason": "Conservative second-release boundary: held/dependent/unreviewed provenance; not bundled"
+    },
+    {
+      "path": "tests/test_smol_s3_functional.py",
+      "reason": "Conservative second-release boundary: held/dependent/unreviewed provenance; not bundled"
+    },
+    {
+      "path": "tests/test_smol_s3_main.py",
+      "reason": "Conservative second-release boundary: held/dependent/unreviewed provenance; not bundled"
+    },
+    {
+      "path": "tests/test_smol_s3_pilot.py",
+      "reason": "Conservative second-release boundary: held/dependent/unreviewed provenance; not bundled"
+    },
+    {
+      "path": "tests/test_smol_s3_pilot_diagnostics.py",
+      "reason": "Conservative second-release boundary: held/dependent/unreviewed provenance; not bundled"
+    },
+    {
+      "path": "tests/test_spatial_heterogeneity.py",
+      "reason": "Existing HOLD classification"
+    },
+    {
+      "path": "tools/reproduce_summary_cpu.py",
+      "reason": "Conservative second-release boundary: held/dependent/unreviewed provenance; not bundled"
+    }
+  ],
+  "held10": [
+    "examples/analyze_pope_spatial_heterogeneity.py",
+    "examples/compare_allocation_strategies.py",
+    "examples/run_pope_controlled_comparison.py",
+    "src/analysis/spatial_heterogeneity.py",
+    "src/inference/controlled_selectors.py",
+    "src/pruning/s2_style_allocation.py",
+    "tests/test_controlled_runner.py",
+    "tests/test_controlled_selectors.py",
+    "tests/test_pope_heterogeneity_analysis.py",
+    "tests/test_spatial_heterogeneity.py"
+  ],
+  "all_first_release_holds_preserved": [
+    "examples/analyze_pope_spatial_heterogeneity.py",
+    "examples/compare_allocation_strategies.py",
+    "examples/run_pope_controlled_comparison.py",
+    "src/analysis/spatial_heterogeneity.py",
+    "src/inference/controlled_selectors.py",
+    "src/pruning/s2_style_allocation.py",
+    "tests/test_controlled_runner.py",
+    "tests/test_controlled_selectors.py",
+    "tests/test_pope_heterogeneity_analysis.py",
+    "tests/test_s2_style_allocation.py",
+    "tests/test_spatial_heterogeneity.py"
+  ],
+  "source_scope": "selected old publication candidates only; no raw evidence or full project hash census",
+  "upstream_source_distributed": false
+}

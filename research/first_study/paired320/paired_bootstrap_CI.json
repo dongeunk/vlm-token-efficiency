@@ -1,0 +1,88 @@
+{
+  "results": {
+    "semantic": {
+      "simple_concentrated": {
+        "estimate": 0.025,
+        "ci95": [
+          0.0,
+          0.075
+        ]
+      },
+      "simple_dispersed": {
+        "estimate": 0.0,
+        "ci95": [
+          -0.075,
+          0.075
+        ]
+      },
+      "complex_concentrated": {
+        "estimate": -0.025,
+        "ci95": [
+          -0.1,
+          0.05
+        ]
+      },
+      "complex_dispersed": {
+        "estimate": 0.0,
+        "ci95": [
+          -0.075,
+          0.075
+        ]
+      },
+      "all_equal_group_weight": {
+        "estimate": 0.0,
+        "ci95": [
+          -0.0375,
+          0.03125000000000001
+        ]
+      }
+    },
+    "strict": {
+      "simple_concentrated": {
+        "estimate": 0.075,
+        "ci95": [
+          0.0,
+          0.15
+        ]
+      },
+      "simple_dispersed": {
+        "estimate": 0.05,
+        "ci95": [
+          -0.05,
+          0.15
+        ]
+      },
+      "complex_concentrated": {
+        "estimate": 0.0,
+        "ci95": [
+          -0.1,
+          0.1
+        ]
+      },
+      "complex_dispersed": {
+        "estimate": 0.0,
+        "ci95": [
+          -0.1,
+          0.1
+        ]
+      },
+      "all_equal_group_weight": {
+        "estimate": 0.03125,
+        "ci95": [
+          -0.0125,
+          0.07500000000000001
+        ]
+      }
+    }
+  },
+  "contrast": "A minus NoFloor",
+  "unit": "image, both questions paired",
+  "replicates": 10000,
+  "seed": 42,
+  "rng": "PCG64",
+  "CI": "pointwise95% linear percentile, not multiplicity adjusted",
+  "overall": "stratified equal-group mean",
+  "scope": "post800 exploratory follow-up; not original Primary Interaction retest",
+  "helper_file": "results\\pope_spatial_floor_80_evaluation\\full_v2_20261024_01\\analysis_helpers.py",
+  "helper_sha256": "fe85929b25fa5d6ab9913da7f92e3af516281f8cae1c8c75c0b9a8f5d049d470"
+}

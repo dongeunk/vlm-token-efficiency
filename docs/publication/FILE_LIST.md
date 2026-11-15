@@ -1,0 +1,164 @@
+# 최신 origin/main 기준 공개 후보 전체 목록
+
+Base `66bbfaf44770b99473fbe94fdde2554f5c94f368`. 기존72개 + 신규66개 = 전체138개 경로. 실제 변경은 README 추가 안내1개와 신규 파일이다. Commit/Push·실제 index staging은 하지 않는다.
+
+## 기존 원격 보존 — 72개
+
+- `.gitattributes`
+- `.gitignore`
+- `EXCLUSIONS.json`
+- `EXCLUSIONS.md`
+- `LICENSE`
+- `NOTICE`
+- `PUBLICATION_MANIFEST.json`
+- `PUBLIC_FILES.md`
+- `README.md`
+- `SECURITY_REVIEW.md`
+- `docs/CODE_AVAILABILITY.md`
+- `docs/ETHICS_AND_RELEASE_SCOPE.md`
+- `docs/HETEROGENEITY.md`
+- `docs/LICENSING.md`
+- `docs/LITERATURE.md`
+- `docs/METHODS.md`
+- `docs/REPRODUCIBILITY.md`
+- `docs/RESULTS.md`
+- `environment/observed_versions.json`
+- `examples/README_pope_controlled_comparison.md`
+- `examples/diagnose_global_coverage.py`
+- `examples/diagnose_matched_random.py`
+- `examples/diagnose_spatial_budgets.py`
+- `examples/download_pope_pilot_images.py`
+- `examples/inspect_llm_input.py`
+- `examples/inspect_visual_tokens.py`
+- `examples/plot_pope_spatial_heterogeneity.py`
+- `examples/report_pope_spatial_heterogeneity.py`
+- `examples/rescore_pope_semantic.py`
+- `examples/run_global_coverage.py`
+- `examples/run_pope_pilot.py`
+- `examples/run_pope_pruning_smoke.py`
+- `examples/run_random_pruning.py`
+- `examples/run_small_vlm.py`
+- `examples/run_spatial_floor_coverage.py`
+- `examples/test_noop_visual_tokens.py`
+- `results/allocation_comparison/aggregate_results.json`
+- `results/pope_controlled_comparison/full/aggregate_metrics.json`
+- `results/pope_controlled_comparison/full/run_summary.json`
+- `results/pope_controlled_comparison/smoke/aggregate_summary.json`
+- `results/pope_pilot/full_model_seed42/aggregate_summary.json`
+- `results/pope_pilot/semantic_review/aggregate_summary.json`
+- `results/pope_pruning_smoke/aggregate_summary.json`
+- `results/pope_spatial_heterogeneity_30/aggregate_summary.json`
+- `results/pope_spatial_heterogeneity_30/figures/accuracy_by_heterogeneity_group.png`
+- `results/pope_spatial_heterogeneity_30/figures/gc_zero_regions_vs_heterogeneity.png`
+- `results/pope_spatial_heterogeneity_30/figures/heterogeneity_vs_ours_minus_gc.png`
+- `results/pope_spatial_heterogeneity_30/group_comparison.csv`
+- `results/pope_spatial_heterogeneity_30/paired_group_comparison.csv`
+- `results/pope_spatial_heterogeneity_30/per_image_metrics.csv`
+- `results/pope_spatial_heterogeneity_30/sensitivity.csv`
+- `src/evaluation/controlled_comparison.py`
+- `src/evaluation/pope.py`
+- `src/evaluation/semantic_yes_no.py`
+- `src/inference/generation_audit.py`
+- `src/inference/pruned_vlm.py`
+- `src/pruning/coverage.py`
+- `src/pruning/matched_allocation.py`
+- `src/pruning/spatial_floor_coverage.py`
+- `tests/test_controlled_comparison.py`
+- `tests/test_coverage.py`
+- `tests/test_coverage_diagnostic.py`
+- `tests/test_generation_audit.py`
+- `tests/test_matched_allocation.py`
+- `tests/test_matched_random_diagnostic.py`
+- `tests/test_pope.py`
+- `tests/test_pope_pilot.py`
+- `tests/test_pruned_vlm.py`
+- `tests/test_semantic_yes_no.py`
+- `tests/test_spatial_budget_diagnostic.py`
+- `tests/test_spatial_floor_coverage.py`
+- `vlm.py`
+
+README 본문은 원문을 그대로 이어 붙인 채 앞에 새 안내만 추가했다. 그 외71개는 byte-for-byte 보존한다.
+
+## 신규 공개 후보
+
+- `docs/SECOND_STUDY_RELEASE_SCOPE.md`
+- `docs/publication/FILE_LIST.md`
+- `docs/publication/PREPARATION_REPORT.md`
+- `docs/publication/PROVENANCE.json`
+- `docs/publication/UPLOAD_MANIFEST.json`
+- `docs/publication/VALIDATION.json`
+- `research/first_study/README.md`
+- `research/first_study/paired320/metrics.json`
+- `research/first_study/paired320/paired_bootstrap_CI.json`
+- `research/first_study/pope80/metrics.json`
+- `research/first_study/pope80/paired_comparisons.json`
+- `research/first_study/reports/floor_vs_no_floor.md`
+- `research/first_study/reports/pope80_five_methods.md`
+- `research/requirements-summary.txt`
+- `research/second_study/README.md`
+- `research/second_study/config/cohort_ids.json`
+- `research/second_study/config/main_config_public.json`
+- `research/second_study/config/protocol_public.json`
+- `research/second_study/figures/COVERAGE_VS_ACCURACY.png`
+- `research/second_study/figures/REGION_BUDGETS.png`
+- `research/second_study/main/FEATURE_COVERAGE.csv`
+- `research/second_study/main/IMAGE_LEVEL_PRIMARY_DELTAS.jsonl`
+- `research/second_study/main/IMAGE_REGION_BUDGET_DIFFERENCES.jsonl`
+- `research/second_study/main/INVALID_TRUNCATION_DETAIL.json`
+- `research/second_study/main/LATENCY_SUMMARY.json`
+- `research/second_study/main/MECHANISM_SUMMARY.json`
+- `research/second_study/main/METHOD_COMPARISON.csv`
+- `research/second_study/main/PAIRED_BOOTSTRAP_10000.json`
+- `research/second_study/main/TOKEN_STRUCTURE_METRICS.json`
+- `research/second_study/main/per_image.jsonl`
+- `research/second_study/reports/S0/EXPERIMENT_PROTOCOL.md`
+- `research/second_study/reports/S0/GPU_MEMORY_AND_SMOKE_PLAN.md`
+- `research/second_study/reports/S0/LAYER0_ERC_FEASIBILITY.md`
+- `research/second_study/reports/S0/NEXT_IMPLEMENTATION_PLAN.md`
+- `research/second_study/reports/S0/SMOLVLM_ARCHITECTURE_AUDIT.md`
+- `research/second_study/reports/S0/SPATIAL_ALLOCATION_ADAPTATION.md`
+- `research/second_study/reports/S1.md`
+- `research/second_study/reports/S1/ALLOCATION_SPEC.md`
+- `research/second_study/reports/S1/CELL_ERC_VALIDATION.md`
+- `research/second_study/reports/S1/MAPPING_SPEC.md`
+- `research/second_study/reports/S1/MOCK_PREFILL_CACHE_CONTRACT.md`
+- `research/second_study/reports/S2A.md`
+- `research/second_study/reports/S2A/ROPE_KV_APPEND_AUDIT.md`
+- `research/second_study/reports/S2B.md`
+- `research/second_study/reports/S2B/ALLOCATION_AND_SELECTION.md`
+- `research/second_study/reports/S2B/ROPE_KV_APPEND_AUDIT.md`
+- `research/second_study/reports/S3A.md`
+- `research/second_study/reports/S3A/EVALUATION_PROTOCOL.md`
+- `research/second_study/reports/S3A/PHASE_S3B_GPU_GATE_AND_PILOT_PLAN.md`
+- `research/second_study/reports/S3A/RUN_RECORD_SCHEMA.md`
+- `research/second_study/reports/S3B1.md`
+- `research/second_study/reports/S3B1/ACTUAL_MAPPING_AND_576.md`
+- `research/second_study/reports/S3B1/FULL_PARITY_AND_CACHE.md`
+- `research/second_study/reports/S3B2.md`
+- `research/second_study/reports/S3B2/CONFIG_AND_EXECUTION_PROTOCOL.md`
+- `research/second_study/reports/S3C.md`
+- `research/second_study/reports/S3C/NEXT_ABLATION_CANDIDATES.md`
+- `research/second_study/reports/S3C/RUN_PROTOCOL.md`
+- `research/second_study/reports/S4A.md`
+- `research/second_study/reports/qwen_cpu_background.md`
+- `src/smol_s3_eval/__init__.py`
+- `src/smol_s3_eval/contracts.py`
+- `src/smol_s3_eval/lock.py`
+- `src/smol_s3_eval/scoring.py`
+- `src/smol_s3_eval/statistics.py`
+- `tools/reproduce_summary_cpu.py`
+
+## 이전 후보에서 제외한 HOLD10개
+
+- `examples/analyze_pope_spatial_heterogeneity.py`
+- `examples/compare_allocation_strategies.py`
+- `examples/run_pope_controlled_comparison.py`
+- `src/analysis/spatial_heterogeneity.py`
+- `src/inference/controlled_selectors.py`
+- `src/pruning/s2_style_allocation.py`
+- `tests/test_controlled_runner.py`
+- `tests/test_controlled_selectors.py`
+- `tests/test_pope_heterogeneity_analysis.py`
+- `tests/test_spatial_heterogeneity.py`
+
+기존11개 HOLD 전체가 후보에 없다. 추가로 권리/의존성 검토가 필요한 S²Prune·Smol runtime/runner/test와 raw responses/원본 데이터·사진·모델·tensor·cache는 보류한다. 세부 이유는 PROVENANCE.json과 docs/SECOND_STUDY_RELEASE_SCOPE.md에 있다. 기존 C 작업 폴더의 파일을 삭제/이동한 것이 아니다.

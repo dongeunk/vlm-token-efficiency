@@ -1,0 +1,1061 @@
+{
+  "strata": [
+    {
+      "visual_tokens": 576,
+      "images": 1,
+      "questions": 6,
+      "method": "full",
+      "metrics": {
+        "n": 6,
+        "pope_accuracy": 0.8333333333333334,
+        "semantic_accuracy": 0.8333333333333334,
+        "pope_precision": 0.75,
+        "pope_recall": 1.0,
+        "pope_f1": 0.8571428571428571,
+        "strict_accuracy": 0.5,
+        "invalid_count": 0,
+        "invalid_rate": 0.0,
+        "strict_invalid_count": 2,
+        "semantic_confusion": {
+          "n": 6,
+          "accuracy": 0.8333333333333334,
+          "yes_class_accuracy": 1.0,
+          "no_class_accuracy": 0.6666666666666666,
+          "precision": 0.75,
+          "recall": 1.0,
+          "f1": 0.8571428571428571,
+          "yes_prediction_ratio": 0.6666666666666666,
+          "invalid_ratio": 0.0,
+          "confusion_matrix": {
+            "yes": {
+              "yes": 3,
+              "no": 0,
+              "invalid": 0
+            },
+            "no": {
+              "yes": 1,
+              "no": 2,
+              "invalid": 0
+            }
+          },
+          "support": {
+            "yes": 3,
+            "no": 3
+          },
+          "tp": 3,
+          "fp": 1,
+          "fn": 0,
+          "tn": 2,
+          "invalid_yes": 0,
+          "invalid_no": 0
+        },
+        "strict_confusion": {
+          "n": 6,
+          "accuracy": 0.5,
+          "yes_class_accuracy": 1.0,
+          "no_class_accuracy": 0.0,
+          "precision": 0.75,
+          "recall": 1.0,
+          "f1": 0.8571428571428571,
+          "yes_prediction_ratio": 0.6666666666666666,
+          "invalid_ratio": 0.3333333333333333,
+          "confusion_matrix": {
+            "yes": {
+              "yes": 3,
+              "no": 0,
+              "invalid": 0
+            },
+            "no": {
+              "yes": 1,
+              "no": 0,
+              "invalid": 2
+            }
+          },
+          "support": {
+            "yes": 3,
+            "no": 3
+          },
+          "tp": 3,
+          "fp": 1,
+          "fn": 0,
+          "tn": 0,
+          "invalid_yes": 0,
+          "invalid_no": 2
+        },
+        "original_official_parser": false,
+        "primary_parser": "visual_semantic_yes_no_v1"
+      },
+      "exploratory": true,
+      "small_stratum_note": "576 has one image; no reliable population inference"
+    },
+    {
+      "visual_tokens": 576,
+      "images": 1,
+      "questions": 6,
+      "method": "s2_l",
+      "metrics": {
+        "n": 6,
+        "pope_accuracy": 0.6666666666666666,
+        "semantic_accuracy": 0.6666666666666666,
+        "pope_precision": 0.6,
+        "pope_recall": 1.0,
+        "pope_f1": 0.7499999999999999,
+        "strict_accuracy": 0.5,
+        "invalid_count": 0,
+        "invalid_rate": 0.0,
+        "strict_invalid_count": 1,
+        "semantic_confusion": {
+          "n": 6,
+          "accuracy": 0.6666666666666666,
+          "yes_class_accuracy": 1.0,
+          "no_class_accuracy": 0.3333333333333333,
+          "precision": 0.6,
+          "recall": 1.0,
+          "f1": 0.7499999999999999,
+          "yes_prediction_ratio": 0.8333333333333334,
+          "invalid_ratio": 0.0,
+          "confusion_matrix": {
+            "yes": {
+              "yes": 3,
+              "no": 0,
+              "invalid": 0
+            },
+            "no": {
+              "yes": 2,
+              "no": 1,
+              "invalid": 0
+            }
+          },
+          "support": {
+            "yes": 3,
+            "no": 3
+          },
+          "tp": 3,
+          "fp": 2,
+          "fn": 0,
+          "tn": 1,
+          "invalid_yes": 0,
+          "invalid_no": 0
+        },
+        "strict_confusion": {
+          "n": 6,
+          "accuracy": 0.5,
+          "yes_class_accuracy": 1.0,
+          "no_class_accuracy": 0.0,
+          "precision": 0.6,
+          "recall": 1.0,
+          "f1": 0.7499999999999999,
+          "yes_prediction_ratio": 0.8333333333333334,
+          "invalid_ratio": 0.16666666666666666,
+          "confusion_matrix": {
+            "yes": {
+              "yes": 3,
+              "no": 0,
+              "invalid": 0
+            },
+            "no": {
+              "yes": 2,
+              "no": 0,
+              "invalid": 1
+            }
+          },
+          "support": {
+            "yes": 3,
+            "no": 3
+          },
+          "tp": 3,
+          "fp": 2,
+          "fn": 0,
+          "tn": 0,
+          "invalid_yes": 0,
+          "invalid_no": 1
+        },
+        "original_official_parser": false,
+        "primary_parser": "visual_semantic_yes_no_v1"
+      },
+      "exploratory": true,
+      "small_stratum_note": "576 has one image; no reliable population inference"
+    },
+    {
+      "visual_tokens": 576,
+      "images": 1,
+      "questions": 6,
+      "method": "s2_u",
+      "metrics": {
+        "n": 6,
+        "pope_accuracy": 0.6666666666666666,
+        "semantic_accuracy": 0.6666666666666666,
+        "pope_precision": 0.6,
+        "pope_recall": 1.0,
+        "pope_f1": 0.7499999999999999,
+        "strict_accuracy": 0.5,
+        "invalid_count": 0,
+        "invalid_rate": 0.0,
+        "strict_invalid_count": 1,
+        "semantic_confusion": {
+          "n": 6,
+          "accuracy": 0.6666666666666666,
+          "yes_class_accuracy": 1.0,
+          "no_class_accuracy": 0.3333333333333333,
+          "precision": 0.6,
+          "recall": 1.0,
+          "f1": 0.7499999999999999,
+          "yes_prediction_ratio": 0.8333333333333334,
+          "invalid_ratio": 0.0,
+          "confusion_matrix": {
+            "yes": {
+              "yes": 3,
+              "no": 0,
+              "invalid": 0
+            },
+            "no": {
+              "yes": 2,
+              "no": 1,
+              "invalid": 0
+            }
+          },
+          "support": {
+            "yes": 3,
+            "no": 3
+          },
+          "tp": 3,
+          "fp": 2,
+          "fn": 0,
+          "tn": 1,
+          "invalid_yes": 0,
+          "invalid_no": 0
+        },
+        "strict_confusion": {
+          "n": 6,
+          "accuracy": 0.5,
+          "yes_class_accuracy": 1.0,
+          "no_class_accuracy": 0.0,
+          "precision": 0.6,
+          "recall": 1.0,
+          "f1": 0.7499999999999999,
+          "yes_prediction_ratio": 0.8333333333333334,
+          "invalid_ratio": 0.16666666666666666,
+          "confusion_matrix": {
+            "yes": {
+              "yes": 3,
+              "no": 0,
+              "invalid": 0
+            },
+            "no": {
+              "yes": 2,
+              "no": 0,
+              "invalid": 1
+            }
+          },
+          "support": {
+            "yes": 3,
+            "no": 3
+          },
+          "tp": 3,
+          "fp": 2,
+          "fn": 0,
+          "tn": 0,
+          "invalid_yes": 0,
+          "invalid_no": 1
+        },
+        "original_official_parser": false,
+        "primary_parser": "visual_semantic_yes_no_v1"
+      },
+      "exploratory": true,
+      "small_stratum_note": "576 has one image; no reliable population inference"
+    },
+    {
+      "visual_tokens": 576,
+      "images": 1,
+      "questions": 6,
+      "method": "s2_c",
+      "metrics": {
+        "n": 6,
+        "pope_accuracy": 0.6666666666666666,
+        "semantic_accuracy": 0.6666666666666666,
+        "pope_precision": 0.6,
+        "pope_recall": 1.0,
+        "pope_f1": 0.7499999999999999,
+        "strict_accuracy": 0.5,
+        "invalid_count": 0,
+        "invalid_rate": 0.0,
+        "strict_invalid_count": 1,
+        "semantic_confusion": {
+          "n": 6,
+          "accuracy": 0.6666666666666666,
+          "yes_class_accuracy": 1.0,
+          "no_class_accuracy": 0.3333333333333333,
+          "precision": 0.6,
+          "recall": 1.0,
+          "f1": 0.7499999999999999,
+          "yes_prediction_ratio": 0.8333333333333334,
+          "invalid_ratio": 0.0,
+          "confusion_matrix": {
+            "yes": {
+              "yes": 3,
+              "no": 0,
+              "invalid": 0
+            },
+            "no": {
+              "yes": 2,
+              "no": 1,
+              "invalid": 0
+            }
+          },
+          "support": {
+            "yes": 3,
+            "no": 3
+          },
+          "tp": 3,
+          "fp": 2,
+          "fn": 0,
+          "tn": 1,
+          "invalid_yes": 0,
+          "invalid_no": 0
+        },
+        "strict_confusion": {
+          "n": 6,
+          "accuracy": 0.5,
+          "yes_class_accuracy": 1.0,
+          "no_class_accuracy": 0.0,
+          "precision": 0.6,
+          "recall": 1.0,
+          "f1": 0.7499999999999999,
+          "yes_prediction_ratio": 0.8333333333333334,
+          "invalid_ratio": 0.16666666666666666,
+          "confusion_matrix": {
+            "yes": {
+              "yes": 3,
+              "no": 0,
+              "invalid": 0
+            },
+            "no": {
+              "yes": 2,
+              "no": 0,
+              "invalid": 1
+            }
+          },
+          "support": {
+            "yes": 3,
+            "no": 3
+          },
+          "tp": 3,
+          "fp": 2,
+          "fn": 0,
+          "tn": 0,
+          "invalid_yes": 0,
+          "invalid_no": 1
+        },
+        "original_official_parser": false,
+        "primary_parser": "visual_semantic_yes_no_v1"
+      },
+      "exploratory": true,
+      "small_stratum_note": "576 has one image; no reliable population inference"
+    },
+    {
+      "visual_tokens": 832,
+      "images": 172,
+      "questions": 1032,
+      "method": "full",
+      "metrics": {
+        "n": 1032,
+        "pope_accuracy": 0.8313953488372093,
+        "semantic_accuracy": 0.8313953488372093,
+        "pope_precision": 0.9356321839080459,
+        "pope_recall": 0.7887596899224806,
+        "pope_f1": 0.8559411146161935,
+        "strict_accuracy": 0.561046511627907,
+        "invalid_count": 68,
+        "invalid_rate": 0.06589147286821706,
+        "strict_invalid_count": 409,
+        "semantic_confusion": {
+          "n": 1032,
+          "accuracy": 0.8313953488372093,
+          "yes_class_accuracy": 0.7887596899224806,
+          "no_class_accuracy": 0.874031007751938,
+          "precision": 0.9356321839080459,
+          "recall": 0.7887596899224806,
+          "f1": 0.8559411146161935,
+          "yes_prediction_ratio": 0.42151162790697677,
+          "invalid_ratio": 0.06589147286821706,
+          "confusion_matrix": {
+            "yes": {
+              "yes": 407,
+              "no": 78,
+              "invalid": 31
+            },
+            "no": {
+              "yes": 28,
+              "no": 451,
+              "invalid": 37
+            }
+          },
+          "support": {
+            "yes": 516,
+            "no": 516
+          },
+          "tp": 407,
+          "fp": 28,
+          "fn": 78,
+          "tn": 451,
+          "invalid_yes": 31,
+          "invalid_no": 37
+        },
+        "strict_confusion": {
+          "n": 1032,
+          "accuracy": 0.561046511627907,
+          "yes_class_accuracy": 0.8449612403100775,
+          "no_class_accuracy": 0.2771317829457364,
+          "precision": 0.9396551724137931,
+          "recall": 0.8449612403100775,
+          "f1": 0.889795918367347,
+          "yes_prediction_ratio": 0.4496124031007752,
+          "invalid_ratio": 0.3963178294573643,
+          "confusion_matrix": {
+            "yes": {
+              "yes": 436,
+              "no": 16,
+              "invalid": 64
+            },
+            "no": {
+              "yes": 28,
+              "no": 143,
+              "invalid": 345
+            }
+          },
+          "support": {
+            "yes": 516,
+            "no": 516
+          },
+          "tp": 436,
+          "fp": 28,
+          "fn": 16,
+          "tn": 143,
+          "invalid_yes": 64,
+          "invalid_no": 345
+        },
+        "original_official_parser": false,
+        "primary_parser": "visual_semantic_yes_no_v1"
+      },
+      "exploratory": true,
+      "small_stratum_note": "frozen subset, descriptive stratum"
+    },
+    {
+      "visual_tokens": 832,
+      "images": 172,
+      "questions": 1032,
+      "method": "s2_l",
+      "metrics": {
+        "n": 1032,
+        "pope_accuracy": 0.811046511627907,
+        "semantic_accuracy": 0.811046511627907,
+        "pope_precision": 0.9248826291079812,
+        "pope_recall": 0.7635658914728682,
+        "pope_f1": 0.8365180467091295,
+        "strict_accuracy": 0.6492248062015504,
+        "invalid_count": 47,
+        "invalid_rate": 0.045542635658914726,
+        "strict_invalid_count": 248,
+        "semantic_confusion": {
+          "n": 1032,
+          "accuracy": 0.811046511627907,
+          "yes_class_accuracy": 0.7635658914728682,
+          "no_class_accuracy": 0.8585271317829457,
+          "precision": 0.9248826291079812,
+          "recall": 0.7635658914728682,
+          "f1": 0.8365180467091295,
+          "yes_prediction_ratio": 0.4127906976744186,
+          "invalid_ratio": 0.045542635658914726,
+          "confusion_matrix": {
+            "yes": {
+              "yes": 394,
+              "no": 116,
+              "invalid": 6
+            },
+            "no": {
+              "yes": 32,
+              "no": 443,
+              "invalid": 41
+            }
+          },
+          "support": {
+            "yes": 516,
+            "no": 516
+          },
+          "tp": 394,
+          "fp": 32,
+          "fn": 116,
+          "tn": 443,
+          "invalid_yes": 6,
+          "invalid_no": 41
+        },
+        "strict_confusion": {
+          "n": 1032,
+          "accuracy": 0.6492248062015504,
+          "yes_class_accuracy": 0.7635658914728682,
+          "no_class_accuracy": 0.5348837209302325,
+          "precision": 0.9248826291079812,
+          "recall": 0.7635658914728682,
+          "f1": 0.8365180467091295,
+          "yes_prediction_ratio": 0.4127906976744186,
+          "invalid_ratio": 0.24031007751937986,
+          "confusion_matrix": {
+            "yes": {
+              "yes": 394,
+              "no": 82,
+              "invalid": 40
+            },
+            "no": {
+              "yes": 32,
+              "no": 276,
+              "invalid": 208
+            }
+          },
+          "support": {
+            "yes": 516,
+            "no": 516
+          },
+          "tp": 394,
+          "fp": 32,
+          "fn": 82,
+          "tn": 276,
+          "invalid_yes": 40,
+          "invalid_no": 208
+        },
+        "original_official_parser": false,
+        "primary_parser": "visual_semantic_yes_no_v1"
+      },
+      "exploratory": true,
+      "small_stratum_note": "frozen subset, descriptive stratum"
+    },
+    {
+      "visual_tokens": 832,
+      "images": 172,
+      "questions": 1032,
+      "method": "s2_u",
+      "metrics": {
+        "n": 1032,
+        "pope_accuracy": 0.8091085271317829,
+        "semantic_accuracy": 0.8091085271317829,
+        "pope_precision": 0.9268867924528302,
+        "pope_recall": 0.7616279069767442,
+        "pope_f1": 0.8361702127659575,
+        "strict_accuracy": 0.6453488372093024,
+        "invalid_count": 47,
+        "invalid_rate": 0.045542635658914726,
+        "strict_invalid_count": 255,
+        "semantic_confusion": {
+          "n": 1032,
+          "accuracy": 0.8091085271317829,
+          "yes_class_accuracy": 0.7616279069767442,
+          "no_class_accuracy": 0.8565891472868217,
+          "precision": 0.9268867924528302,
+          "recall": 0.7616279069767442,
+          "f1": 0.8361702127659575,
+          "yes_prediction_ratio": 0.4108527131782946,
+          "invalid_ratio": 0.045542635658914726,
+          "confusion_matrix": {
+            "yes": {
+              "yes": 393,
+              "no": 119,
+              "invalid": 4
+            },
+            "no": {
+              "yes": 31,
+              "no": 442,
+              "invalid": 43
+            }
+          },
+          "support": {
+            "yes": 516,
+            "no": 516
+          },
+          "tp": 393,
+          "fp": 31,
+          "fn": 119,
+          "tn": 442,
+          "invalid_yes": 4,
+          "invalid_no": 43
+        },
+        "strict_confusion": {
+          "n": 1032,
+          "accuracy": 0.6453488372093024,
+          "yes_class_accuracy": 0.7616279069767442,
+          "no_class_accuracy": 0.5290697674418605,
+          "precision": 0.9268867924528302,
+          "recall": 0.7616279069767442,
+          "f1": 0.8361702127659575,
+          "yes_prediction_ratio": 0.4108527131782946,
+          "invalid_ratio": 0.24709302325581395,
+          "confusion_matrix": {
+            "yes": {
+              "yes": 393,
+              "no": 80,
+              "invalid": 43
+            },
+            "no": {
+              "yes": 31,
+              "no": 273,
+              "invalid": 212
+            }
+          },
+          "support": {
+            "yes": 516,
+            "no": 516
+          },
+          "tp": 393,
+          "fp": 31,
+          "fn": 80,
+          "tn": 273,
+          "invalid_yes": 43,
+          "invalid_no": 212
+        },
+        "original_official_parser": false,
+        "primary_parser": "visual_semantic_yes_no_v1"
+      },
+      "exploratory": true,
+      "small_stratum_note": "frozen subset, descriptive stratum"
+    },
+    {
+      "visual_tokens": 832,
+      "images": 172,
+      "questions": 1032,
+      "method": "s2_c",
+      "metrics": {
+        "n": 1032,
+        "pope_accuracy": 0.8052325581395349,
+        "semantic_accuracy": 0.8052325581395349,
+        "pope_precision": 0.9263657957244655,
+        "pope_recall": 0.7558139534883721,
+        "pope_f1": 0.8324439701173959,
+        "strict_accuracy": 0.6453488372093024,
+        "invalid_count": 48,
+        "invalid_rate": 0.046511627906976744,
+        "strict_invalid_count": 251,
+        "semantic_confusion": {
+          "n": 1032,
+          "accuracy": 0.8052325581395349,
+          "yes_class_accuracy": 0.7558139534883721,
+          "no_class_accuracy": 0.8546511627906976,
+          "precision": 0.9263657957244655,
+          "recall": 0.7558139534883721,
+          "f1": 0.8324439701173959,
+          "yes_prediction_ratio": 0.40794573643410853,
+          "invalid_ratio": 0.046511627906976744,
+          "confusion_matrix": {
+            "yes": {
+              "yes": 390,
+              "no": 122,
+              "invalid": 4
+            },
+            "no": {
+              "yes": 31,
+              "no": 441,
+              "invalid": 44
+            }
+          },
+          "support": {
+            "yes": 516,
+            "no": 516
+          },
+          "tp": 390,
+          "fp": 31,
+          "fn": 122,
+          "tn": 441,
+          "invalid_yes": 4,
+          "invalid_no": 44
+        },
+        "strict_confusion": {
+          "n": 1032,
+          "accuracy": 0.6453488372093024,
+          "yes_class_accuracy": 0.7577519379844961,
+          "no_class_accuracy": 0.5329457364341085,
+          "precision": 0.9265402843601895,
+          "recall": 0.7577519379844961,
+          "f1": 0.8336886993603411,
+          "yes_prediction_ratio": 0.40891472868217055,
+          "invalid_ratio": 0.24321705426356588,
+          "confusion_matrix": {
+            "yes": {
+              "yes": 391,
+              "no": 84,
+              "invalid": 41
+            },
+            "no": {
+              "yes": 31,
+              "no": 275,
+              "invalid": 210
+            }
+          },
+          "support": {
+            "yes": 516,
+            "no": 516
+          },
+          "tp": 391,
+          "fp": 31,
+          "fn": 84,
+          "tn": 275,
+          "invalid_yes": 41,
+          "invalid_no": 210
+        },
+        "original_official_parser": false,
+        "primary_parser": "visual_semantic_yes_no_v1"
+      },
+      "exploratory": true,
+      "small_stratum_note": "frozen subset, descriptive stratum"
+    },
+    {
+      "visual_tokens": 1088,
+      "images": 27,
+      "questions": 162,
+      "method": "full",
+      "metrics": {
+        "n": 162,
+        "pope_accuracy": 0.845679012345679,
+        "semantic_accuracy": 0.845679012345679,
+        "pope_precision": 0.9682539682539683,
+        "pope_recall": 0.7530864197530864,
+        "pope_f1": 0.8472222222222222,
+        "strict_accuracy": 0.5864197530864198,
+        "invalid_count": 10,
+        "invalid_rate": 0.06172839506172839,
+        "strict_invalid_count": 64,
+        "semantic_confusion": {
+          "n": 162,
+          "accuracy": 0.845679012345679,
+          "yes_class_accuracy": 0.7530864197530864,
+          "no_class_accuracy": 0.9382716049382716,
+          "precision": 0.9682539682539683,
+          "recall": 0.7530864197530864,
+          "f1": 0.8472222222222222,
+          "yes_prediction_ratio": 0.3888888888888889,
+          "invalid_ratio": 0.06172839506172839,
+          "confusion_matrix": {
+            "yes": {
+              "yes": 61,
+              "no": 13,
+              "invalid": 7
+            },
+            "no": {
+              "yes": 2,
+              "no": 76,
+              "invalid": 3
+            }
+          },
+          "support": {
+            "yes": 81,
+            "no": 81
+          },
+          "tp": 61,
+          "fp": 2,
+          "fn": 13,
+          "tn": 76,
+          "invalid_yes": 7,
+          "invalid_no": 3
+        },
+        "strict_confusion": {
+          "n": 162,
+          "accuracy": 0.5864197530864198,
+          "yes_class_accuracy": 0.8395061728395061,
+          "no_class_accuracy": 0.3333333333333333,
+          "precision": 0.9714285714285714,
+          "recall": 0.8395061728395061,
+          "f1": 0.9006622516556292,
+          "yes_prediction_ratio": 0.43209876543209874,
+          "invalid_ratio": 0.3950617283950617,
+          "confusion_matrix": {
+            "yes": {
+              "yes": 68,
+              "no": 1,
+              "invalid": 12
+            },
+            "no": {
+              "yes": 2,
+              "no": 27,
+              "invalid": 52
+            }
+          },
+          "support": {
+            "yes": 81,
+            "no": 81
+          },
+          "tp": 68,
+          "fp": 2,
+          "fn": 1,
+          "tn": 27,
+          "invalid_yes": 12,
+          "invalid_no": 52
+        },
+        "original_official_parser": false,
+        "primary_parser": "visual_semantic_yes_no_v1"
+      },
+      "exploratory": true,
+      "small_stratum_note": "frozen subset, descriptive stratum"
+    },
+    {
+      "visual_tokens": 1088,
+      "images": 27,
+      "questions": 162,
+      "method": "s2_l",
+      "metrics": {
+        "n": 162,
+        "pope_accuracy": 0.8024691358024691,
+        "semantic_accuracy": 0.8024691358024691,
+        "pope_precision": 0.9375,
+        "pope_recall": 0.7407407407407407,
+        "pope_f1": 0.8275862068965517,
+        "strict_accuracy": 0.6296296296296297,
+        "invalid_count": 7,
+        "invalid_rate": 0.043209876543209874,
+        "strict_invalid_count": 45,
+        "semantic_confusion": {
+          "n": 162,
+          "accuracy": 0.8024691358024691,
+          "yes_class_accuracy": 0.7407407407407407,
+          "no_class_accuracy": 0.8641975308641975,
+          "precision": 0.9375,
+          "recall": 0.7407407407407407,
+          "f1": 0.8275862068965517,
+          "yes_prediction_ratio": 0.3950617283950617,
+          "invalid_ratio": 0.043209876543209874,
+          "confusion_matrix": {
+            "yes": {
+              "yes": 60,
+              "no": 21,
+              "invalid": 0
+            },
+            "no": {
+              "yes": 4,
+              "no": 70,
+              "invalid": 7
+            }
+          },
+          "support": {
+            "yes": 81,
+            "no": 81
+          },
+          "tp": 60,
+          "fp": 4,
+          "fn": 21,
+          "tn": 70,
+          "invalid_yes": 0,
+          "invalid_no": 7
+        },
+        "strict_confusion": {
+          "n": 162,
+          "accuracy": 0.6296296296296297,
+          "yes_class_accuracy": 0.7407407407407407,
+          "no_class_accuracy": 0.5185185185185185,
+          "precision": 0.9375,
+          "recall": 0.7407407407407407,
+          "f1": 0.8275862068965517,
+          "yes_prediction_ratio": 0.3950617283950617,
+          "invalid_ratio": 0.2777777777777778,
+          "confusion_matrix": {
+            "yes": {
+              "yes": 60,
+              "no": 11,
+              "invalid": 10
+            },
+            "no": {
+              "yes": 4,
+              "no": 42,
+              "invalid": 35
+            }
+          },
+          "support": {
+            "yes": 81,
+            "no": 81
+          },
+          "tp": 60,
+          "fp": 4,
+          "fn": 11,
+          "tn": 42,
+          "invalid_yes": 10,
+          "invalid_no": 35
+        },
+        "original_official_parser": false,
+        "primary_parser": "visual_semantic_yes_no_v1"
+      },
+      "exploratory": true,
+      "small_stratum_note": "frozen subset, descriptive stratum"
+    },
+    {
+      "visual_tokens": 1088,
+      "images": 27,
+      "questions": 162,
+      "method": "s2_u",
+      "metrics": {
+        "n": 162,
+        "pope_accuracy": 0.7901234567901234,
+        "semantic_accuracy": 0.7901234567901234,
+        "pope_precision": 0.9354838709677419,
+        "pope_recall": 0.7160493827160493,
+        "pope_f1": 0.811188811188811,
+        "strict_accuracy": 0.6296296296296297,
+        "invalid_count": 8,
+        "invalid_rate": 0.04938271604938271,
+        "strict_invalid_count": 44,
+        "semantic_confusion": {
+          "n": 162,
+          "accuracy": 0.7901234567901234,
+          "yes_class_accuracy": 0.7160493827160493,
+          "no_class_accuracy": 0.8641975308641975,
+          "precision": 0.9354838709677419,
+          "recall": 0.7160493827160493,
+          "f1": 0.811188811188811,
+          "yes_prediction_ratio": 0.38271604938271603,
+          "invalid_ratio": 0.04938271604938271,
+          "confusion_matrix": {
+            "yes": {
+              "yes": 58,
+              "no": 22,
+              "invalid": 1
+            },
+            "no": {
+              "yes": 4,
+              "no": 70,
+              "invalid": 7
+            }
+          },
+          "support": {
+            "yes": 81,
+            "no": 81
+          },
+          "tp": 58,
+          "fp": 4,
+          "fn": 22,
+          "tn": 70,
+          "invalid_yes": 1,
+          "invalid_no": 7
+        },
+        "strict_confusion": {
+          "n": 162,
+          "accuracy": 0.6296296296296297,
+          "yes_class_accuracy": 0.7283950617283951,
+          "no_class_accuracy": 0.5308641975308642,
+          "precision": 0.9365079365079365,
+          "recall": 0.7283950617283951,
+          "f1": 0.8194444444444445,
+          "yes_prediction_ratio": 0.3888888888888889,
+          "invalid_ratio": 0.2716049382716049,
+          "confusion_matrix": {
+            "yes": {
+              "yes": 59,
+              "no": 12,
+              "invalid": 10
+            },
+            "no": {
+              "yes": 4,
+              "no": 43,
+              "invalid": 34
+            }
+          },
+          "support": {
+            "yes": 81,
+            "no": 81
+          },
+          "tp": 59,
+          "fp": 4,
+          "fn": 12,
+          "tn": 43,
+          "invalid_yes": 10,
+          "invalid_no": 34
+        },
+        "original_official_parser": false,
+        "primary_parser": "visual_semantic_yes_no_v1"
+      },
+      "exploratory": true,
+      "small_stratum_note": "frozen subset, descriptive stratum"
+    },
+    {
+      "visual_tokens": 1088,
+      "images": 27,
+      "questions": 162,
+      "method": "s2_c",
+      "metrics": {
+        "n": 162,
+        "pope_accuracy": 0.7901234567901234,
+        "semantic_accuracy": 0.7901234567901234,
+        "pope_precision": 0.9354838709677419,
+        "pope_recall": 0.7160493827160493,
+        "pope_f1": 0.811188811188811,
+        "strict_accuracy": 0.6172839506172839,
+        "invalid_count": 9,
+        "invalid_rate": 0.05555555555555555,
+        "strict_invalid_count": 46,
+        "semantic_confusion": {
+          "n": 162,
+          "accuracy": 0.7901234567901234,
+          "yes_class_accuracy": 0.7160493827160493,
+          "no_class_accuracy": 0.8641975308641975,
+          "precision": 0.9354838709677419,
+          "recall": 0.7160493827160493,
+          "f1": 0.811188811188811,
+          "yes_prediction_ratio": 0.38271604938271603,
+          "invalid_ratio": 0.05555555555555555,
+          "confusion_matrix": {
+            "yes": {
+              "yes": 58,
+              "no": 21,
+              "invalid": 2
+            },
+            "no": {
+              "yes": 4,
+              "no": 70,
+              "invalid": 7
+            }
+          },
+          "support": {
+            "yes": 81,
+            "no": 81
+          },
+          "tp": 58,
+          "fp": 4,
+          "fn": 21,
+          "tn": 70,
+          "invalid_yes": 2,
+          "invalid_no": 7
+        },
+        "strict_confusion": {
+          "n": 162,
+          "accuracy": 0.6172839506172839,
+          "yes_class_accuracy": 0.7283950617283951,
+          "no_class_accuracy": 0.5061728395061729,
+          "precision": 0.9365079365079365,
+          "recall": 0.7283950617283951,
+          "f1": 0.8194444444444445,
+          "yes_prediction_ratio": 0.3888888888888889,
+          "invalid_ratio": 0.2839506172839506,
+          "confusion_matrix": {
+            "yes": {
+              "yes": 59,
+              "no": 12,
+              "invalid": 10
+            },
+            "no": {
+              "yes": 4,
+              "no": 41,
+              "invalid": 36
+            }
+          },
+          "support": {
+            "yes": 81,
+            "no": 81
+          },
+          "tp": 59,
+          "fp": 4,
+          "fn": 12,
+          "tn": 41,
+          "invalid_yes": 10,
+          "invalid_no": 36
+        },
+        "original_official_parser": false,
+        "primary_parser": "visual_semantic_yes_no_v1"
+      },
+      "exploratory": true,
+      "small_stratum_note": "frozen subset, descriptive stratum"
+    }
+  ],
+  "official_full_benchmark": false
+}

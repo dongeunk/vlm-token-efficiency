@@ -1,0 +1,2 @@
+# Only for stored-summary CPU reproduction; no model/GPU packages required.
+numpy==2.4.6
