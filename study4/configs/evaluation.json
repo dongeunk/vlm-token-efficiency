@@ -1,0 +1,36 @@
+{
+  "K": 64,
+  "arms": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+  ],
+  "backend": "sdpa",
+  "batch": 1,
+  "decode": "greedy",
+  "dtype": "float16",
+  "max_new_tokens": 10,
+  "model_revision": "7e3e67edbbed1bf9888184d9df282b700a323964",
+  "padding": false,
+  "parser": "strict_answer_only_v1",
+  "profile": "evaluation_batch1_no_padding",
+  "prompt_suffix": "\nAnswer with Yes or No only.",
+  "tensor_dumps": 0,
+  "dataset": "POPE Random Dev100 (official questions)",
+  "model": "HuggingFaceTB/SmolVLM-256M-Instruct",
+  "auxiliary_parser": "rucaibox_evaluate_first_period_v1",
+  "tau": 0.3,
+  "spatial_grid": [
+    5,
+    5
+  ],
+  "full_baseline": "All original visual tokens",
+  "bootstrap": {
+    "seed": 20261124,
+    "repetitions": 10000,
+    "clusters": 100
+  }
+}
