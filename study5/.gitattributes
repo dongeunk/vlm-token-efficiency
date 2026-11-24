@@ -1,0 +1,5 @@
+# Preserve bytes covered by the historical evaluation identity.
+src/*.py -text whitespace=blank-at-eol,space-before-tab,cr-at-eol,-blank-at-eof
+scripts/run_p3b_candidates.py -text whitespace=blank-at-eol,space-before-tab,cr-at-eol,-blank-at-eof
+configs/layout_geometry.json -text
+docs/STUDY5_PROTOCOL.md -text whitespace=blank-at-eol,space-before-tab,cr-at-eol,-blank-at-eof

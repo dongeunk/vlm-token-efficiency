@@ -7,6 +7,7 @@ SmolVLM에서 시각 토큰을 줄이면서 객체 존재 판정에 필요한 �
 | [Study1 · Coverage와 공간 하한](research/first_study/README.md) | 질문 비의존 표현 Coverage에서 최소 지역 대표를 두는 것이 도움이 되는가? Global Coverage와 공간 하한을 비교했다. |
 | [Study2 · 지역 예산 할당](research/second_study/README.md) | K64에서 지역별 예산을 Coverage로 배정하는 것이 Laplacian 배정에 도움이 되는가? 공통 ERC 기반 선택·Decoder 아래 비교했다. |
 | [Study4 · 공간 대표 선택](study4/README.md) | 질문 가중 Coverage에서 같은 K64로 공간 보장과 대표 선택 기준을 바꾸면 무엇이 달라지는가? 첫 Prefill 전에 Visual64로 압축했다. |
+| [Study5 · Query Attention과 Coverage Ablation](study5/README.md) | 공간 제약과 K64 completion 규칙의 정확도 차이를 분리해 비교했다. |
 
 ## Study4 대표 결과
 
@@ -22,6 +23,23 @@ SmolVLM-256M-Instruct, 공식 POPE Random Dev100 이미지 100장·600문항, pr
 D−A는 Accuracy **+3.33%p**, F1 **+7.32%p**였다. Accuracy 차이의 이미지 단위 paired bootstrap 95% CI는 **[+0.67, +6.17]%p**였다. A는 SmolVLM 이식 기준선이다. F는 A보다 정확도가 낮았다. 이 비교는 Dev100 탐색적 평가이며 독립 Test를 수행하지 않았다. 종단간 가속은 확립되지 않았다. [최종 보고서](study4/docs/STUDY4_FINAL_RESEARCH_REPORT.md) · [한국어 요약](study4/docs/STUDY4_RESEARCH_SUMMARY.md) · [결과표](study4/results/performance.csv)
 
 A는 전역 greedy 64개를 선택한다. B–F는 5×5 셀당 한 개씩 선택한 뒤 동일 Coverage로 39개를 추가한다. 대표 선택 기준은 중심 거리(B), 코사인 medoid(C), 질문 Attention(D), Vision Attention(E), 공간 제약 Coverage(F)다. [방법과 실행 조건](study4/README.md)
+
+## Study5 · Query Attention과 Coverage Ablation
+
+Study4에서 관찰한 D의 개선을 공간 분할, 질문 Attention, Coverage의 관점에서 분해했다. SmolVLM-256M-Instruct의 Visual K64에서 Exploratory Candidate79 이미지 79장·474문항에 대한 GPU 응답 2,370개를 비교했다.
+
+| 방법 | Strict Accuracy | Strict F1 |
+|---|---:|---:|
+| A · Global Coverage64 | 62.24% | 39.32% |
+| D · Grid Query25 + Coverage39 | 65.61% | 47.59% |
+| G · Global Query25 + Coverage39 | 67.09% | 51.25% |
+| H · Global Query Top-64 | **75.32%** | 67.77% |
+| I · Grid Query25 + Global Query39 | **75.32%** | **67.95%** |
+
+주 비교 D−G는 Accuracy **−1.48%p**, 95% 이미지 단위 paired bootstrap CI **[−4.01, +1.27]%p**였다. 격자 제약의 추가 정확도 이점은 확인되지 않았다. 같은 Seed25에서 Query로 39개를 추가한 I/H는 Coverage를 사용한 D/G보다 정확도가 높았고 평균 Coverage 점수는 낮았다. 단일 전역 Query 순위를 사용하는 H가 가장 단순한 공동 최고 Accuracy 방법이었다.
+
+Candidate79의 완전한 독립성은 미확정이다. 단일 SmolVLM 모델, K64, POPE 객체 존재 판별에서 얻은 탐색적 결과다. Study5에는 Full 직접 평가와 End-to-End 가속 검증이 없고, 보조 비교의 다중 비교는 미보정이다. Left-Padding FP16 parity BLOCKER가 남아 있다. [Study5 재현 범위](study5/README.md) · [최종 보고서](study5/docs/STUDY5_FINAL_RESEARCH_REPORT.md) · [한국어 요약](study5/docs/STUDY5_RESEARCH_SUMMARY.md) · [집계](study5/results/candidate_summary.json)
+
 
 ## 재현과 자료
 

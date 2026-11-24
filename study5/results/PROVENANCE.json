@@ -1,0 +1,14 @@
+{
+  "scope": "Exploratory Candidate79",
+  "independent_test": false,
+  "images": 79,
+  "questions": 474,
+  "gpu_responses": 2370,
+  "source_manifest_sha256": "c39173ab3f48b39a86176d03508c0b6f4cead3566bbe18615b437e7dbcf566e0",
+  "source_config_sha256": "f01e3a6edf0b9a1cb446f814e70efbcaa8644cb0720fce313be77be5c64dd514",
+  "source_execution_identity_sha256": "d8cfeb74ea28de7007d9fcf0739f6fe3fb8a8a9ad5ff6f70080cf4854190d025",
+  "completed_chunk_aggregate_sha256": "db0833196bce58b4512df088b6a0876494728b61c76dd5d93456ab76880a2431",
+  "public_summary_payload_sha256": "e1ffd02254c43c4c3d40919fcf01f0cb0a50f80e4e4cd6312c4e2ae863b283d0",
+  "export": "Aggregate data. Each anonymous cluster represents six questions from one image. Original cluster order is retained for deterministic bootstrap.",
+  "paired_transition_counts": "Totals were verified against the private responses. A table of paired question-level outcomes was withheld."
+}
