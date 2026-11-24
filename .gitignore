@@ -47,3 +47,23 @@ models/
 /study4/**/TEST400.json
 /study4/**/CANDIDATES.json
 /study4/**/VISUAL_QA.sqlite3*
+
+# Study5 local inputs and historical GPU artifacts
+/study5/runs/
+/study5/evidence/
+/study5/inputs/
+/study5/private/
+/study5/scratch/
+/study5/**/tensor_dumps/
+/study5/**/*.sqlite3*
+/study5/**/*.db
+/study5/**/*.jsonl
+/study5/**/*.log
+/study5/**/*.npy
+/study5/**/*.npz
+/study5/**/*.pdf
+/study5/**/*.jpg
+/study5/**/*.jpeg
+/study5/**/*.webp
+/study5/**/RESERVE79.json
+/study5/**/DEV100.json
