@@ -25,3 +25,25 @@ models/
 **/selected_manifest.jsonl
 **/panels/
 **/drafts/
+
+
+# Study4 private and local-only artifacts
+/study4/runs/
+/study4/scratch/
+/study4/inputs/
+/study4/checkpoint/
+/study4/checkpoints/
+/study4/private/
+/study4/**/tensor_dumps/
+/study4/**/*.sqlite3*
+/study4/**/*.safetensors
+/study4/**/*.npz
+/study4/**/*.npy
+/study4/**/*.jsonl
+/study4/**/*.pdf
+!/study4/docs/figures/STUDY4_DEV100_RESULTS.pdf
+/study4/**/DEV100.json
+/study4/**/PILOT10.json
+/study4/**/TEST400.json
+/study4/**/CANDIDATES.json
+/study4/**/VISUAL_QA.sqlite3*

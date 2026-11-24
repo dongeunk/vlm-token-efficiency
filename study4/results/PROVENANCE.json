@@ -1,0 +1,24 @@
+{
+  "manifest_sha256": "ab748187e49cf6f1963fd7cf65727ee41f1b858d5a27e35e8892b235a73bf4ee",
+  "settings_sha256": "974e37057b9b5824aacfc814621e7a99050392661d303d1fd99b00ea2759ac3c",
+  "images": 100,
+  "questions": 600,
+  "outputs": 4200,
+  "reused": 420,
+  "new": 3780,
+  "bootstrap_seed": 20261124,
+  "bootstrap_reps": 10000,
+  "status": "COMPLETE",
+  "tensor_dumps": 0,
+  "independent_test_completed": false,
+  "raw_artifacts_redistributed": false,
+  "source_summary_sha256": {
+    "performance.csv": "4befd9333035241a00c6cfb80aaf4ab28a5ce2ad26480f70d743f57e92c4cecd",
+    "paired_vs_A.csv": "81bdbb2baa1a4863f216a8e0290af12d4b72abda0e81f2eba75be14c1d1e9bdd",
+    "cluster_bootstrap.csv": "89cdcb37c15a9829204f417ca3d017cbf188134006c1d442e0ef2223d9e7fd29",
+    "coverage_overlap.csv": "16b5b20eaa6d236caed54e7b45c68c24c769130f27de508c7620a9597d2a826d",
+    "latency_memory.csv": "4647bd9e7d01f04e118ac2d25635954d1c19ef9bd3a7a518031a7713ddf00659",
+    "image_distribution.csv": "31338f03cc3bed4aa11dd07f2d647af88df42abe0e4fc29e238a2e98966434cd"
+  },
+  "public_cluster_file_sha256": "9d269b94d57f51d8c2732719c2818de89c2020bd2624cd96fd1876090cb136af"
+}

@@ -1,3 +1,40 @@
+# VLM Token Efficiency
+
+SmolVLM에서 시각 토큰을 줄이면서 객체 존재 판정에 필요한 단서를 얼마나 보존할 수 있는지 살펴본 연속 연구다. 연구마다 공간 보장, 예산 할당, 대표 토큰 선택을 각각 다뤘다.
+
+| 연구 | 핵심 질문과 방법 |
+|---|---|
+| [Study1 · Coverage와 공간 하한](research/first_study/README.md) | 질문 비의존 표현 Coverage에서 최소 지역 대표를 두는 것이 도움이 되는가? Global Coverage와 공간 하한을 비교했다. |
+| [Study2 · 지역 예산 할당](research/second_study/README.md) | K64에서 지역별 예산을 Coverage로 배정하는 것이 Laplacian 배정에 도움이 되는가? 공통 ERC 기반 선택·Decoder 아래 비교했다. |
+| [Study4 · 공간 대표 선택](study4/README.md) | 질문 가중 Coverage에서 같은 K64로 공간 보장과 대표 선택 기준을 바꾸면 무엇이 달라지는가? 첫 Prefill 전에 Visual64로 압축했다. |
+
+## Study4 대표 결과
+
+SmolVLM-256M-Instruct, 공식 POPE Random Dev100 이미지 100장·600문항, pruned 조건 Visual K64. Full은 모든 시각 토큰을 사용했다.
+
+| 방법 | Strict Accuracy | Strict F1 |
+|---|---:|---:|
+| Full | 86.33% | 84.47% |
+| A · CoverPruner-style Global Coverage | 65.83% | 48.10% |
+| D · Grid-Query Attention | 69.17% | 55.42% |
+| F · Grid-Constrained Coverage | 63.67% | 42.93% |
+
+D−A는 Accuracy **+3.33%p**, F1 **+7.32%p**였다. Accuracy 차이의 이미지 단위 paired bootstrap 95% CI는 **[+0.67, +6.17]%p**였다. A는 SmolVLM 이식 기준선이다. F는 A보다 정확도가 낮았다. 이 비교는 Dev100 탐색적 평가이며 독립 Test를 수행하지 않았다. 종단간 가속은 확립되지 않았다. [최종 보고서](study4/docs/STUDY4_FINAL_RESEARCH_REPORT.md) · [한국어 요약](study4/docs/STUDY4_RESEARCH_SUMMARY.md) · [결과표](study4/results/performance.csv)
+
+A는 전역 greedy 64개를 선택한다. B–F는 5×5 셀당 한 개씩 선택한 뒤 동일 Coverage로 39개를 추가한다. 대표 선택 기준은 중심 거리(B), 코사인 medoid(C), 질문 Attention(D), Vision Attention(E), 공간 제약 Coverage(F)다. [방법과 실행 조건](study4/README.md)
+
+## 재현과 자료
+
+Study4의 합성 CPU 테스트와 집계 검산은 공개 파일로 실행할 수 있다. 기존 평가 환경은 GTX 1660 SUPER, Python 3.11, PyTorch 2.13.0+cu126, Transformers 5.15.1이며 Study4는 Batch1 No-Padding·SDPA·FP16을 사용했다. 공개본의 전체 GPU 재생에는 별도 연구 입력과 Runner가 필요하다. 모델·주석·이미지는 각 공식 출처에서 받는다. [Study4 재현 절차](study4/README.md#재현) · [SmolVLM](https://huggingface.co/HuggingFaceTB/SmolVLM-256M-Instruct) · [COCO](https://cocodataset.org/#download) · [POPE](https://github.com/RUCAIBox/POPE)
+
+---
+
+## 기존 Study1·Study2 공개 기록
+
+아래는 이전 공개 시점의 README 기록이다. 본문의 상태 표기는 당시 시점을 기준으로 한다.
+
+
+
 # VLM Token Efficiency — 1차·2차 연구
 
 기존 1차 공개 커밋66bbfaf를 보존하고, 후속1차80이미지 결과와2차 S0–S4-A 결과를 별도 공개 view로 추가하는 검토안이다. Commit·Push는 아직 하지 않았다.
